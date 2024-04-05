@@ -1,0 +1,1718 @@
+[
+        {
+        "Commenter": "Alliance for Trust in AI",
+        "ID": "NTIA-2023-0009-0156",
+        "is_org": true,
+		"Alias": "Alliance for Trust in AI"
+    },
+        {
+        "Commenter": "Anthropic PBC",
+        "ID": "NTIA-2023-0009-0233",
+        "is_org": true,
+		"Alias": "Anthropic"
+    },
+        {
+        "Commenter": "Cohere Inc.",
+        "ID": "NTIA-2023-0009-0245",
+        "is_org": true,
+		"Alias": "Cohere"
+    },
+        {
+        "Commenter": "Future of Life Institute",
+        "ID": "NTIA-2023-0009-0251",
+        "is_org": true,
+		"Alias": "FLI"
+    },
+        {
+        "Commenter": "Partnership on AI",
+        "ID": "NTIA-2023-0009-0254",
+        "is_org": true,
+		"Alias": "Partnership on AI"
+    },
+        {
+        "Commenter": "AI Policy and Governance Working Group",
+        "ID": "NTIA-2023-0009-0257",
+        "is_org": true,
+		"Alias": "AIPGWG"
+    },
+        {
+        "Commenter": "Ethical Intelligence Associates, Limited",
+        "ID": "NTIA-2023-0009-0270",
+        "is_org": true,
+		"Alias": "Ethical Intelligence"
+    },
+        {
+        "Commenter": "Centre for the Governance of AI",
+        "ID": "NTIA-2023-0009-0271",
+        "is_org": true,
+		"Alias": "Centre for the Governance of AI"
+    },
+        {
+        "Commenter": "Consumer Technology Association (CTA)",
+        "ID": "NTIA-2023-0009-0280",
+        "is_org": true,
+		"Alias": "CTA"
+    },
+        {
+        "Commenter": "BSA The Software Alliance",
+        "ID": "NTIA-2023-0009-0155",
+        "is_org": true,
+        "Alias": "BSA"
+    },
+        {
+        "Commenter": "Connected Health Initiative",
+        "ID": "NTIA-2023-0009-0284",
+        "is_org": true,
+		"Alias": "CHI"
+    },
+        {
+        "Commenter": "Context Fund Policy Working Group",
+        "ID": "NTIA-2023-0009-0308",
+        "is_org": true,
+		"Alias": "Context Fund"
+    },
+        {
+        "Commenter": "Information Technology Industry Council (ITI)",
+        "ID": "NTIA-2023-0009-0324",
+        "is_org": true,
+		"Alias": "ITI"
+    },
+        {
+        "Commenter": "Uber Technologies, Inc.",
+        "ID": "NTIA-2023-0009-0325",
+        "is_org": true,
+		"Alias": "Uber"
+    },
+        {
+        "Commenter": "Johns Hopkins Center for Health Security",
+        "ID": "NTIA-2023-0009-0328",
+        "is_org": true,
+		"Alias": "Johns Hopkins"
+    },
+    {
+        "Commenter": "Seichter, Anthony",
+        "ID": "NTIA-2023-0009-0138",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "The EleutherAI Institute",
+        "ID": "NTIA-2023-0009-0291",
+		"is_org": true,
+		"Alias": "EleutherAI"
+    },
+    {
+        "Commenter": "Hans, Gautam",
+        "ID": "NTIA-2023-0009-0279",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Electronic Privacy Information Center (EPIC)",
+        "ID": "NTIA-2023-0009-0206",
+		"is_org": true,
+		"Alias": "EPIC"
+    },
+    {
+        "Commenter": "U.S. Chamber of Commerce",
+        "ID": "NTIA-2023-0009-0230",
+		"is_org": true,
+		"Alias": "Chamber Commerce"
+    },
+    {
+        "Commenter": "National Association of Manufacturers",
+        "ID": "NTIA-2023-0009-0214",
+		"is_org": true,
+		"Alias": "Nat Assoc Manufacturers"
+    },
+    {
+        "Commenter": "Computer and Communications Industry Association",
+        "ID": "NTIA-2023-0009-0219",
+		"is_org": true,
+		"Alias": "CCIA"
+    },
+    {
+        "Commenter": "Unlearn.AI",
+        "ID": "NTIA-2023-0009-0142",
+		"is_org": true,
+		"Alias": "Unlearn.AI"
+    },
+    {
+        "Commenter": "The Future Society",
+        "ID": "NTIA-2023-0009-0269",
+		"is_org": true,
+		"Alias": "Future Society"
+    },
+    {
+        "Commenter": "Y Combinator",
+        "ID": "NTIA-2023-0009-0144",
+		"is_org": true,
+		"Alias": "Y Combinator"
+    },
+    {
+        "Commenter": "Center for Law and AI Risk",
+        "ID": "NTIA-2023-0009-0121",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Haynes, David",
+        "ID": "NTIA-2023-0009-0110",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0004",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "HiiiWAV (a Black creative tech incubator)",
+        "ID": "NTIA-2023-0009-0160",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Graziul, Chris",
+        "ID": "NTIA-2023-0009-0244",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0003",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "OpenAI",
+        "ID": "NTIA-2023-0009-0211",
+		"is_org": true,
+		"Alias": "OpenAI"
+    },
+    {
+        "Commenter": "Rayfield, Ben",
+        "ID": "NTIA-2023-0009-0157",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Databricks, Inc.",
+        "ID": "NTIA-2023-0009-0226",
+		"is_org": true,
+		"Alias": "Databricks"
+    },
+    {
+        "Commenter": "Mowshowitz, Zvi",
+        "ID": "NTIA-2023-0009-0153",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Wikimedia Foundation",
+        "ID": "NTIA-2023-0009-0250",
+		"is_org": true,
+		"Alias": "Wikimedia"
+    },
+    {
+        "Commenter": "Maciejko, Robert",
+        "ID": "NTIA-2023-0009-0116",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Center for Data Innovation",
+        "ID": "NTIA-2023-0009-0231",
+		"is_org": true,
+		"Alias": "Center for Data Innovation"
+    },
+    {
+        "Commenter": "AI-Plans",
+        "ID": "NTIA-2023-0009-0274",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0103",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0228",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "McCleary, Kyle",
+        "ID": "NTIA-2023-0009-0107",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0189",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "e103e31307896fa784a6a011c, 0fecddcac42f8c6a6b64f413d",
+        "ID": "NTIA-2023-0009-0150",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0241",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Staley, James",
+        "ID": "NTIA-2023-0009-0266",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Benamy, Daniel",
+        "ID": "NTIA-2023-0009-0268",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "perry, Dominique",
+        "ID": "NTIA-2023-0009-0024",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ham, Jung",
+        "ID": "NTIA-2023-0009-0038",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0041",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Voigt, Alex",
+        "ID": "NTIA-2023-0009-0093",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Soko, Lola",
+        "ID": "NTIA-2023-0009-0026",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Kelley, Robert",
+        "ID": "NTIA-2023-0009-0109",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ray, Krishanu",
+        "ID": "NTIA-2023-0009-0042",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Kelly, Matthew",
+        "ID": "NTIA-2023-0009-0145",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Mellema, Owen",
+        "ID": "NTIA-2023-0009-0113",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sanchez-Wentz, Estevan",
+        "ID": "NTIA-2023-0009-0072",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0099",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Whitaker , Jonathan",
+        "ID": "NTIA-2023-0009-0102",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Smyth, Jason",
+        "ID": "NTIA-2023-0009-0177",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Van Aken, David",
+        "ID": "NTIA-2023-0009-0187",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Liu, Wei",
+        "ID": "NTIA-2023-0009-0170",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Singh, Jodh",
+        "ID": "NTIA-2023-0009-0039",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Baker, Linda",
+        "ID": "NTIA-2023-0009-0027",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Mihalik, Matt",
+        "ID": "NTIA-2023-0009-0063",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Kravt\u0161enko, Semjon",
+        "ID": "NTIA-2023-0009-0114",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Takacs, Daniel",
+        "ID": "NTIA-2023-0009-0120",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Pope, Quintin",
+        "ID": "NTIA-2023-0009-0281",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ellis, Michael",
+        "ID": "NTIA-2023-0009-0056",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Auld, Eric",
+        "ID": "NTIA-2023-0009-0151",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ruebsamen, Gene",
+        "ID": "NTIA-2023-0009-0191",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Corbitt, David",
+        "ID": "NTIA-2023-0009-0196",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Heller, Adam",
+        "ID": "NTIA-2023-0009-0029",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0011",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0019",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "K, A",
+        "ID": "NTIA-2023-0009-0082",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Copeland, Tanner",
+        "ID": "NTIA-2023-0009-0124",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "B, J",
+        "ID": "NTIA-2023-0009-0076",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Meury, Troy",
+        "ID": "NTIA-2023-0009-0050",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0066",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Marks, Logan",
+        "ID": "NTIA-2023-0009-0081",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0085",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Montgomery, Landon",
+        "ID": "NTIA-2023-0009-0086",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Andre, Charles",
+        "ID": "NTIA-2023-0009-0104",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Baker, James",
+        "ID": "NTIA-2023-0009-0057",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Saini, Dhruv",
+        "ID": "NTIA-2023-0009-0133",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0091",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0095",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0100",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0305",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Reynolds, James",
+        "ID": "NTIA-2023-0009-0331",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ra, Shawn",
+        "ID": "NTIA-2023-0009-0319",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Bortz, Travis",
+        "ID": "NTIA-2023-0009-0326",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0310",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Lancaste, James",
+        "ID": "NTIA-2023-0009-0021",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Pth.AI Inc",
+        "ID": "NTIA-2023-0009-0023",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0045",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Braiden, Lee",
+        "ID": "NTIA-2023-0009-0049",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0053",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Loebenberg, Kenneth",
+        "ID": "NTIA-2023-0009-0036",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Roush, Allen",
+        "ID": "NTIA-2023-0009-0141",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Cross, Jon",
+        "ID": "NTIA-2023-0009-0118",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Mate, Christian",
+        "ID": "NTIA-2023-0009-0139",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "King, Arthur",
+        "ID": "NTIA-2023-0009-0115",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Staples, Tate",
+        "ID": "NTIA-2023-0009-0119",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Krellenstein, Adam",
+        "ID": "NTIA-2023-0009-0195",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Robins, Jules",
+        "ID": "NTIA-2023-0009-0154",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Neuroreef Labs Inc.",
+        "ID": "NTIA-2023-0009-0253",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Norwood, Gabe",
+        "ID": "NTIA-2023-0009-0013",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0058",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0071",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Avila, Christopher",
+        "ID": "NTIA-2023-0009-0203",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Ro, Arzet",
+        "ID": "NTIA-2023-0009-0222",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Newsome, Terry",
+        "ID": "NTIA-2023-0009-0010",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Marks, Janna",
+        "ID": "NTIA-2023-0009-0172",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "ACT | The App Association",
+        "ID": "NTIA-2023-0009-0282",
+		"is_org": true,
+		"Alias": "The App"
+    },
+    {
+        "Commenter": "MLCommons",
+        "ID": "NTIA-2023-0009-0166",
+		"is_org": true,
+		"Alias": "MLCommons"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0090",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Tokson, Matthew",
+        "ID": "NTIA-2023-0009-0197",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "The AI Alliance",
+        "ID": "NTIA-2023-0009-0181",
+		"is_org": true,
+		"Alias": "AI Alliance"
+    },
+    {
+        "Commenter": "Meta Platforms Inc.",
+        "ID": "NTIA-2023-0009-0158",
+		"is_org": true,
+		"Alias": "Meta"
+    },
+    {
+        "Commenter": "Open Source Initiative",
+        "ID": "NTIA-2023-0009-0223",
+		"is_org": true,
+		"Alias": "Open Source Initiative"
+    },
+    {
+        "Commenter": "AI & Democracy Foundation",
+        "ID": "NTIA-2023-0009-0290",
+		"is_org": true,
+		"Alias": "AI & Democracy"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0321",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Association for Long Term Existence and Resilience (ALTER)",
+        "ID": "NTIA-2023-0009-0301",
+		"is_org": true,
+		"Alias": "ALTER"
+    },
+    {
+        "Commenter": "Duong, Van",
+        "ID": "NTIA-2023-0009-0040",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Zabaware, Inc.",
+        "ID": "NTIA-2023-0009-0044",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sanchez, Jarod",
+        "ID": "NTIA-2023-0009-0055",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0077",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "But anonyumous, ARtist",
+        "ID": "NTIA-2023-0009-0098",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Harmon, Colton",
+        "ID": "NTIA-2023-0009-0112",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Houser, Brandon",
+        "ID": "NTIA-2023-0009-0135",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Jennings, Michael",
+        "ID": "NTIA-2023-0009-0169",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "LaGuardia-LoBianco, Gino",
+        "ID": "NTIA-2023-0009-0173",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Huffman, Richard",
+        "ID": "NTIA-2023-0009-0032",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0012",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "sirc, ivax",
+        "ID": "NTIA-2023-0009-0014",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0016",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Taylor, Chad",
+        "ID": "NTIA-2023-0009-0018",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Schultz, Adam",
+        "ID": "NTIA-2023-0009-0022",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0069",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Frey, Chris",
+        "ID": "NTIA-2023-0009-0080",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Mande, Matt",
+        "ID": "NTIA-2023-0009-0123",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sharp, Robert Douglas",
+        "ID": "NTIA-2023-0009-0127",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0163",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0074",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0030",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "But anonyumous, ARtist",
+        "ID": "NTIA-2023-0009-0097",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Hernandez, Michael",
+        "ID": "NTIA-2023-0009-0037",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "X, Francisco",
+        "ID": "NTIA-2023-0009-0009",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0068",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Wand, Brandon",
+        "ID": "NTIA-2023-0009-0087",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Smith, Joshua",
+        "ID": "NTIA-2023-0009-0147",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "O'Hanlon, Zachary",
+        "ID": "NTIA-2023-0009-0035",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Tillman, James",
+        "ID": "NTIA-2023-0009-0183",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Furman, Zachary",
+        "ID": "NTIA-2023-0009-0198",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0084",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "ICAI Icelandic Center for Artificial Intelligence",
+        "ID": "NTIA-2023-0009-0122",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Snyder, Cooper",
+        "ID": "NTIA-2023-0009-0137",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0146",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Allied Mission Group, LLC",
+        "ID": "NTIA-2023-0009-0159",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "D, S",
+        "ID": "NTIA-2023-0009-0134",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Glaysher, Elliot",
+        "ID": "NTIA-2023-0009-0167",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0174",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Healy, Brendan",
+        "ID": "NTIA-2023-0009-0285",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0043",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0065",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Kirk, Quentin",
+        "ID": "NTIA-2023-0009-0202",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0204",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0323",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Wilson, Sebastian",
+        "ID": "NTIA-2023-0009-0297",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "V, V",
+        "ID": "NTIA-2023-0009-0317",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Lawton, Scott",
+        "ID": "NTIA-2023-0009-0322",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "groutkas, chris john",
+        "ID": "NTIA-2023-0009-0298",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Pulikunta, SaiRahul",
+        "ID": "NTIA-2023-0009-0306",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0313",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Norman, Christopher",
+        "ID": "NTIA-2023-0009-0293",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Chien, Matt",
+        "ID": "NTIA-2023-0009-0303",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Hert, Kirk",
+        "ID": "NTIA-2023-0009-0299",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Stability AI",
+        "ID": "NTIA-2023-0009-0333",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Rabe, Brandon",
+        "ID": "NTIA-2023-0009-0215",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "McCleary, Thomas",
+        "ID": "NTIA-2023-0009-0192",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Phase 2",
+        "ID": "NTIA-2023-0009-0247",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Brennan, Robert",
+        "ID": "NTIA-2023-0009-0094",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0007",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sparnicht, Chris",
+        "ID": "NTIA-2023-0009-0064",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Cingranelli, Nicholas",
+        "ID": "NTIA-2023-0009-0149",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "ALAI, Aaron",
+        "ID": "NTIA-2023-0009-0129",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Thorn",
+        "ID": "NTIA-2023-0009-0218",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Institute for Security and Technology",
+        "ID": "NTIA-2023-0009-0234",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "New America's Open Technology Institute",
+        "ID": "NTIA-2023-0009-0287",
+		"is_org": true,
+		"Alias": "NAOTI"
+    },
+    {
+        "Commenter": "Center for Democracy and Technology",
+        "ID": "NTIA-2023-0009-0229",
+		"is_org": true,
+		"Alias": "CDT"
+    },
+    {
+        "Commenter": "Foster, Charles",
+        "ID": "NTIA-2023-0009-0175",
+		"is_org": true,
+		"Alias": "Charles Foster"
+    },
+    {
+        "Commenter": "Intel Corporation",
+        "ID": "NTIA-2023-0009-0265",
+		"is_org": true,
+		"Alias": "Intel"
+    },
+    {
+        "Commenter": "Hugging Face Inc.",
+        "ID": "NTIA-2023-0009-0262",
+		"is_org": true,
+		"Alias": "Hugging Face"
+    },
+    {
+        "Commenter": "Hartley, Mary-Anne",
+        "ID": "NTIA-2023-0009-0278",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Machine Intelligence Research Institute",
+        "ID": "NTIA-2023-0009-0259",
+		"is_org": true,
+		"Alias": "MIRI"
+    },
+    {
+        "Commenter": "Reason Foundation",
+        "ID": "NTIA-2023-0009-0165",
+		"is_org": true,
+		"Alias": "Reason Found"
+    },
+    {
+        "Commenter": "Chamber of Progress",
+        "ID": "NTIA-2023-0009-0186",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "JusticeText",
+        "ID": "NTIA-2023-0009-0208",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sthalekar, Nikhil",
+        "ID": "NTIA-2023-0009-0200",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "R Street Institute",
+        "ID": "NTIA-2023-0009-0125",
+		"is_org": true,
+		"Alias": "R Street"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0185",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Software & Information Industry Association (SIIA)",
+        "ID": "NTIA-2023-0009-0243",
+		"is_org": true,
+		"Alias": "SIIA"
+    },
+    {
+        "Commenter": "Holistic AI Inc.",
+        "ID": "NTIA-2023-0009-0128",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Pryon Inc.",
+        "ID": "NTIA-2023-0009-0286",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Bommasani, Rishi",
+        "ID": "NTIA-2023-0009-0256",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "RAND",
+        "ID": "NTIA-2023-0009-0249",
+		"is_org": true,
+		"Alias": "RAND"
+    },
+    {
+        "Commenter": "International Center for Law & Economics",
+        "ID": "NTIA-2023-0009-0210",
+		"is_org": true,
+		"Alias": "ICLE"
+    },
+    {
+        "Commenter": "van der Linden, Henk",
+        "ID": "NTIA-2023-0009-0083",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "The Center for Security and Emerging Technology (CSET)",
+        "ID": "NTIA-2023-0009-0225",
+		"is_org": true,
+		"Alias": "CSET"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0193",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Access Now",
+        "ID": "NTIA-2023-0009-0242",
+		"is_org": true,
+		"Alias": "Access Now"
+    },
+    {
+        "Commenter": "GitHub",
+        "ID": "NTIA-2023-0009-0264",
+		"is_org": true,
+		"Alias": "GitHub"
+    },
+    {
+        "Commenter": "Microsoft Corporation",
+        "ID": "NTIA-2023-0009-0277",
+		"is_org": true,
+		"Alias": "Microsoft"
+    },
+    {
+        "Commenter": "Barrett, Anthony",
+        "ID": "NTIA-2023-0009-0205",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Computing Community Consortium",
+        "ID": "NTIA-2023-0009-0261",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Withers, Caleb",
+        "ID": "NTIA-2023-0009-0258",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Center for AI Policy",
+        "ID": "NTIA-2023-0009-0224",
+		"is_org": true,
+		"Alias": "CAIP"
+    },
+    {
+        "Commenter": "IBM",
+        "ID": "NTIA-2023-0009-0180",
+		"is_org": true,
+		"Alias": "IBM"
+    },
+    {
+        "Commenter": "Cohen, Michael",
+        "ID": "NTIA-2023-0009-0227",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anttila, Peter",
+        "ID": "NTIA-2023-0009-0015",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0051",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Perez-Gonzalez, Hector",
+        "ID": "NTIA-2023-0009-0025",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Dunn, Reuben",
+        "ID": "NTIA-2023-0009-0067",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "L, Francis",
+        "ID": "NTIA-2023-0009-0061",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Fraxion",
+        "ID": "NTIA-2023-0009-0272",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0073",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0273",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Sly, Taylor",
+        "ID": "NTIA-2023-0009-0275",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Kirk, Quentin",
+        "ID": "NTIA-2023-0009-0201",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0267",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Jones, Nathaniel",
+        "ID": "NTIA-2023-0009-0034",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0002",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Miller, Paul",
+        "ID": "NTIA-2023-0009-0052",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Rabe, Brandon",
+        "ID": "NTIA-2023-0009-0212",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Henry, Sean",
+        "ID": "NTIA-2023-0009-0020",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0078",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Maliszewski , Sam",
+        "ID": "NTIA-2023-0009-0089",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Lambert, Jared",
+        "ID": "NTIA-2023-0009-0105",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Madere, Jared",
+        "ID": "NTIA-2023-0009-0079",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0236",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Guice, Alan",
+        "ID": "NTIA-2023-0009-0161",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Pressman, John David",
+        "ID": "NTIA-2023-0009-0152",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0176",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Conley, James",
+        "ID": "NTIA-2023-0009-0101",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0184",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Lopez, Kevin",
+        "ID": "NTIA-2023-0009-0162",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Krellenstein, Adam",
+        "ID": "NTIA-2023-0009-0194",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0031",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Trammell, Brandon",
+        "ID": "NTIA-2023-0009-0048",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "H, D",
+        "ID": "NTIA-2023-0009-0062",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0054",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0070",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0075",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0033",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Guijarro, Anthony",
+        "ID": "NTIA-2023-0009-0164",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Bockelie, Aaron",
+        "ID": "NTIA-2023-0009-0108",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "D, Greggy",
+        "ID": "NTIA-2023-0009-0182",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Schmitt, Alex",
+        "ID": "NTIA-2023-0009-0047",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Longstaff, Scott",
+        "ID": "NTIA-2023-0009-0008",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Clark, Christopher",
+        "ID": "NTIA-2023-0009-0132",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0096",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "doe, john",
+        "ID": "NTIA-2023-0009-0088",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Cook, Wes",
+        "ID": "NTIA-2023-0009-0179",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Yarbro, Brad",
+        "ID": "NTIA-2023-0009-0276",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Mittal, Pranay",
+        "ID": "NTIA-2023-0009-0143",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0190",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Fidika, Paul",
+        "ID": "NTIA-2023-0009-0059",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Parada, Carlos",
+        "ID": "NTIA-2023-0009-0216",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Lambert, Jared",
+        "ID": "NTIA-2023-0009-0106",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Jeffries, Daniel",
+        "ID": "NTIA-2023-0009-0117",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Janney, Ted",
+        "ID": "NTIA-2023-0009-0060",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Smith, Colby",
+        "ID": "NTIA-2023-0009-0168",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "AH Capital Management, L.L.C. (\"a16z\")",
+        "ID": "NTIA-2023-0009-0252",
+		"is_org": true,
+		"Alias": "a16z"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0292",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "American Civil Liberties Union, Center for American Progress, and the Leadership Conference on Civil and Human Rights",
+        "ID": "NTIA-2023-0009-0263",
+		"is_org": true,
+		"Alias": "ACLU"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0304",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Gutierrez, Raul",
+        "ID": "NTIA-2023-0009-0300",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Wagenhoffer, Dane",
+        "ID": "NTIA-2023-0009-0309",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Anonymous",
+        "ID": "NTIA-2023-0009-0329",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "T, T",
+        "ID": "NTIA-2023-0009-0296",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Beavers, Molly",
+        "ID": "NTIA-2023-0009-0314",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "An open letter from Judd Rosenblatt, Founder and CEO of AE Studio, on the crucial role of open-source models in advancing AI alignment research (see attached PDF)",
+        "ID": "NTIA-2023-0009-0332",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Warren, Neil",
+        "ID": "NTIA-2023-0009-0316",
+		"is_org": false,
+		"Alias": "n/a"
+    },
+    {
+        "Commenter": "Weinberg, Michael",
+        "ID": "NTIA-2023-0009-0318",
+		"is_org": false,
+		"Alias": "n/a"
+    }
+]
