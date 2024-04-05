@@ -1,0 +1,3252 @@
+ 
+ 
+COMMENTS OF THE ELECTRONIC PRIVACY INFORMATION CENTER 
+to the 
+NATIONAL TELECOMMUNICATIONS AND INFORMATION ADMINISTRATION 
+On its 
+Request for Comment: Dual Use Foundation Artificial Intelligence Models with Widely 
+Available Model Weights 
+ 
+89 Fed. Reg. 14,059 
+March 27, 2024 
+ 
+The Electronic Privacy Information Center (EPIC) submits these comments in response to 
+the National Telecommunications and Information Administration (NTIA)’s Request for 
+Comment on the potential risks, benefits, and other implications of dual-use foundation models 
+with widely available model weights.1  
+EPIC is a public interest research center in Washington, D.C., established in 1994 to secure 
+the fundamental right to privacy in the digital age for all people through advocacy, research, and 
+litigation.2 We advocate for a human-rights-based approach to artificial intelligence (AI) policy 
+that ensures new technologies are subject to democratic governance.3 Over the last decade, EPIC 
+has consistently advocated for the adoption of clear, commonsense, and actionable AI regulations 
+across the country.4 EPIC has litigated cases against the U.S. Department of Justice to compel 
+ 
+1 89 Fed. Reg. 14059 (Mar. 27, 2024). 
+2 About Us, EPIC, https://epic.org/about/ (2023). 
+3 See, e.g., AI and Human Rights, EPIC, https://epic.org/issues/ai/ (2023); AI and Human Rights: Criminal 
+Legal System, EPIC, https://epic.org/issues/ai/ai-in-the-criminal-justice-system/ (2023); EPIC, Outsourced & 
+Automated: How AI Companies Have Taken Over Government Decision-Making (2023), 
+https://epic.org/outsourced-automated/ [hereinafter “Outsourced & Automated Report”]; Letter from EPIC to 
+President Biden and Vice President Harris on Ensuring Adequate Federal Workforce and Resources for 
+Effective AI Oversight (Oct. 24, 2023), https://epic.org/wp-content/uploads/2023/10/EPIC-letter-to-White-
+House-re-AI-workforce-and-resources-Oct-2023.pdf; EPIC, Comments on the NIST Artificial Intelligence 
+Risk Management Framework: Second Draft (Sept. 28, 2022), https://epic.org/wp-
+content/uploads/2022/09/EPIC-Comments-NIST-RMF-09-28-22.pdf. 
+4 See, e.g., Press Release, EPIC, EPIC Urges DC Council to Pass Algorithmic Discrimination Bill (Sept. 23, 
+2022), https://epic.org/epic-urges-dc-council-to-pass-algorithmic-discrimination-bill/; EPIC, Comments to the 
+ 
+ 
+Comments of EPIC 
+2 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+production of documents regarding “evidence-based risk assessment tools,”5 against the U.S. 
+Department of Homeland Security to produce documents about a program purported to assess the 
+probability that an individual will commit a crime,6 and against the National Security Commission 
+on Artificial Intelligence (NSCAI) to enforce its transparency obligations under the Freedom of 
+Information Act and the Federal Advisory Committee Act.7 EPIC has also published extensive 
+research on the risks and documented harms of emerging AI technologies like generative AI,8 as 
+well as the ways that government agencies develop, procure, and use AI systems around the 
+country.9 
+As the NTIA evaluates the relative risks, benefits, and policy approaches to different 
+foundation model weighting regimes, EPIC wishes to highlight key privacy and bias issues that 
+will remain regardless of whether a model’s weights are non-public or widely available, including 
+vulnerabilities to adversarial attacks seeking sensitive information within training datasets and 
+efforts to undermine weight-based de-biasing techniques. Both closed and open AI model 
+paradigms carry benefits and risks; selecting one path forward will not be enough by itself to solve 
+the privacy, accuracy, and bias issues at the core of AI technologies. Instead, the decision to make 
+model weights widely available or keep them non-public is a decision of which benefits and risks 
+to prioritize. Keeping AI systems closed may hinder more adversarial attacks and enable easier 
+enforcement compared to open systems, while making model weights widely available may foster 
+more independent evaluation of AI systems and greater competition compared to closed systems. 
+Rather than recommend one model weight paradigm over the other, EPIC urges the NTIA 
+to grapple with the nuanced advantages, disadvantages, and regulatory hurdles that emerge within 
+AI models along the entire gradient of openness—and how benefits, risks, and effective oversight 
+ 
+Patent and Trademark Office on Intellectual Property Protection for Artificial Intelligence Innovation (Jan. 10, 
+2020), https://epic.org/wp-content/uploads/apa/comments/EPIC-USPTO-Jan2020.pdf; EPIC, Comments on the 
+Department of Housing and Urban Development’s Implementation of the Fair Housing Act’s Disparate Impact 
+Standard (Oct. 18, 2019), https://epic.org/wp-content/uploads/apa/comments/EPIC-HUD-Oct2019.pdf.  
+5 EPIC v. DOJ, 320 F. Supp. 3d 110 (D.D.C. 2018), voluntarily dismissed, 2020 WL 1919646 (D.C. Cir. 
+2020), https://epic.org/foia/doj/criminal-justice-algorithms/. 
+6 See EPIC v. DHS – FAST Program, EPIC, https://epic.org/documents/epic-v-dhs-fast-program/ (last visited 
+Dec. 5, 2023). 
+7 EPIC v. NSCAI, 419 F. Supp. 3d 82, 86, 95 (D.D.C. 2019), https://epic.org/documents/epic-v-ai-
+commission/. 
+8 EPIC, Generating Harms: Generative AI’s Impact & Paths Forward (2023), https://epic.org/gai [hereinafter 
+“EPIC Generative AI Report”].  
+9 Outsourced & Automated Report; EPIC, Screened & Scored in the District of Columbia (2022), 
+https://epic.org/wp-content/uploads/2022/11/EPIC-Screened-in-DC-Report.pdf [hereinafter “Screened & 
+Scored Report”]. 
+ 
+Comments of EPIC 
+3 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+mechanisms shift as models move along the gradient.10 To further inform the NTIA’s report, EPIC 
+has also appended our own generative AI report, Generating Harms: Generative AI’s Impact & 
+Paths Forward, which taxonomizes a range of consumer and societal harms caused by generative 
+AI applications and the foundation models at their core. 
+ 
+I. 
+Key Privacy Risks Remain When Model Weights are Widely Available 
+Responsive to Questions 2, 4, and 5. 
+Data privacy and security is at the center of AI and machine-learning. For foundation 
+models to operate, they must first be trained and finetuned on data, often by splitting a dataset into 
+training and test sets.11 While many AI datasets involve non-human data, today’s most popular AI 
+applications are built using data collected indiscriminately via web scraping12 and purchased from 
+data brokers. 13  In fact, several popular AI applications have trained on user content after 
+deployment as well, meaning that sensitive or personal information provided in user emails, 
+prompts, and other content are incorporated into AI systems after initial model development.14 
+Because AI training data can incorporate extensive sensitive or personally identifiable information 
+about people, the ways AI developers collect, use, and secure their training data directly impacts 
+the privacy rights of countless people. 
+Unlike traditional software systems, AI models built using machine-learning methods 
+cannot easily correct or delete personal data used to train the system. Once a model is trained on 
+ 
+10 See Irene Solaiman, The Gradient of Generative AI Release: Methods and Considerations, arXiv (Feb. 5, 
+2023), https://arxiv.org/pdf/2302.04844.pdf; Rishi Bommasani et al., Stan. Inst. Human-Centered A.I., 
+Considerations for Governing Open Foundation Models (2023), 
+https://hai.stanford.edu/sites/default/files/2023-12/Governing-Open-Foundation-Models.pdf.  
+11 See, e.g., Hyojin Bahng et al., Learning De-Biased Representations with Biased Representations, 37 Proc. 
+Int. Conf. on Mach. Learning 1 (2020), https://proceedings.mlr.press/v119/bahng20a/bahng20a.pdf. 
+12 See Müge Fazlioglu, Training AI on Personal Data Scraped from the Web, IAPP (Nov. 8, 2023), 
+https://iapp.org/news/a/training-ai-on-personal-data-scraped-from-the-web/; Thomas Claburn, How to Spot 
+OpenAI’s Crawler Bot and Stop it Slurping Sites for Training Data, Register (Aug. 8, 2023), 
+https://www.theregister.com/2023/08/08/openai_scraping_software/; Sara Morrison, The Tricky Truth About 
+How Generative AI Uses Your Data, Vox (July 27, 2023). 
+13 See, e.g., Evan Weinberger, Data Brokers Eyed by CFPB for Selling Sensitive Info for Ads, AI, Bloomberg 
+Law (Aug. 15, 2023), https://news.bloomberglaw.com/banking-law/data-brokers-eyed-by-cfpb-for-selling-
+sensitive-info-for-ads-ai.  
+14 See Geoffrey A. Fowler, Your Instagrams are Training AI. There’s Little You Can Do About It., Wash. Post 
+(Sept. 27, 2023), https://www.washingtonpost.com/technology/2023/09/08/gmail-instagram-facebook-trains-
+ai/; Kyle Wiggers, Addressing Criticism, OpenAI Will No Longer Use Customer Data to Train its Models by 
+Default, TechCrunch (Mar. 1, 2023), https://techcrunch.com/2023/03/01/addressing-criticism-openai-will-no-
+longer-use-customer-data-to-train-its-models-by-default/. 
+ 
+Comments of EPIC 
+4 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+data, it memorizes that data and cannot easily unlearn it.15 Every model output will reflect the 
+training data, and some models, like large-language models, may even leak personal data directly 
+to users.16 Because of the ways that AI models incorporate training data, adversarial machine-
+learning techniques have been developed to effectively identify and extract sensitive information 
+in training datasets through an AI model’s behavior.17 Two such techniques are membership 
+inference attacks, which aim to determine whether a certain data sample was included in a model’s 
+training data by evaluating model outputs,18 and attribute inference attacks, which aims to impute 
+sensitive training data attributes using partial knowledge of nonsensitive training data attributes 
+and model outputs. 19  Crucially, many adversarial machine-learning techniques have proven 
+effective at identifying sensitive or personally identifiable information in training datasets in both 
+closed and open models.20 
+To fortify data privacy in AI models against vulnerabilities and adversarial attacks, some 
+AI researchers have developed differential privacy techniques for AI models. 21 Differential 
+privacy is one of several burgeoning data privacy-preserving mathematical techniques, wherein 
+random noise is injected into different elements of a technical system to prevent the identification 
+of any one individual’s data without significantly impacting the accuracy of the system’s outputs.22 
+As applied to machine-learning models, differentially private noise can be applied to at least four 
+elements: (1) a model’s training data; (2) a model’s loss function, which evaluates how well a 
+trained model predicts an expected outcome; (3) a model’s gradients, which are commonly used 
+ 
+15 See Liwei Song & Prateek Mittal, Systematic Evaluation of Privacy Risks of Machine Learning Models, 30 
+Proc. USENIX Sec. Symp. 2615, 2615 (2021). Hurdles to unlearning data are at the core of recent FTC cases 
+requiring AI model deletion. See Jevan Hutson & Ben Winters, America’s Next ‘Stop Model!’: Model 
+Deletion, 8 Geo. L. Tech. Rev. 125, 128–134 (2022), 
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4225003. 
+16 Tiernan Ray, ChatGPT can Leak Training Data, Violate Privacy, Says Google’s DeepMind, ZDNet (Dec. 4, 
+2023), https://www.zdnet.com/article/chatgpt-can-leak-source-data-violate-privacy-says-googles-deepmind/. 
+17 See Song & Mittal, supra note 15, at 2629; Michale Backes et al.,  
+18 See, e.g., Reza Shokri et al., Membership Inference Attacks Against Machine Learning Models, 2017 IEEE 
+Sump. On Sec. & Priv. 3, https://ieeexplore.ieee.org/document/7958568. 
+19 See, e.g., Bargav Jayaraman & David Evans, Are Attribute Inference Attacks Just Imputation?, arXiv (Sept. 
+2, 2022), https://arxiv.org/pdf/2209.01292.pdf. 
+20 See Song & Mittal, supra note 15, at 2615 (overview of research studies into membership inference attacks); 
+Reza Shokri et al., supra note 18, at 3–18 (closed AI research); see generally Milad Nasr et al., Comprehensive 
+Privacy Analysis of Deep Learning: Passive and Active White-Box Inference Attacks Against Centralized and 
+Federating Learning, 2019 IEEE Symp. On Sec. & Priv. (open AI research). 
+21 See Tianqing Zhu et al., More than Privacy: Applying Differential Privacy in Key Areas of Artificial 
+Intelligence, 344 IEEE Transactions on Knowledge & Data Eng’g 2824, 2830–36 (June 2022), 
+https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9158374. 
+22 Ctr. for Info. Pol’y Leadership, Hunton Andrews Kurth LLP, Privacy-Enhancing and Privacy-Preserving 
+Technologies: Understanding the Role of PETs and PPTs in the Digital Age 36–41 (2023), 
+https://www.informationpolicycentre.com/uploads/5/7/1/0/57104281/cipl-understanding-pets-and-ppts-
+dec2023.pdf. 
+ 
+Comments of EPIC 
+5 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+to optimize model training by adjusting model weights to minimize errors; and (4) a model’s 
+weights.23 However, adding noise to any single element of an AI model will not be effective at 
+preserving privacy: adding noise to training data may combat attribute inference attacks but is less 
+effective against membership inference attacks, the inverse is true for adding noise to the loss 
+function or gradients, and adding noise to model weights themselves may resist both membership 
+and attribute inference attacks at the cost of significantly reducing model accuracy.24 Crucially, 
+making model weights widely available can facilitate the development and use of both stronger 
+privacy-preserving techniques and adversarial machine-learning techniques. Data privacy and 
+adversarial attacks will remain a pressing issue for AI development regardless of whether AI 
+systems favor closed versus open AI models, but the specific privacy advantages and 
+disadvantages of different AI models will shift as developers move along the gradient of AI 
+openness.25 
+ 
+II. 
+Key AI Bias Risks Remain When Model Weights are Widely Available 
+Responsive to Questions 2, 4, and 5. 
+Because training data often reflects human biases about the world,26 AI bias remains a core 
+challenge for AI development and use—one that has already produced tangible harms across 
+myriad industries and use contexts.27  To reduce the prevalence and impact of bias, AI developers 
+can employ a variety of debiasing techniques, including but not limited to (1) augmenting training 
+data to increase representation of underprivileged groups in datasets or avoid bias-prone 
+ 
+23 Zhu et al., supra note 21, at 2830. 
+24 Id. 
+25 See Solaiman, supra note 10. 
+26 See IBM Data and AI Team, Shedding Light on AI Bias with Real World Examples, IBM (Oct. 16, 2023), 
+https://www.ibm.com/blog/shedding-light-on-ai-bias-with-real-world-examples/; Joy Buolamwini & Timnit 
+Gebru, Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification, 81 Proc. 
+Mach. Learning Rsch. 1–15 (2018), https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf. 
+27 See, e.g., Leon Yin et al., OpenAI’s GPT is a Recruiter’s Dream Tool. Tests Show There’s Racial Bias, 
+Bloomberg (Mar. 7, 2024); Jesutofunmi A. Omiye et al., Large Language Models Propagate Race-Based 
+Medicine, 6 npj Digit. Med. 1–3 (2023), https://www.nature.com/articles/s41746-023-00939-z; Drew Harwell, 
+Federal Study Confirms Racial Bias of Many Facial-Recognition Systems, Casts Doubt on Their Expanding 
+Use, Wash. Post (Dec. 19, 2019), https://www.washingtonpost.com/technology/2019/12/19/federal-study-
+confirms-racial-bias-many-facial-recognition-systems-casts-doubt-their-expanding-use/. 
+ 
+Comments of EPIC 
+6 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+attributes,28 (2) training a model to avoid a predefined bias,29 and (3) adjusting model weights to 
+foster fairer model outputs, even where developers cannot effectively reduce bias in training 
+datasets.30 
+Because debiasing techniques focus on adjusting or counteracting bias within training 
+datasets, most debiasing techniques rely on developers’ ability to accurately identify sources of 
+bias while training an AI model. Consequently, these techniques tend to fall short for multimodal 
+foundation models, where anticipated and tested use contexts may differ from actual use contexts; 
+without anticipating a particular use case, AI developers cannot effectively test for and reduce bias 
+for that use case. Additionally, any undetected biases within a model’s training data may continue 
+to bias model outputs during deployment—even after developers employ debiasing techniques. 
+Adjusting model weights to favor underrepresented groups can be an effective way to 
+produce fairer model outputs, even when a model’s training data is difficult to debias directly. For 
+example, in circumstances where developers train an AI model on an extensive dataset spanning 
+thousands of nuanced variables, they may struggle to accurately identify all relevant biases within 
+their training data. By adjusting model weights while testing the accuracy of a model within 
+different use contexts, developers may be able to reduce bias within a model even when bias 
+remains within a model’s training data. For this purpose, making model weights publicly available 
+may assist in the debiasing process (e.g., independent parties may be able to identify model bias 
+and effective model weight adjustments where AI developers cannot, such as in novel use contexts). 
+However, with new advantages come new disadvantages. Making model weights publicly 
+available may not only permit independent parties to evaluate foundation models and identify 
+better ways to mitigate AI bias, but also permit malicious third-party actors to identify model 
+weight debiasing techniques and counteract them. To maintain model accuracy and fairness, then, 
+AI developers and regulators will need to pair technical solutions with ongoing model evaluation 
+and red-teaming efforts. For a more robust account of EPIC’s recommendations for post-
+ 
+28 See Hyojin Bahng et al., Learning De-biased Representations with Biased Representations, 37 Proc. Int’l 
+Conf. on Mach. Learning 1 (2020), https://proceedings.mlr.press/v119/bahng20a/bahng20a.pdf; Robert 
+Geirhos et al., ImageNet-Trained CNNs are Biased Towards Texture; Increasing Shape Bias Improves 
+Accuracy and Robustness, 2019 Proc. Int’l Conf. on Learning Representations 7, 17, 
+https://openreview.net/pdf?id=Bygh9j09KX. 
+29 See Bahng et al., supra note 28; Haohan Wang et al., Learning Robust Representations by Projecting 
+Superficial Statistics Out, 2019 Proc. Int’l Conf. on learning Representations 8–9, 
+https://openreview.net/pdf?id=rJEjjoR9K7. 
+30 See, e.g., Faisal Kamiran & Toon Calders, Data Preprocessing Techniques for Classification Without 
+Discrimination, 33 Knowledge Info. Sys. 1, 2, 16–18 (2012), https://link.springer.com/article/10.1007/s10115-
+011-0463-8. 
+ 
+Comments of EPIC 
+7 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+deployment AI testing and evaluation, see EPIC’s recent comment to the Office of Management 
+and Budget (OMB) regarding their draft AI memorandum.31 
+ 
+III. 
+The Impact of Model Openness Relies on the Effectiveness of Different Oversight Tools 
+Responsive to Questions 7 and 9. 
+The benefits and risks of any AI model will shift as it becomes more open, but model 
+openness is not the sole variable impacting the NTIA’s analysis. We must also evaluate the 
+capacity of developers, regulators, and other independent parties to (1) fully realize an AI model’s 
+relative benefits and (2) fully mitigate a model’s risks. As AI models move from closed to open, 
+the relative capacity of different actors to use, misuse, and regulate AI will shift as well. For 
+example, in a fully closed ecosystem, third-party actors are relatively limited in what role they play 
+in overseeing responsible AI development and use; they may only access consumer-facing model 
+outputs, voluntary testing outputs, and other resources either offered by AI developers or required 
+under state, federal, or international laws. However, with these oversight limitations comes a 
+simpler oversight and liability regime: if an AI model is fully proprietary, regulators can place 
+most obligations around responsible AI development, use, and security on AI developers. 
+By contrast, in a fully open ecosystem, the barriers to independent AI evaluation, 
+adjustment, and development lower substantially, allowing more robust independent audits and 
+evaluation, more streamlined government enforcement, and more malicious AI use and 
+retooling. 32 While AI regulators may more easily oversee AI developers under a more open 
+ecosystem, harmful, anonymous AI use may be harder to police. And regardless of model openness, 
+the relative resources and technical expertise available to different parties—small AI developers, 
+state and federal regulators, academic researchers, civil society advocates, etc.—will influence 
+how impactful proposed benefits and risks of open versus closed AI are in practice.33 
+Ultimately, where the United States lands in the open versus closed AI debate must depend, 
+at least in part, on whether independently assessing AI models or assigning liability for AI harms 
+is a greater regulatory hurdle. Regardless of any technical issues around model openness, privacy-
+ 
+31 EPIC, Comments on the OMB’s Draft Memorandum on Advancing Governance, Innovation, and Risk 
+Management for Agency Use of Artificial Intelligence (Dec. 5, 2023), https://epic.org/wp-
+content/uploads/2023/12/EPIC-OMB-AI-Guidance-Comments-120523-1.pdf. 
+32 See, e.g., Andrew Burt, The AI Transparency Paradox, Harv. Bus. Rev. (Dec. 13, 2019), 
+https://hbr.org/2019/12/the-ai-transparency-paradox.  
+33 See, e.g., Natalie Alms, The People Problem Behind the Government’s AI Ambitions, NextGov (Nov. 21, 
+2023), https://www.nextgov.com/artificial-intelligence/2023/11/people-problem-behind-governments-ai-
+ambitions/392212/; FTC Bureau of Competition & Office of Technology, Generative AI Raises Competition 
+Concerns, FTC Tech. Blog (June 29, 2023), https://www.ftc.gov/policy/advocacy-research/tech-at-
+ftc/2023/06/generative-ai-raises-competition-concerns. 
+ 
+Comments of EPIC 
+8 
+Dual Use Foundation Models 
+NTIA 
+ 
+March 27, 2024 
+preserving techniques, and model debiasing, the threat of harm from negligent or malicious AI use 
+will remain. Understanding how model openness interacts with AI regulation and oversight will 
+be essential for fostering more responsible, more equitable, and more beneficial AI. 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+/s/ Grant Fergusson 
+ 
+ 
+ 
+ 
+ 
+ 
+Grant Fergusson 
+ 
+ 
+ 
+ 
+ 
+ 
+Equal Justice Works Fellow 
+ 
+/s/ Calli Schroeder 
+ 
+ 
+ 
+ 
+ 
+ 
+Calli Schroeder 
+ 
+ 
+ 
+ 
+ 
+ 
+EPIC Senior Counsel &  
+Global Privacy Counsel 
+ 
+/s/ Maria Villégas Bravo 
+Maria Villégas Bravo 
+ 
+ 
+ 
+ 
+ 
+ 
+EPIC Law Fellow 
+ELECTRONIC PRIVACY   
+INFORMATION CENTER (EPIC)  
+1519 New Hampshire Ave. NW   
+Washington, DC 20036  
+202-483-1140 (tel)  
+202-483-1248 (fax)  
+ 
+MAY 2023
+Generative AI’s Impact & 
+Paths Forward
+ 
+CONTRIBUTIONS BY 
+Grant Fergusson 
+Caitriona Fitzgerald 
+Chris Frascella 
+Megan Iorio 
+Tom McBrien 
+Calli Schroeder 
+Ben Winters 
+Enid Zhou 
+ 
+EDITED BY  
+Grant Fergusson, Calli Schroeder, Ben Winters, and Enid Zhou 
+Thank you to Sarah Myers West and Katharina Kopp for your generous 
+comments on an earlier draft of the paper. 
+Notes on this Paper: 
+This is version 1 of this paper and is reflective of documented and 
+anticipated harms of Generative AI as of May 15, 2023. Due to the fast-
+changing pace of development, use, and harms of Generative AI, we want to 
+acknowledge that this is an inherently dynamic paper, subject to changes in 
+the future. 
+Throughout this paper, we use a standard format to explain the typology of 
+harms that generative AI can produce. Each section first explains relevant 
+background information and potential risks imposed by generative AI, then 
+highlights specifics harms and interventions that scholars and regulators 
+have pursued to remedy each harm. This paper draws on two taxonomies of 
+A.I. harms to guide our analysis: 
+1. Danielle Citron’s and Daniel Solove’s Typology of Privacy Harms, 
+comprising physical, economic, reputational, psychological, autonomy, 
+discrimination, and relationship harms;1 and 
+2. Joy Buolamwini’s Taxonomy of Algorithmic Harms, comprising loss of 
+opportunity, economic loss, and social stigmatization, including loss of 
+liberty, increased surveillance, stereotype reinforcement, and other 
+dignitary harms.2 
+These taxonomies do not necessarily cover all potential AI harms, and our 
+use of these taxonomies is meant to help readers visualize and 
+contextualize AI harms without limiting the types and variety of AI harms that 
+readers consider.
+ 
+ 
+ 
+Table of Contents 
+Introduction 
+......................................................................................................................... 
+i 
+Turbocharging Information Manipulation .................................................................. 1 
+Harassment, Impersonation, and Extortion .............................................................. 9 
+Spotlight: Section 230 .................................................................................................. 
+19 
+Profits Over Privacy: Increased Opaque Data Collection 
+................................... 
+24 
+Increasing Data Security Risk .................................................................................... 
+30 
+Confronting Creativity: Impact on Intellectual Property Rights ......................... 
+33 
+Exacerbating Effects of Climate Change ................................................................ 
+40 
+Labor Manipulation, Theft, and Displacement 
+....................................................... 
+44 
+Spotlight: Discrimination 
+.............................................................................................. 
+53 
+The Potential Application of Products Liability Law 
+............................................. 
+54 
+Exacerbating Market Power and Concentration 
+................................................... 
+57 
+Recommendations ....................................................................................................... 60 
+Appendix of Harms ....................................................................................................... 
+64 
+References 
+..................................................................................................................... 68 
+ 
+ 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+i 
+ 
+ 
+Introduction 
+OpenAI’s decision to release ChatGPT, a chatbot built on the Large 
+Language Model GPT-3, last November thrust AI tools to the forefront of 
+public consciousness. In the last six months, new AI tools used to generate 
+text, images, video, and audio based on user prompts exploded in 
+popularity. Suddenly, phrases like Stable Diffusion, Hallucinations, and Value 
+Alignment were everywhere. Each day, new stories about the different 
+capabilities of generative AI—and their potential for harm—emerged without 
+any clear indication of what would come next or what impacts these tools 
+would have. 
+While generative AI may be new, its harms are not. AI scholars have been 
+warning us of the problems that large AI models can cause for years.3 These 
+old problems are exacerbated by the industry’s shift in goals from research 
+and transparency to profit, opacity, and concentration of power. The 
+widespread availability and hype of these tools has led to increased harm 
+both individually and on a massive scale. AI replicates racial, gender, and 
+disability discrimination, and these harms are weaved inextricably through 
+every issue highlighted in this report. 
+OpenAI and other companies’ decisions to rapidly integrate generative AI 
+technology into consumer-facing products and services have undermined 
+longstanding efforts to make AI development transparent and accountable, 
+leaving many regulators scrambling to prepare for the repercussions. And it 
+is clear that generative AI systems can significantly amplify risks to both 
+individual privacy and to democracy and cybersecurity generally. In the 
+words of the OpenAI CEO, who indeed had the power not to accelerate the 
+release of this technology, “I’m especially concerned that these models 
+could be used for widespread misinformation…[and] offensive cyberattacks.” 
+Introduction 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+ii 
+ 
+ 
+This rapid deployment of generative AI systems without adequate 
+safeguards is clear evidence that self-regulation has failed. Hundreds of 
+entities, from corporations to media and government entities, are 
+developing and looking to rapidly integrate these untested AI tools into a 
+wide range of systems. And this rapid rollout will have disastrous results 
+without necessary fairness, accountability, and transparency protections 
+built in from the beginning. 
+We are at a critical juncture as policymakers and industry around the globe 
+are focusing on the substantial risks and opportunities posed by AI. There is 
+an opportunity to make this technology work for people. Companies should 
+be required to show their work, make it clear when AI is in use, and offer 
+informed consent throughout the training, development, and use process. 
+One thread of public concern focuses on AI’s “existential” risks—speculative 
+long-term risks in which robots replace humans at work, socially, and 
+ultimately taking over, a la “I, Robot.” Some legislators on the state and 
+federal level have begun to take the issue of addressing AI more seriously—
+however, it remains to be seen if their focus will be only on supporting 
+companies with their development of AI tools and requiring marginal 
+disclosure and transparency requirements. Enacting clear prohibitions on 
+high-risk uses, addressing the easy spread of disinformation, requiring 
+meaningful and proactive disclosures that facilitate informed consent, and 
+bolstering consumer protection agencies are necessary to address the 
+harms and risks specific to generative AI. This paper strives to provide a 
+broad outline of different issues that the use of generative AI brings up, 
+educate lawmakers and the public, and offer some paths forward to mitigate 
+harm. 
+- Ben Winters, Senior Counsel
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+1 
+ 
+ 
+Turbocharging 
+Information 
+Manipulation 
+BACKGROUND AND RISKS  
+The widespread availability of free and low-cost generative AI tools 
+facilitates the spread of high volumes of text, image, voice, and video 
+content. Much of the content created by AI systems is likely benign or could 
+be beneficial to specific audiences, but these systems will also facilitate the 
+spread of extremely harmful content. For example, generative AI tools can 
+and will be used to propagate content that is false, misleading, biased, 
+inflammatory, or dangerous. As generative AI tools grow more sophisticated, 
+it will be quicker, cheaper, and easier to produce this content—and existing 
+harmful content can serve as the foundation to produce more. In this 
+section, we consider five categories of harmful content that AI tools would 
+turbocharge: Scams, Disinformation, Misinformation, Cybersecurity Threats, 
+and Clickbait and Surveillance Advertising. Though we draw distinctions 
+between disinformation (purposeful spread of false information) and 
+misinformation (less purposeful spread or creation of false information), the 
+spread of AI-generated content will blur this line for parties that use AI-
+generated content without first editing or factchecking it. Entities using AI-
+generated outputs without exercising due diligence should be held jointly 
+responsible with the entity behind the generation of that output for the harm 
+it causes.  
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+2 
+ 
+ 
+SCAMS 
+Scam phone calls, texts, and emails have long been out of control, harming 
+the public in many ways. In 2021 alone, 2.8 million consumers filed fraud 
+reports with the FTC, claiming more than $2.3 billion in losses, and nearly 1.4 
+million consumers filed identity theft reports.4 Generative AI can accelerate 
+the creation, personalization, and believability of these various scams using 
+AI-generated text, voices, and videos. AI voice generation can also be used 
+to mimic the voice of a loved one, calling to request immediately financial 
+assistance for bail, legal help, or ransom.5 
+According to a 2022 report from EPIC and the National Consumer Law 
+Center, there are over one billion scam robocalls made to American 
+telephones each month, which led to nearly $30 billion in consumer losses 
+between June 2020-21—most frequently targeting vulnerable communities 
+like seniors, individuals with disabilities, and people in debt.6 These scams 
+are made at scale, and often use an automated voice speaking a script 
+CASE STUDY – ELECTION 2024  
+Products using GPT-4 and subsequent large language models can 
+create quick and unique human-sounding “scripts” that can be 
+distributed via text, email, print, or through an AI voice generator 
+combined with AI video generators. These AI-generated scripts can 
+be used to dissuade or scare voters—or spread misinformation about 
+voting or elections. In 2022, for example, text messages were sent to 
+voters in at least five states with purposefully wrong voting 
+information. This type of election misinformation has become 
+common in recent years, but generative AI tools will supercharge bad 
+actors’ ability to quickly spread believable election misinformation. 
+Congress must enact legislation that protects against deliberate 
+voter intimidation, deterrence, or interference through false or 
+misleading information, as well as false claims of endorsement. 
+ 
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+3 
+ 
+ 
+generated by a text generator like ChatGPT designed to pretend they’re 
+someone of authority to scare consumers into sending money. In 2022, 
+estimated consumer losses increased to $39.5 billion,7 with the FTC 
+reporting more than $326 million lost from scam texts alone.8  
+Auto dialers, robo-texts, robo-emails, and mailers, combined with data 
+brokers that sell lists of numbers or email addresses, enable entities to send 
+out a massive number of messages at once. The same data brokers can sell 
+lists of people as potential targets along with “insights” about their mental 
+health conditions, religious beliefs, or sexuality that can be exploited. The 
+degree of targeting that data brokers are allowed to use on individuals 
+exacerbates AI-generated harm. 
+Text generation services also increase the likelihood of successful phishing 
+scams and election interference by bad actors. This has already happened—
+in a 2021 study, researchers found phishing emails generated by GPT-3 
+were more effective than human-generated ones.9 Generative AI can 
+expand the pool of potentially effective fraudsters by aiding people with 
+limited English skills in crafting natural and accurate-sounding emails that 
+can then target employees, intelligence targets, and individuals in a way that 
+makes it much more difficult to detect the scam. 
+DISINFORMATION 
+Bad actors can also use generative AI tools to produce adaptable content 
+designed to support a campaign, political agenda, or hateful position and 
+spread that information quickly and inexpensively across many platforms. 
+This rapid spread of false or misleading content—AI-facilitated 
+disinformation—can also create a cyclical effect for generative AI: when a 
+high volume of disinformation is pumped into the digital ecosystem and 
+more generative systems are trained on that information via reinforcement 
+learning methods, for example, false or misleading inputs can create 
+increasingly incorrect outputs. 
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+4 
+ 
+ 
+The use of generative AI tools to accelerate the spread of disinformation 
+could fuel efforts to influence public opinion, harass specific individuals, or 
+affect politics and elections. The impacts of increased disinformation may be 
+far-reaching and cannot be easily countered once spread; this is especially 
+concerning given the risks disinformation poses to the democratic process. 
+MISINFORMATION 
+The phenomenon of inaccurate outputs by text-generating large language 
+models like Bard or ChatGPT has already been widely documented. Even 
+without the intent to lie or mislead, these generative AI tools can produce 
+harmful misinformation. The harm is exacerbated by the polished and 
+typically well-written style that AI generated text follows and the inclusion 
+among true facts, which can give falsehoods a veneer of legitimacy. As 
+reported in the Washington Post, for example, a law professor was included 
+on an AI-generated “list of legal scholars who had sexually harassed 
+someone,” even when no such allegation existed.10 As Princeton Professor 
+Arvind Narayanan said in an interview with The Markup: 
+Sayash Kapoor and I call it a bullshit generator, as have others 
+as well. We mean this not in a normative sense but in a 
+relatively precise sense. We mean that it is trained to produce 
+plausible text. It is very good at being persuasive, but it’s not 
+trained to produce true statements. It often produces true 
+statements as a side effect of being plausible and persuasive, 
+but that is not the goal.11 
+AI-generated content implicates a broader legal issue as well: our trust in 
+what we see and hear. As AI-generated media becomes more common, so 
+too will circumstances where we are tricked into believing something 
+fictional is real12—or that something real is fictional.13 When individuals can 
+no longer trust information and new information is generated faster than it 
+can be checked for accuracy, what can they do? Information sources like 
+Wikipedia could be overwhelmed with false AI-generated content. This can 
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+5 
+ 
+ 
+be harmful in targeted situations by inducing a target to act under the 
+assumption that, e.g., their loved ones are in crisis.14  
+SECURITY 
+The same phishing concerns described above pose a security threat. 
+Though chatbots cannot (yet) develop their own novel malware from 
+scratch, hackers could soon potentially use the coding abilities of large 
+language models like ChatGPT to create malware that can then be minutely 
+adjusted for maximum reach and effect, essentially allowing more novice 
+hackers to become a serious security risk. In fact, security professionals 
+have noted that hackers are already discussing how to install malware and 
+extract information from targets using ChatGPT.15  
+Generative AI tools could very well begin to learn from repeated exposure 
+to malware and be able to develop more novel and unpredictable malware 
+that evades detection by common security systems. 
+CLICKBAIT AND FEEDING THE SURVEILLANCE 
+ADVERTISING ECOSYSTEM 
+Beyond misinformation and disinformation, generative AI can be used to 
+create clickbait headlines and articles, which manipulate how users navigate 
+the internet and applications. For example, generative AI is being used to 
+create full articles, regardless of their veracity, grammar, or lack of common 
+sense, to drive search engine optimization and create more webpages that 
+users will click on. These mechanisms attempt to maximize clicks and 
+engagement at the truth’s expense, degrading users’ experiences in the 
+process. Generative AI continues to feed this harmful cycle by spreading 
+misinformation at faster rates, creating headlines that maximize views and 
+undermine consumer autonomy. 
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+6 
+ 
+ 
+HARMS 
+• Economic/Economic Loss: Successful scams and malware can result 
+in victims’ direct economic loss through extortion, trickery, or gaining 
+access to financial accounts. This can lead to long-term impacts on 
+credit as well. 
+• Reputational/Relationship/Social Stigmatization: Misinformation and 
+disinformation can generate and spread false or harmful information 
+about an individual resulting in harm to their reputation in the 
+community, potential damage to their personal and professional 
+relationships, and impacts to their dignity. 
+• Psychological—Emotional Distress: Disinformation and 
+misinformation can cause severe emotional harm as individuals 
+navigate the impacts of false information being spread about them—in 
+addition, many individuals face shame and embarrassment if they are 
+the victim of scams and may feel manipulated or used in the context of 
+clickbait and surveillance advertising. 
+• Psychological—Disturbance: The influx of false or misleading 
+information and clickbait makes it difficult for individuals to carry on 
+their daily activities online. 
+• Autonomy: The spread of misinformation and disinformation makes it 
+increasingly difficult for individuals to make properly informed choices 
+and the manipulative nature of surveillance advertising complicates 
+the issue of choice even further. 
+• Discrimination: Scams, disinformation, misinformation, malware, and 
+clickbait all prey on vulnerabilities of the “marks,” including 
+membership in certain vulnerable groups and categories (the elderly, 
+immigrants, etc.). 
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+7 
+ 
+ 
+EXAMPLES 
+• People used AI to call in fake bomb threats to public places like 
+schools.16 
+• AI voice generators were used call people’s loved ones, convincing 
+them that their family member was in jail and desperately needed 
+money for bail and legal assistance.17 
+• The Center for Countering Digital Hate tested Google’s Bard chatbot 
+to see if they would replicate 100 common conspiracy theories 
+including Holocaust denial and saying the mass child murder tragedy 
+at Sandy Hook was staged using “crisis actors.” Bard pumped out text 
+based on these lies 78 out of 100 times without context or disclosure. 
+• Unedited AI Spam was found by Vice reporters widely throughout the 
+internet.18  
+• CNET, a tech news website, paused its use of AI and issued 
+corrections in 41 out of the 77 stories that it published which had been 
+written using an AI tool. The AI-written articles, which were designed 
+to be viewed more on Google searches to increase ad revenue, 
+contained inaccurate and misleading information.19 
+• Similarly, Buzzfeed reportedly published AI-written content, namely 
+travel guides, with the aim to attract search traffic about different 
+destinations. The quality of the results was uniformly reviewed as 
+useless and unhelpful.20 
+INTERVENTIONS  
+• Enact a law that makes intimidating, deceiving, or deliberately 
+misinforming someone about an election or candidate illegal 
+(regardless of the means), such as the Deceptive Practices and Voter 
+Intimidation Prevention Act.  
+Turbocharging Information Manipulation 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+8 
+ 
+ 
+• Pass the American Data Privacy Protection Act. The ADPPA will limit 
+the collection and use of personal information to that which is 
+reasonably necessary and proportionate to the purpose for which the 
+information was collected. Such limitation will limit personal 
+information being used to profile users to target them with ads, 
+phishing attempts, and other scams. The ADPPA will also restrict the 
+use of personal data to train generative AI systems that can 
+manipulate users. 
+• Promulgate an FTC Commercial Surveillance rule that sets a data 
+minimization standard prohibiting out-of-context secondary uses of 
+personal information, which would similarly prevent training generative AI 
+systems using personal information collected for an unrelated purpose. 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+9 
+ 
+ 
+Harassment, 
+Impersonation, and 
+Extortion 
+BACKGROUND AND RISKS  
+Some of the earliest uses—or misuses—of generative AI technologies are 
+deepfakes:21 realistic images or videos created using machine-learning 
+algorithms to depict someone as saying or doing something they did not—
+often by replacing the likeness of one person with that of another.22 
+Deepfakes and other AI-generated content can be used to facilitate or 
+exacerbate many of the harms listed throughout this report, but this section 
+focuses on one subset: intentional, targeted abuse of individuals. AI-
+generated images and videos provide several ways for bad actors to 
+impersonate, harass, humiliate, exploit, and blackmail others. For example, a 
+deepfake video could show a victim praising a cause they detest or 
+engaging in sexually explicit or otherwise humiliating acts. These images 
+and videos can spread rapidly across the internet as well, making it difficult 
+or impossible for victims, law enforcement, and other interested parties to 
+identify the creator(s) and ensure harmful deepfakes are removed. 
+Unfortunately, many victims of targeted deepfakes are left without recourse, 
+and those who pursue recourse are often forced to identify and confront the 
+perpetrators themselves. 
+The harms of synthetic media predate AI and machine learning. As far back 
+as the 1990s, commercial photo editing software enabled users to alter 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+10 
+ 
+ 
+appearances or swap faces in photos. However, modern deepfakes and 
+other AI-generated synthetic content trace their roots to Google’s 2015 
+release of TensorFlow, an open-source tool for building machine-learning 
+models, and the viral spread of a 2017 deepfake created using such a tool.23 
+To create these early deepfakes—many of which involved placing 
+celebrities’ faces onto the bodies of pornographic film actors—a creator had 
+to build a machine-learning model (often, a generative adversarial network, 
+or GAN) using a tool like TensorFlow, train it on various image, video, or 
+audio files, and then instruct the model to map a specific person’s features 
+or voice onto another person’s body.24 The release of new generative AI 
+services like Midjourney and Runway removed these technical hurdles, 
+enabling anyone to quickly create AI-generated content by providing a few 
+key images, a source video, or even text entries. 
+At its core, using AI-generated content to impersonate, harass, humiliate, 
+exploit, or blackmail an individual or organization is frequently no different 
+from doing the same using other methods. Victims of deepfake harms may 
+still turn to existing criminal and civil remedies for fraud,25 impersonation,26 
+extortion,27 and cyberstalking28 to redress malicious uses of generative AI 
+tools. However, generative AI raises novel legal issues and exacerbates 
+harm in new ways, straining the ability of victims and regulators alike to use 
+existing legal avenues to redress harm. For example, deepfake 
+impersonations of deceased people—a phenomenon described as 
+“ghostbots”—may not only implicate defamation law, but also cause 
+emotional distress among a deceased individual’s loved ones where false 
+textual quotes may not.29 These new legal issues fall into roughly three 
+categories: issues involving malicious intent; issues involving privacy and 
+consent; and issues involving believability. 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+11 
+ 
+ 
+ 
+MALICIOUS INTENT 
+A frequent malicious use case of generative AI to harm, humiliate, or 
+sexualize another person involves generating deepfakes of nonconsensual 
+sexual imagery or videos. These sexual deepfakes are some of the earliest 
+and most common examples of deepfake technology, garnering widespread 
+media attention.30 However, many existing nonconsensual pornography 
+laws limit liability to circumstances where content is published with an intent 
+to harm.31 Some malicious uses of generative AI no doubt meet this 
+threshold, but many deepfake creators may not intend to harm the subject 
+of a sexual deepfake; rather, they may create and circulate the deepfake 
+without ever expecting the subject to see or be impacted by the content. 
+Intent requirements permeate other criminal laws applicable to malicious 
+uses of generative A.I as well. For example, the federal cyberstalking 
+statute, 18 U.S.C. § 2261A, only applies to those who act “with the intent to 
+kill, injure, harass, intimidate, or place under surveillance [with similar 
+intent].” State impersonation statutes like California Penal Code § 528.5 
+similarly limit enforcement to those who impersonate another “for purposes 
+of harming, intimidating, threatening, or defrauding another person.” Using 
+CASE STUDY – SILENCING A JOURNALIST 
+In April of 2018, Indian investigative journalist Rana Ayyub 
+received an email from a source within the Modi government. A 
+video of her engaging in sexual acts was going viral, leading to 
+public humiliation and criticism from those who wanted to discredit 
+her work. But it was a fake. Ayyub’s likeness was inserted into a 
+pornographic video using an early deepfake technology. As public 
+scrutiny increased, her home address and cell phone information 
+were leaked, leading to death and rape threats. This early video 
+was circulated to harass, shame, and ostracize a vocal critic of the 
+government – and for months, it succeeded.  
+ 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+12 
+ 
+ 
+generative AI to intimidate, harass, 
+defraud, or extort another person may 
+fall within these criminal statutes, but 
+creating harmful or sexual deepfakes 
+for personal enjoyment or 
+entertainment may not. 
+Lastly, divining the intent of a deepfake 
+creator is made more difficult by a 
+modern feature of many online 
+platforms: user anonymity. When a 
+victim becomes aware of a malicious 
+deepfake as it spreads online—as 
+happened to Journalist Rana Ayyub in 
+2018—it can be incredibly difficult, if 
+not impossible, to track down the 
+original creator to bring a lawsuit or 
+criminal charges. 
+PRIVACY AND CONSENT 
+Even when a victim of targeted, AI-
+generated harms successfully 
+identifies a deepfake creator with 
+malicious intent, they may still struggle to redress many harms because the 
+generated image or video isn’t the victim, but instead a composite image or 
+video using aspects of multiple sources to create a believable, yet fictional, 
+scene. At their core, these AI-generated images and videos circumvent 
+traditional notions of privacy and consent: because they rely on public 
+images and videos, like those posted on social media websites, they often 
+don’t rely on any private information. This feature of AI-generated content 
+excludes certain traditional privacy torts, including intrusion upon seclusion 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+13 
+ 
+ 
+and publication of private facts, which depend explicitly on the publication 
+or intrusion upon private facts.32 Other privacy torts, including false light, 
+fare better because they only require plaintiffs to show that the creator knew 
+or recklessly disregarded whether a reasonable person would find the AI-
+generated content highly offensive.33 Still, these claims too face a difficult 
+legal hurdle: the First Amendment.34 
+The generative nature of new AI tools like Midjourney and Runway places 
+them at a difficult crossroads between free expression protections and 
+privacy protections for deepfake victims. Many AI-generated photos and 
+videos transform source material or include new content in ways that may 
+be protected under the First Amendment, but they can appear to be real 
+footage of the victim in embarrassing, sexual, or otherwise undesirable 
+circumstances. This tension between free speech, privacy, and consent 
+raises new and difficult legal questions for both private individuals and 
+public figures like celebrities and politicians. 
+Consider the issue of consent. Many harmful AI depictions of private 
+individuals use public source photos that victims post online. Victims may 
+disapprove of the fictional, yet believable, photos and videos that generative 
+AI tools produce of them, but existing legal claims may not provide the 
+remedies these victims expect. Although the legal right of publicity originally 
+protected the privacy and dignity of individuals, for example, some modern 
+courts have focused their attention on the economic interest that a victim 
+holds in their identity—namely, celebrities’ economic interest in their public 
+image, which others may appropriate for their own commercial gain.35 These 
+courts and similar state appropriation laws may not provide the easy legal 
+remedy that victims expect when facing nonconsensual deepfakes; they 
+may expect the victim to show some economic or physical injury in addition 
+to their lack of consent, or they may expect the deepfake creator to have 
+benefited financially. These laws and judicial interpretations did not develop 
+with generative AI in mind, meaning that even AI harms that should be easy 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+14 
+ 
+ 
+to remedy can become complex, costly, and confusing for victims. Of 
+course, victims of malicious deepfakes and other AI-generated content can 
+still pursue several other legal claims, such as defamation or negligent 
+infliction of emotional distress, but the generative nature of new AI tools 
+suggest that even these claims may face legal hurdles. The novelty and 
+scalability of generative AI can be obstacles for victims of malicious 
+deepfakes, even when their underlying legal claim is strong. 
+Defamation is yet another example of a legal claim made more challenging 
+by generative AI. While private individuals may hold the creator of a 
+defamatory deepfake liable so long as the depiction was false and harmed 
+the victim, public figures like celebrities and politicians must overcome a 
+higher First Amendment hurdle to get redress. In New York Times Co. v. 
+Sullivan, for example, the Supreme Court held that public figures had to 
+show that a defendant published defamatory material with actual malice—in 
+other words, “with knowledge that it was false or with reckless disregard of 
+whether it was false or not.”36 And in Hustler Magazine, Inc. v. Falwell, the 
+Supreme Court applied the same standard to defeat a claim of intentional 
+infliction of emotional distress.37 However, the actual malice standard 
+applied in these cases developed based on assumptions about what a 
+reasonably prudent person could do to investigate and uncover the truth of 
+information they receive. As generative AI tools grow more sophisticated, it 
+will only become more difficult for individuals and press organizations to tell 
+whether something is real or generated by AI, effectively raising the hurdle 
+that public figures must overcome to redress harms caused by defamatory 
+deepfakes. 
+Importantly, the malicious use of generative AI can impact everyone—private 
+individuals and public figures alike. The distinction between private 
+individuals and public figures within the law is far from clear, and both 
+private individuals and public figures have successfully overcome the First 
+Amendment, privacy, and consent hurdles discussed above.38 These cases 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+15 
+ 
+ 
+and the legal tests they implicate merely highlight legal assumptions that 
+may not hold true when someone uses generative AI to impersonate, 
+harass, defame, or otherwise harm others—legal assumptions that may 
+impose barriers to redress and perpetuate AI-generated harm. While many 
+traditional legal remedies may still be available for victims of malicious 
+deepfakes and other generative AI harms, the novel legal questions that 
+generative AI raises—as well as the potentially massive volume of violations 
+that a publicly available generative AI tool can produce—will no doubt make 
+these legal remedies harder to pursue and less effective in practice. 
+BELIEVABILITY 
+Deepfakes can impose real social injuries on their subjects when they are 
+circulated to viewers who think they are real. Even when a deepfake is 
+debunked, it can have a persistent negative impact on how others view the 
+subject of the deepfake.39 And the believability of AI-generated content can 
+undermine victims’ ability to pursue legal redress as well. The proliferation 
+of generative AI and deepfakes undermines core assumptions about how 
+legal fact-finding and the authentication of evidence occurs.40 Currently, the 
+bar for authenticating courtroom evidence is not particularly high.41 All a 
+claimant must show is that a reasonable juror could find in favor of 
+authenticity or identification,42 after which point the determination of 
+authenticity is up to the jury.43 In addition, many courts have adopted 
+assumptions about the authenticity of aural and visual evidence that 
+deepfakes undermine. For example, some courts recognize the “silent 
+witness” theory of video authentication, wherein the existence of a 
+recording speaks to the evidence’s authenticity without the need for a 
+human witness’s observations.44 Others assume the authenticity of evidence 
+taken from press archives or government databases, both of which may be 
+vulnerable to deepfakes.45 As AI-generated content grows more common 
+and more believable, courts and regulators alike will need to identify and 
+adopt methods to determine whether images and videos are real and 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+16 
+ 
+ 
+reconsider legal assumptions about the truth and value of evidence 
+submitted at trial. 
+HARMS 
+• 
+Physical: In some contexts, believable deepfakes of the victim 
+seeming to engage in certain behaviors may put them at risk of 
+physical harm and violence, for example, in cultures where publicly 
+known sex acts would shame the family or in cultures where same-sex 
+relationships are illegal. 
+• 
+Economic/Economic Loss: Distribution of AI-generated fake images 
+and videos that are pornographic in nature or touch on hot-button 
+political or social topics could lead to job loss for the victim as well as 
+trouble finding future employment. 
+• 
+Reputational/Relationship/Social Stigmatization: Victims’ standing in 
+the community, intimate and professional relationships, and dignity 
+could all be severely damaged or destroyed if, for example, deepfakes 
+convinced others that person was cheating on a partner or engaging 
+in illicit acts with minors. 
+• 
+Psychological: Victims of these attacks often feel severely violated 
+and may face feelings of hopelessness and fear that their lives have 
+been destroyed. 
+• 
+Autonomy/Loss of Opportunity: Deepfakes have already been 
+weaponized to intentionally silence journalists, activists, and other 
+vulnerable individuals and can lead to loss of opportunity and change 
+in life circumstances if believed broadly. This can also contribute to a 
+threat to democracy and social change. 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+17 
+ 
+ 
+• 
+Autonomy/Discrimination: Deepfakes can easily be tools used to 
+target already-vulnerable individuals belonging to marginalized groups 
+or to make individuals appear to belong to marginalized groups—they 
+also may reinforce negative attitudes about sex work and sex workers. 
+EXAMPLES 
+• The European Union’s police force issued an official warning that 
+“grim” criminal abuse using ChatGPT and other generative AI tools is 
+here and growing.46  
+• A Twitch streamer made Deepfake porn of another Twitch streamer, 
+imposing her face onto porn and passing it off as if it was her.47 
+• A TikTok user spoke out about digitally created nude photos of her 
+shared on the internet. The photos were used to threaten and 
+blackmail her.48 
+• Video game voice actors had their voice taken and used to train an AI 
+to use their voice to harass and expose information about them, all 
+without their knowledge or consent.49 
+INTERVENTIONS 
+• Technological solutions include deepfake detection software and 
+methods for watermarking AI-generated content. These solutions may 
+help victims, courts, and regulators identify AI-generated content, but 
+the effectiveness of these solutions depends entirely on technical 
+experts and responsible AI actors developing innovative detection 
+and authentication tools faster than malicious AI developers can 
+develop new, harder-to-detect AI tools. 
+• Many longstanding legal tools may still apply despite the novel 
+features of generative AI tools and the legal challenges they impose. 
+For example, deepfakes that exploit copyrighted content—potentially 
+including photos that victims took of themselves50—may be vulnerable 
+Harassment, Impersonation, and Extortion  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+18 
+ 
+ 
+to traditional copyright claims. Depending on the circumstances 
+surrounding the AI-generated content, victims may also turn to various 
+tort claims like defamation, false light, intentional infliction of 
+emotional distress, and appropriation of name and likeness.51 To 
+circumvent the challenge of identifying anonymous creators, victims 
+may be able to sue the online platforms that host and circulate 
+malicious AI-generated content if the platforms—including the 
+providers of AI tools like Midjourney and Runway— materially 
+contributed to what makes the content harmful or otherwise illegal.52 
+And several criminal laws, from criminal impersonation and fraud 
+statutes to incitement to violence, could apply to claims involving the 
+malicious circulation of AI-generated content.53 
+• Several regulatory interventions may further protect victims of 
+deepfakes and other malicious uses of generative AI. While a general 
+ban on deepfakes or generative AI tools may run afoul of the First 
+Amendment,54 expanding claims under copyright law or privacy torts 
+to cover fictional depictions of victims created with reckless disregard 
+to the content’s impact on victims would go far to redress the harms 
+caused by malicious uses of generative AI. Criminal statutes could 
+also be updated or complemented with statutory language that 
+captures the issues raised above, including language that lowers the 
+intent required to hold someone liable for nonconsensual, AI-
+generated sexual depictions of another person. And given the 
+difficulty in identifying believable deepfakes and authenticating 
+evidence, the Federal Rules of Evidence may benefit from higher 
+authentication standards to counteract possible deepfakes. Lastly, 
+malicious deepfakes and other AI-generated content created for 
+commercial purposes could be regulated by administrative agencies 
+like the Federal Trade Commission and state Attorneys General 
+Offices on the grounds that they are unfair and deceptive.55 
+ 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+19 
+ 
+ 
+Spotlight:  
+Section 230  
+Section 230 of the Communications Decency Act says that a provider of an 
+interactive computer service is not to be “treated as the publisher or 
+speaker of information provided by” a third party.56 Historically, companies—
+and courts—have taken an expansive view on what it means to treat a 
+company as the publisher or speaker of information—basically, if the lawsuit 
+had anything to do with third-party provided content, companies claimed 
+Section 230 immunity. In recent years, courts have begun to cabin Section 
+230’s reach, finding instead that companies can only claim Section 230 
+immunity if the basis for liability is dissemination of improper information that 
+the company played no role in making improper.57  
+Generative AI tools do not get blanket immunity: Some commentators 
+have framed the generative AI Section 230 debate as an all-or-nothing 
+determination, with some proclaiming that generative AI tools receive 
+Section 230 immunity58 and others proclaiming they do not.59 But judges in 
+recent major court decisions have declined to apply Section 230 in such a 
+broad manner. Instead, courts apply Section 230 on a claim-by-claim basis.60 
+Thus, whether a company will get Section 230 protection will depend on the 
+specific facts and legal obligations at issue, not simply whether they have 
+deployed a generative AI tool. 
+Section 230 should not apply to some claims, like products liability 
+claims, because they do not treat the company as the publisher or 
+speaker of information: In the past, courts have applied Section 230 very 
+broadly, largely by reading the provision to mean that a company is treated 
+as the publisher or speaker whenever their allegedly unlawful activities 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+20 
+ 
+ 
+involved the dissemination of third-party information. Courts have begun to 
+backtrack on this and are recognizing that Section 230 does not protect 
+against claims that target a company’s own obligations not to cause harm.61 
+Thus, claims that generative AI companies violated their own duties 
+regarding the design of their service, the collection, use, or disclosure of 
+information, and the creation of content should not be barred by Section 
+230. 
+For instance, generative AI companies will have difficulty using Section 230 
+to escape product liability claims—such as for negligent design or failure to 
+warn—at least in the Ninth Circuit, where courts now recognize that such 
+claims are based not on harm caused by third-party information but on a 
+company’s breach of their duty to design products that do not pose an 
+unreasonable risk of injury to consumers.62 Generative AI companies should 
+also have to face claims that they violated privacy laws that limit how 
+generative AI companies can collect, use, and disclose personal information 
+because these laws impose duties on companies to respect the privacy 
+interests of third-parties. 
+Generative AI companies will not get Section 230 protection when the 
+tool is wholly responsible for creating the content: Generative AI 
+companies could potentially face several different types of claims about the 
+information that their tools generate. Section 230 provides companies with 
+protection for legal claims based on information provided by another party—
+another “information content provider,” in Section 230 lingo. An information 
+content provider is defined as “any person or entity that is responsible, in 
+whole or in part, for the creation or development of information” provided to 
+the company.63 So, a generative AI company does not get Section 230 
+protection if it is, itself, an information content provider of the information at 
+issue—that is, if the company “is responsible, in whole or in part, for the 
+creation or development of the information.”  
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+21 
+ 
+ 
+When a generative AI tool is alleged to have created new harmful content, 
+such as when it “hallucinates” or makes up information that is not in its 
+training data,64 the legal claim is not based on third-party information and 
+Section 230 should not apply. For example, when a generative AI tool 
+makes up false and reputationally damaging information about an individual, 
+the generative AI company will not be protected by Section 230 for, say, 
+defamation or false light, because the company, and not any third party, is 
+responsible for creating the false and reputationally damaging information 
+that is the basis for the legal claim. 
+Generative AI companies will not get Section 230 protection when they 
+materially contribute to the improper content: In some cases, generative AI 
+companies will try to argue that the outputs at issue originated with a third 
+party, either as user input or training data.65 In such cases, courts will have 
+to determine whether the company created or developed the information in 
+part. The prevailing test is whether the company materially contributed to 
+making the information improper.66 Material contribution can include altering 
+or summarizing third-party information to make it violate a law,67 requiring or 
+encouraging the third party to input information that violates a law,68 or 
+otherwise acting in a way that contributes to the illegality. 
+When a user asks that a generative AI tool create misinformation or a 
+deepfake, or when a tool uses training data to create harmful content, the 
+tool transforms inputs into harmful content and the company that deployed it 
+should not be able to use Section 230 to avoid liability. The user inputs—the 
+request for harmful information, the photos or videos of the target of a 
+deepfake—are not themselves harmful or sufficient to create the harmful 
+content. After all, that is why the user is using generative AI to create the 
+content. The inputs are also unlikely, on their own, to be sufficient to form 
+the legal basis for the claim against the generative AI company. In such 
+scenarios, a company deploying a generative AI tool materially contributes 
+to the improper information by transforming information that cannot form the 
+basis for liability into information that can form the basis for liability.  
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+22 
+ 
+ 
+If, on the other hand, a user asks a generative AI tool to simply repeat a 
+defamatory statement that the user enters into the tool, or to repeat harmful 
+information from other sources, the tool may not materially contribute to the 
+harm and may, consequently, benefit from Section 230 protection. 
+ 
+Section 230 should not be an obstacle to holding 
+companies accountable for harms caused by 
+generative AI tools. Any new regulation or claim 
+should be stated in terms of the generative AI 
+company’s obligations and the harm the tool itself 
+caused by generating harmful content. 
+ 
+It is not clear that scraped training data is information “provided by” a 
+third party: To obtain Section 230 protection, a company must show that 
+the information that forms the basis for liability was “provided by” a third 
+party. There is very little precedent on the question of when information has 
+been “provided by” a third party.69 To “provide” information can mean to 
+supply it or make it available to another.70 Generative AI companies would 
+likely argue that publicly available information is made available for 
+everyone to republish, including generative AI tools. But it is not at all clear 
+that third parties intend to make their information available to generative AI 
+tools simply by making their information viewable by a general audience on 
+the internet—in fact, in many cases it is clearly the opposite. 
+The relationship between the internet company and the third-party 
+information provider matters for determining whether the third party 
+provided the information.71 The types of services that Section 230 originally 
+contemplated had users that directly provided information to the service, 
+such as the Prodigy message boards that were the basis of the case that 
+inspired Section 230.72 Search engines and other types of services that third 
+parties do not provide information directly to have also been found to enjoy 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+23 
+ 
+ 
+ 
+some Section 230 protection,73 but even these companies afford third 
+parties some control over whether and to what extent their information is 
+published or republished on their services. For example, websites can tell 
+Google’s search engine crawlers not to index their pages,74 but there is no 
+effective means to block an AI company from scraping their site.75 The lack 
+of control third parties have over the use of their information in generative AI 
+tools, along with similar considerations described in [privacy section], could 
+sway courts against finding that scraped data is “provided by” third parties. 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+24 
+ 
+ 
+Profits Over Privacy: 
+Increased Opaque 
+Data Collection 
+BACKGROUND AND RISKS 
+Generative AI tools are built on top of a variety of large, complex machine-
+learning models, which need a large amount of training data to function. For 
+tools like ChatGPT, the data includes text scraped from across the internet. 
+For products like Lensa or Stable Diffusion, the data includes photos and art. 
+With generative AI’s voracious need for data, many AI developers may 
+scrape the web indiscriminately for data. While, in some cases, these 
+developers attempt to sanitize their training data by filtering out protected 
+work, explicit content, hate speech, or biased inputs, the practice of 
+cleaning data is far from industry-standard. Without meaningful data 
+minimization or disclosure rules, companies have an incentive to collect and 
+use increasingly more (and more sensitive) data to train AI models. The 
+excuse for collecting this data indiscriminately—increasing competition and 
+innovation within the AI space—is harmful to the state of data privacy. This 
+arms race narrative creates a justification for maximizing data collection just 
+in case it provides some nebulous advantage later. In reality, these tools can 
+be built with less data and without coercive and secretive data collection 
+processes.  
+Profits Over Privacy: Increased Opaque Data Collection  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+25 
+ 
+ 
+SCRAPING TO TRAIN DATA 
+Many generative AI tools use models built on data scraped from publicly 
+available websites. This information often includes personal information 
+posted on social media and other websites. People post information on 
+social media and elsewhere for a variety of reasons: to allow potential 
+employers to find them on LinkedIn; so that friends and acquaintances can 
+find them on Facebook, Twitter, and Venmo; and so forth. These reasons 
+have an important common feature: people post information on a website 
+for the purpose of making that information viewable on that website. But 
+sometimes, a person’s personal information is made publicly available 
+without their consent. Third parties might publish their photo or other 
+information about them. A platform’s confusing privacy settings may lead a 
+person to accidentally make their information available. A software error76 or 
+design change77 can also expose information that a person had set to be 
+viewable only to a select few.  
+When companies scrape personal information and use it to create 
+generative AI tools, they undermine consumers’ control of their personal 
+information by using the information for a purpose for which the consumer 
+did not consent. The individual may not have even imagined their data could 
+be used in the way the company intends when the person posted it online. 
+Individual storing or hosting of scraped personal data may not always be 
+harmful in a vacuum, but there are many risks. Multiple data sets can be 
+combined in ways that cause harm: information that is not sensitive when 
+spread across different databases can be extremely revealing when 
+collected in a single place, and it can be used to make inferences about a 
+person or population. And because scraping makes a copy of someone’s 
+data as it existed at a specific time, the company also takes away the 
+individual’s ability to alter or remove the information from the public sphere.  
+Profits Over Privacy: Increased Opaque Data Collection  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+26 
+ 
+ 
+The privacy harms that follow from indiscriminate scraping of personal 
+information for AI training data also create risks for online speech and the 
+openness of the internet. As AI tools use people’s personal information for 
+more and more harmful purposes, people may become more hesitant to 
+share any information on social media or sites that could potentially be 
+scraped in the future, even if those sites promise to secure their data. They 
+may be less likely to post photos of themselves, to participate in public 
+debates on “the vast public forums of the internet”78—particularly social 
+media—or to have social media profiles or personal websites that can be 
+associated with them at all. Disincentivizing people from engaging in public 
+discourse and interacting online will limit the usefulness of the internet as a 
+whole and networking tools in particular. 
+Basic data minimization principles dictate that peoples’ personal information 
+should only be collected or used for the specific purpose for which each 
+person provided the information. But there are currently no statutes that 
+prohibit companies from scraping people’s personal information and using it 
+to train generative AI tools. Privacy laws in the U.S. exempt most publicly 
+available information from regulation based on a concern that collection and 
+use of this information is protected by the First Amendment. But lawmakers 
+underestimate the significant countervailing privacy interests against 
+allowing companies to indiscriminately scrape personal information.  
+People should be able to post public profile photos without fear that these 
+photos will be used to create deepfakes of them or feed other abusive AI 
+applications. Laws limiting the collection of publicly available personal 
+information and/or its subsequent use would both protect people’s interest 
+in controlling their information and encourage people to continue to make 
+information publicly available on the internet. 
+Profits Over Privacy: Increased Opaque Data Collection  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+27 
+ 
+ 
+GENERATIVE AI USER DATA 
+Many generative AI tools require users to log in for access, and many retain 
+user information, including contact information, IP address, and all the inputs 
+and outputs or “conversations” the users are having within the app. These 
+practices implicate a consent issue because generative AI tools use this 
+data to further train the models, making their “free” product come at a cost 
+of user data to train the tools. This dovetails with security, as mentioned in 
+the next section, but best practices would include not requiring users to sign 
+in to use the tool and not retaining or using the user-generated content for 
+any period after the active use by the user. 
+GENERATIVE AI OUTPUTS 
+Generative AI tools may inadvertently share personal information about 
+someone or someone’s business or may include an element of a person 
+from a photo. Particularly, companies concerned about their trade secrets 
+being integrated into the model from their employees have explicitly banned 
+their employees from using it. 
+HARMS 
+• Physical: Individuals who may want to remove personal data for their 
+own safety, such as domestic violence or stalking victims, may be 
+unable to do so where data has been added to generative AI data sets 
+and so may be at risk from their abusers. 
+• Economic/Economic Loss: Businesses whose trade secrets have 
+been incorporated into training sets face potential economic loss. 
+• Psychological: Individuals unable to remove their personal data from 
+training sets may face frustration or fear if the data could impact them 
+negatively if spread. 
+Profits Over Privacy: Increased Opaque Data Collection  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+28 
+ 
+ 
+• Autonomy: Individuals unable to block addition or force removal of 
+their personal information from training sets demonstrably have lost 
+control of their data. 
+• Autonomy: Individuals are often not informed, consulted, or given 
+options about whether their personal data will be added to training 
+datasets. 
+• Autonomy/Loss of Opportunity: Inability to remove data that is 
+inaccurate or no longer accurate or make updates may result in 
+incorrect outputs that then exacerbate as the incorrect information 
+proliferates. 
+EXAMPLES 
+• The Italian Data Protection Authority began an enforcement action 
+based on the EU’s General Data Protection Regulation against 
+OpenAI, banning the service in the country pending investigation. This 
+led the company to institute some privacy disclosures and controls to 
+the system.79 Regulatory interest from bodies throughout the world will 
+likely act as a catalyst to improved data protection behavior. 
+• Photos from private medical records were found in public database 
+LAION-5B, which are used to make image generators.  
+INTERVENTIONS 
+• Enforce laws that prohibit unfair and deceptive trade practices, 
+consent requirements for child users, and require justification for data 
+processing. 
+• Enact laws and regulations that impose a data minimization standard 
+that would limit use of personal data for generative AI training (e.g., 
+the American Data Privacy Protection Act, the FTC commercial 
+surveillance rule, and certain state privacy regulations) 
+Profits Over Privacy: Increased Opaque Data Collection  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+29 
+ 
+ 
+§ Support tools that are built using a limited and disclosed set of 
+data. 
+• Adopt a strict data minimization standard by developers to help 
+mitigate the privacy harms of creating, tweaking, and updating models 
+to train AI. Data minimization is a standard that, depending on the 
+precise definition, should only allow collection of personal data to the 
+extent that it is necessary to carry out the service requested by the 
+user. The tenets of data minimization are fundamentally at odds with 
+the large-scale creation of generative AI datasets from public info 
+without disclosure or consent.  
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+30 
+ 
+ 
+Increasing Data 
+Security Risk  
+BACKGROUND AND RISKS  
+The Identity Theft Resource Center estimated a record-breaking 1,862 data 
+breaches occurred in 2021;80 with another 1,802 in 2022.81 Beyond the 
+inherent privacy harms of a breach, there can be severe downstream 
+impacts as well. A Government Accountability Office report indicated that 
+victims have “lost job opportunities, been refused loans, or even been 
+arrested for crimes they did not commit as a result of identity theft.”82 Yet 
+these harms do not appear on the victim’s bank statement or credit report, 
+and can be nearly impossible to control where a Social Security Number 
+(SSN) is used; by virtue of its unique and unchangeable nature, the SSN 
+serves as a powerful identifier for both government and private sector 
+entities. To make matters worse, a stolen SSN, unlike a stolen credit card, 
+cannot be effectively cancelled or replaced.83 Criminals in possession of 
+SSNs can open new financial accounts and perpetrate identity theft because 
+many financial institutions rely on SSNs to verify transactions.84 
+Unsurprisingly, research by the Bureau of Justice Statistics indicates that 
+identity theft can result in severe distress.85 
+The threat landscape has gotten worse in recent years as well, with the 
+introduction of ransomware-as-a-service, malware-as-a-service, and other 
+proxy services by which hackers-for-hire have productized methods for 
+unauthorized access to data.86 We should expect to see continued 
+examples of purchasable tools by which data can be accessed, encrypted, 
+and/or manipulated without authorization. 
+Increasing Data Security Risk  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+31 
+ 
+ 
+Just as every other type of individual and organization has explored 
+possible use cases for generative AI products, so too have malicious actors. 
+This could take the form of facilitating or scaling up existing threat methods, 
+for example drafting actual malware code,87 business email compromise 
+attempts,88 and phishing attempts.89 This could also take the form of new 
+types of threat methods, for example mining information fed into the AI’s 
+learning model dataset90 or poisoning the learning model data set with 
+strategically bad data.91 We should also expect that there will be new attack 
+vectors that we have not even conceived of yet made possible or made 
+more broadly accessible by generative AI. 
+HARMS  
+• Physical: Where an individual is the victim of identity theft, they may 
+face arrest for crimes they have not committed. 
+• Economic/Economic Loss: Victims may lose job opportunities or be 
+refused loans as the result of identity theft and destruction of credit. 
+• Reputational/Social Stigmatization: Identity theft can cause severe 
+reputational damage and malware can also be used to reveal sensitive 
+information about an individual, resulting in additional social harms. 
+• Psychological: Victims of these attacks may face embarrassment and 
+fear as well as feelings of helplessness, anger, and more due to the 
+results of such attacks. 
+• Autonomy: Loss of identity control, financial control, image, and more 
+may accompany these attacks. 
+• Discrimination: Scams often target historically vulnerable groups, 
+such as the elderly. 
+Increasing Data Security Risk  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+32 
+ 
+ 
+EXAMPLES  
+• ChatGPT suffered a massive data breach, exposing user information 
+and prompt history.92  
+• Samsung banned use of AI after secure information was found leaked 
+to ChatGPT by employees.93 
+• OpenAI is allowing users to get information from users through plug-
+ins that let the chatbot get new sources of information like Expedia 
+and Instacart.94 
+INTERVENTIONS 
+• If companies invest in employee training and patching known 
+vulnerabilities, they can mitigate some of the risk of generative AI 
+super-charging existing threat methods. However, risks related to the 
+use of the AI model itself will require distinct solutions, including but 
+not limited to those outlined in NIST’s AI Risk Management 
+Framework95 and those required in the proposed American Data 
+Privacy and Protection Act (ADPPA).96  
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+33 
+ 
+ 
+Confronting 
+Creativity: Impact 
+on Intellectual 
+Property Rights  
+BACKGROUND AND RISKS  
+Intellectual property law (IP law) encompasses copyrights, patents, 
+trademarks, and trade secrets. Loosely, copyrights protect original works in 
+any medium of expression (think books, music, theater, and artwork), 
+patents protect inventions, trademarks protect any words or symbols used 
+to identify the source of specific goods and services, and trade secrets 
+protect proprietary business information.97 Each of the branches of IP law 
+contain specific rights for the creators and owners of a work over that 
+work—for example, controls over how that work is used or preventing others 
+from claiming the work as theirs. While all areas of IP law have challenged 
+generative AI use and generation of works, copyright has been by far the 
+most frequently invoked. 
+The extent and effectiveness of legal protections for intellectual property 
+have been thrown into question with the rise of generative AI. Generative AI 
+trains itself on vast pools of data that often include IP-protected works. As 
+stated in a recent open letter from the Center for Artistic Inquiry and 
+Reporting, “AI-art generators are trained on enormous datasets, containing 
+millions upon millions of copyrighted images, harvested without their 
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+34 
+ 
+ 
+creator’s knowledge, let alone compensation or consent. This is effectively 
+the greatest art heist in history.”98 The systems trained on these works may 
+then learn to mimic specific styles, as has already occurred in several 
+cases.99 Several artists whose style has been copied have expressed deep 
+frustration, anger, and dismay over their work being mimicked, noting that 
+the AI is profiting off the work they have put in to develop distinct styles, 
+impacting their livelihood, and reducing deeply personal work to an 
+algorithm. In the words of Nick Cave, an artist confronted with a song 
+generated “in the style of” Nick Cave, “This song is bullshit, a grotesque 
+mockery of what it is to be human.” 100 
+Questions about how far IP protections extend in the realm of generative AI 
+can be categorized into either the input or output cycle of these systems. 
+ 
+INPUTS 
+Generative AI systems can produce extremely detailed and adaptable 
+content because they are trained on enormous amounts of data scraped 
+from across the internet. The type of data taken in will vary depending on 
+the system type. For example, AI art generators will scrape art and images, 
+CASE STUDY – WHAT’S IN A VOICE? 
+An AI-generated song, billed as a “collaboration” between Drake and 
+the Weeknd, popped up on Spotify, Tidal, Apple Music, and YouTube, 
+quickly collecting enough listens and views over the weekend to 
+appear on music charts by Monday. The song was generated by 
+scraping multiple samples of both artists’ voices and music, creating a 
+realistic-sounding new hit. It was taken down after multiple copyright 
+claims by Universal Music Group, leading to questions about whether 
+an original song can be copyrighted and what protections exist for the 
+artists whose voices and musical styles are being cloned.  
+ 
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+35 
+ 
+ 
+translating information about their key features into code that is then 
+reviewed by those systems for patterns, relationships, and rules, then used 
+to generate responses to user prompts. Because these systems’ outputs 
+become more “accurate” or responsive with more data, many are 
+programmed to scrape their preferred content type continuously and 
+automatically. 
+These vast datasets nearly always contain protected works. The entities 
+using the datasets to create a generative AI system rarely, if ever, have 
+permission or license from the creators and owners of artistic works to use 
+them. In fact, many artists have openly stated that they do not want their 
+work going into systems that may make them obsolete.101  
+There is serious and ongoing debate over whether generative AI tools 
+should be permitted to use protected works without a license. Some argue 
+that such use constitutes fair use, an exception to some copyright 
+protections with a very limited scope of application. Fair use often depends 
+on the use of copyrighted material. For instance, a research or non-profit 
+group using the content may have a better fair use claim than a company 
+intending to sell the work generated using the original work. The extent to 
+which fair use may apply to generative AI is still unsettled law. 
+OUTPUTS 
+End-users of generative AI have already attempted to claim ownership over 
+the outputs of generative AI tools, including several who have attempted to 
+file for copyrights with the United States Copyright Office.102 The rising use 
+of generative AI to create creative works and subsequent copyright filing 
+attempts has been significant enough to prompt the Copyright Office to 
+launch a new AI initiative.103 
+Statements from the U.S. Copyright Office so far have mandated that a work 
+cannot receive copyright protections unless it contains “creative 
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+36 
+ 
+ 
+contribution from a human actor,”104 noting that copyright may only protect 
+material that is “the product of human creativity.”105 While some have argued 
+that the prompt constitutes sufficient “human creativity” to result in IP 
+protections for the resulting work, the Copyright Office disagrees, 
+comparing a prompt to “instructions to a commissioned artist—they identify 
+what the prompter wishes to have depicted, but the machine determines 
+how these instructions are implemented in its output.”106 
+This distinction becomes more complex when a portion of the work is AI-
+generated and a portion is human-generated.107 Copyright may be applied 
+to work that contains or builds off AI-generated work, but the copyright will 
+apply solely to the human-authored aspects.108 
+HARMS  
+The harms to individual creators of works and to the artist community are 
+substantial.  
+• Economic/Economic Loss: Legal harms in this space likely include 
+infringement on works and right of use, along with questions about 
+ownership of AI-generated products, as discussed above. 
+Infringement on works would likely stem from generative AI outputs. 
+These include unauthorized reproduction (which may be the case of 
+the AI-generated work is too similar to original pieces) and derivative 
+work (work which contains too many original elements from the initial 
+piece, often seen in reproductions, condensations, or abridgments of 
+original work). Right of use would relate to generative AI input, 
+whether the generative AI systems have a license to use original work 
+in learning sets or whether this could fall under an exception, such as 
+Fair Use. 
+• Economic/Economic Loss: Creators and owners may face severe 
+economic harms as demand for their work shrinks when similar work 
+can be easily and cheaply generated. These harms likely would 
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+37 
+ 
+ 
+manifest in lack of opportunity and hiring (as many creator jobs and 
+commissions are replaced with generative AI) and infringement on 
+economic gain from originally created work (missing out on licensing 
+or selling work since buyers are using replicated work instead). This 
+could also lead to a sharp drop in professional artists if there is rising 
+fear that AI-generated work will make it too difficult to make a living as 
+a creator. Finally, the influx of AI-generated work will impact the 
+market for that work. 
+• Reputational: Creators may face reputational harm as well. It is 
+entirely possible for fans to confuse AI-generated work with that of the 
+inspiring creator, which is a problem when the creator has no part in 
+that work and cannot give input regarding use, quality, or direction. 
+Work generated in a specific creator’s style or voice may be used to 
+promote causes the creator disagrees with or may be of low quality, 
+both of which could cause reputational damage. 
+• Psychological: Several artists have expressed pain, sadness, anger, 
+and more regarding their work being used and replicated by 
+generative AI. In many cases, artists’ work is deeply personal, making 
+copies and exploitation of that work deeply personal as well. 
+• Loss of Opportunity/Relationship/Dignitary: If creators and their work 
+are not protected from exploitation and copying via generative AI, it 
+will likely result in fewer artists putting in the time and effort to develop 
+their own distinct art styles, leading to an overall drop in the creator 
+community and volume of all creative works by humans. 
+EXAMPLES  
+• Several artists have found that their work has already been used to 
+train AI without their permission, in some cases leading to AI that can 
+convincingly replicate their precise artistic style when asked.109  
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+38 
+ 
+ 
+• As noted in the case study above, this extends to AI-generated songs 
+“performed” in exact mimics of artists’ vocal tones and musical 
+styles.110  
+• Artists have found AI copying their style or modifying their work in 
+ways that make it seem as if it supports hateful messages, as with one 
+artist who found the alt-right using AI-generative tools to create 
+express offensive worldviews in her artistic style.111  
+• There are current examples of individuals attempting to claim 
+copyright over work generated by AI tools.112  
+• Three artists have filed a class action in the Northern District of 
+California against generative AI image companies for using their 
+artwork without consent or compensation to build the training sets that 
+inform the platforms.113 
+• Getty Images has started legal proceedings against Stability AI for 
+copying and processing millions of its images for training sets without 
+license.114 
+INTERVENTIONS  
+• AI developers could be forced to license any IP included in training 
+data for generative AI technology, which would prevent indiscriminate, 
+continuous content scraping across the internet. 
+• Customers could be obligated to perform a form of due diligence to 
+confirm whether models were trained with any protected content prior 
+to using the model. 
+• AI tools could be forced to acquire creator permission before 
+generating art “in the style” of any specific creator. 
+• Academic researchers at the University of Chicago developed a tool 
+called Glaze that introduces nearly imperceptible elements to artwork 
+that are designed to disrupt generative AI’s ability to scrape 
+information about the artwork and add it to the training data.115 
+Confronting Creativity: Impact on Intellectual Property Rights 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+39 
+ 
+ 
+• Shutterstock is putting together the option for creators to opt out of 
+their work being used in AI training sets and has established a 
+contributor fund to compensate creators if their IP is used in training 
+sets.116 
+• DeviantArt has implemented a metadata tag for images shared on the 
+web that contains a warning to AI systems not to scrape the tagged 
+content.117 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+40 
+ 
+ 
+Exacerbating Effects 
+of Climate Change 
+BACKGROUND AND RISK  
+The planet is hurtling toward ongoing climate disasters.118 Climate change 
+has already caused hundreds of thousands to millions of deaths, billions of 
+dollars in economic damage, and mass species extinction.119 In the future, 
+every tenth of a degree of warming that we are able to avoid will mean 
+millions of saved lives, avoidance of enormous economic loss, and a chance 
+at a livable future.120 Eventually, by choice or by necessity, our society will 
+evaluate every industry and activity in terms of its resource and carbon cost.  
+Into this high-risk situation crashes the growing field of generative AI, which 
+brings with it direct and severe impacts on our climate: generative AI comes 
+with a high carbon footprint and similarly high resource price tag, which 
+largely flies under the radar of public AI discourse.  
+Training and running generative AI tools requires companies to use extreme 
+amounts of energy and physical resources. Training one natural language 
+processing model with normal tuning and experiments emits, on average, 
+the same amount of carbon that seven people do over an entire year.121 
+Exacerbating Effects of Climate Change 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+41 
+ 
+ 
+122 
+A comparison of pounds of carbon dioxide produced  
+by everyday people/objects and generative-AI-related tasks 
+AI models take an enormous amount of carbon to produce, and this trend is 
+not likely to meaningfully improve given the incentives in the industry. Much 
+AI research, especially at large tech companies that effectively control the 
+space, focuses on accuracy or related measures at the expense of all other 
+considerations.123 A good portion of AI research seeks to “buy” better results 
+by investing exponentially more money over time for a linear increase in 
+accuracy, disregarding other externalities like resource costs.124 These costs 
+are physical requirements for many AI systems: the relationship between 
+model performance and model complexity is at best logarithmic, so for a 
+linear gain in performance, an exponentially larger and more resource-
+inefficient model is required.125 While some AI researchers have begun 
+focusing on efficiency, whether for cost-cutting or environmental reasons, 
+there is no reason to think that large tech companies will abandon their 
+quest for accuracy any time soon. 
+Meanwhile, the data centers that AI developers use to train and host 
+generative AI models have high energy costs and massive carbon footprints. 
+Though some of this energy may come from renewable resources, data 
+centers’ energy consumption is still concerning for several reasons. First, 
+many regions that house data centers still use carbon-intensive energy 
+sources to generate electricity.126 Second, even when renewable energy is 
+Exacerbating Effects of Climate Change 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+42 
+ 
+ 
+available, it may be better allocated to heat a family’s home, power a 
+greenhouse, or further other socially important goals, rather than train an AI 
+model—but this tradeoff is generally not examined or discussed.127 
+These data centers are also resource-intensive in unsustainable ways. Many 
+tech firms draw from public water supplies to cool their centers in the middle 
+of drought-prone areas—a practice that has led to public backlash.128 “New 
+research suggests training for GPT-3 alone consumed 185,000 gallons 
+(700,000 liters) of water. An average user’s conversational exchange with 
+ChatGPT basically amounts to dumping a large bottle of fresh water out on 
+the ground, according to a new study.”129 These technologies also rely 
+heavily on minerals that are procured under violent and exploitative 
+conditions.130 
+HARMS 
+• Physical: Severe environmental changes will result in substantial 
+physical harms to people globally (drought, natural disasters, etc.). 
+• Economic/Economic Loss: The economic resources required to 
+counter environmental harms or to run generative AI as-is are 
+significant. 
+• Autonomy: So many limited resources going to large companies using 
+them for generative AI necessarily means that others will have less 
+access and suffer shortages. 
+EXAMPLES 
+• Sasha Luccioni, the Climate Lead at HuggingFace, evaluates 
+environmental and societal impact of Generative AI – she highlights 
+“tonnes of carbon emissions,” “huge quantities of energy/water,” and 
+“Rare metals for manufacturing hardware” in her Iceberg model of 
+Generative AI costs. 
+Exacerbating Effects of Climate Change 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+43 
+ 
+ 
+ 
+Figure 1: Credit: Sasha Luccioni 
+INTERVENTIONS 
+• Because of environmental disruption, the Dutch Government imposed 
+a nine-month moratorium on large data centers in the country in order 
+to stand up regulations.131 
+• Tech companies should be required to track and publish the amount 
+of energy and resources their models and data centers are using. 
+• Conferences should require tracking of resources to develop and run 
+a system. 
+• Academic researchers should be given equitable access to 
+computational resources. As of now, academics do not have sufficient 
+access to understand the specifics of how modern AI tools work and 
+what resources they require. This knowledge is hoarded inside large 
+tech companies. Without this knowledge and access, the focus is kept 
+on profit/accuracy, not environmental concerns. Sunshine is the best 
+disinfectant, and academics who understand computer science are a 
+useful window to let the sunshine in.
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+44 
+ 
+ 
+Labor Manipulation, 
+Theft, and 
+Displacement 
+BACKGROUND AND RISKS 
+Recent clickbait headlines playing into fears and hype trumpet that 
+generative AI is coming for people’s jobs.132 While generative AI will disrupt 
+the way certain industries work, it is still too early to see how this technology 
+will impact labor markets and integrate into existing work. 
+When it comes to labor and market dominance, large tech companies like 
+Apple, Meta, Amazon, Google, and Microsoft employ much of the AI 
+research and development industry. These companies are directing this 
+specialized workforce to develop commercial AI products that can be used 
+for private profit rather than public benefit.  
+Major tech companies have also been the dominant players in developing 
+new generative AI systems because training generative AI models requires 
+massive swaths of data, computing power, and technical and financial 
+resources. Their market dominance has a ripple effect on the labor market, 
+affecting both workers within these companies and those implementing 
+their generative AI products externally. With so much concentrated market 
+power, expertise, and investment resources, these handful of major tech 
+companies employ most of the research and development jobs in the 
+generative AI field. The power to create jobs also means these tech 
+companies can slash jobs in the face of economic uncertainty. And 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+45 
+ 
+ 
+externally, the generative AI tools these companies develop have the 
+potential to affect white-collar office work intended to increase worker 
+productivity and automate tasks. 
+GENERATIVE AI IN THE WORKPLACE 
+The development of AI as whole is changing how companies design their 
+workplace and business models. Generative AI is no different. Time will tell 
+whether and to what extent employers will adopt, implement, and integrate 
+generative AI in their workplaces—and how much it will impact workers. 
+Still, early signs suggest that generative AI will change white-collar work. 
+Many white-collar workers have already begun to embrace generative AI to 
+help with daily tasks like drafting presentations, marketing materials, 
+speeches, emails, conducting research, and even coding. A Fishbowl survey 
+found that 43% of working professionals have used generative AI tools to 
+complete tasks at work and 70% of those respondents do so without their 
+boss’s knowledge.133 News outlets and websites have used ChatGPT to 
+write whole or part of articles.134 Hiring managers are turning to generative 
+AI to help write job descriptions and draft interview questions, among other 
+administrative tasks.135 Lawyers are using generative AI to do research, 
+administrative tasks, and even draft contracts.136 And in medicine, physicians 
+are using generative AI for research and summarizing patient visits.137  
+The proliferation of generative AI has also created a demand for workers 
+with experience using the tools and entirely new jobs built around these 
+tools. According to a ResumeBuilder.com study, nine out of ten surveyed 
+companies are currently seeking workers with ChatGPT experience.138 The 
+rise in generative AI tools has also created a growing demand for “prompt 
+engineers”—people who train AI chatbots to test and improve answers or 
+otherwise facilitate better prompt-inputs for large language models like 
+ChatGPT.139 In fact, there is already a prompt database where people can 
+sell their own prompts to produce better results.140  
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+46 
+ 
+ 
+Not all employers are jumping on the generative AI bandwagon. Some 
+workplaces are cautious to quickly adopt this technology due to concerns 
+about reliability, as the technology sometimes responds to prompts with 
+misinformation or wrong answers. Other employers have expressed concern 
+over security risks and restricted employee use. Workplaces like J.P. 
+Morgan, Chase & Co., Bank of America, Citigroup, and Verizon prohibited 
+employees from using ChatGPT.141 Samsung banned generative AI tools 
+after employees uploaded sensitive data to ChatGPT, expressing concern 
+that the data transmitted is stored on external servers where it is difficult to 
+retrieve or delete and could be leaked to others.142  
+The overall effect of generative AI on the economy remains to be seen. 
+Some experts have said unregulated and freely deployed generative AI can 
+cause harm to competition, push down wages, and lead to excessive 
+automation and inequality.143 But when discussing potential risks of 
+generative AI on labor, there needs to be a distinction between whether 
+generative AI tools lead to automation or augmentation of job roles. Since 
+the 1980s, a significant portion of income inequality has been driven by 
+automation.144 When generative AI is used for automation, potential risks 
+include job loss as well as the devaluation of labor and heightened 
+economic inequality.  
+JOB AUTOMATION INSTEAD OF AUGMENTATION 
+There are both positive and negative aspects to the impact of AI on labor. A 
+White House report states that AI “has the potential to increase productivity, 
+create new jobs, and raise living standards,” but it can also disrupt certain 
+industries, causing significant changes, including job loss.145 Beyond risk of 
+job loss, workers could find that generative AI tools automate parts of their 
+jobs—or find that the requirements of their job have fundamentally changed.  
+The impact of generative AI will depend on whether the technology is 
+intended for automation (where automated systems replace human work) or 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+47 
+ 
+ 
+augmentation (where AI is used to aid human workers). For the last two 
+decades, rapid advances in automation have resulted in a “decline in labor 
+share, stagnant wages[,] and the disappearance of good jobs in many 
+advanced economies.”146 AI used exclusively for automation could 
+exacerbate these negative trends.147 
+Some studies suggest that AI may lead to reduced hiring if the technology 
+replaces many routine tasks previously performed by workers.148 But other 
+studies suggest that AI could create new opportunities—particularly in high-
+skilled jobs—and increase worker productivity.149 Proponents of generative 
+AI say that technology like ChatGPT can automate repetitive tasks and free 
+more time for people to focus on complex or creative tasks. However, 
+employers trying to reduce costs, maximize profits, and increase 
+shareholder value are more likely to prioritize AI technology that automates 
+rather than augments work.  
+While it is still too early to determine whether AI will either significantly 
+devalue or fully replace workers, preliminary research shows that generative 
+AI does impact job-related tasks. According to research by OpenAI, “80% of 
+the U.S. workforce could have at least 10% of their work tasks affected” by 
+large language models, and this effect is projected to span all wage levels 
+across industries.150 The OpenAI paper also found that “approximately 19% 
+of workers may see at least 50% of their tasks impacted.”151  
+A Goldman Sachs report states that generative AI could impact as much as 
+300 million jobs.152 Generative AI could substitute a quarter of current work, 
+with white-collar workers in administrative and legal sectors most likely to be 
+affected.153 The Goldman Sachs report also shows that AI will impact the 
+labor market more generally, but the report emphasizes that the impact 
+depends greatly on the technology’s capabilities and how it is adopted. 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+48 
+ 
+ 
+DEVALUATION OF LABOR & HEIGHTENED 
+ECONOMIC INEQUALITY 
+Technological advancement to accelerate productivity, automate jobs, and 
+increase profitability by reducing costs began way before the generative AI 
+boom. Historically, automation is one of the clearest factors in wage decline. 
+According to a White House report, much of the development and adoption 
+of AI is intended to automate rather than augment work.154 The report notes 
+that a focus on automation could lead to a less democratic and less fair 
+labor market.155  
+Consider the potential labor impacts that generative AI is having in the 
+software engineering industry, where many start-ups are using GPT-4 to 
+spend less on human programmers.156 While generative AI will not replace 
+all software engineers anytime soon, it will impact the accessibility of 
+learning code, how much programmers’ services cost, and how in-demand 
+human programmers are.157 Beginner coders could benefit from using 
+generative AI to help them learn code, but more experienced programmers 
+may find the value of their labor decrease with increased competition.  
+In 2021, OpenAI CEO Sam Altman predicted that there would be an 
+“unstoppable” technological AI revolution where the price of many types of 
+labor “will fall toward zero once sufficiently powerful AI ‘joins the 
+workforce.’”158 Altman elaborates that, since labor is the driving cost of the 
+supply chain, AI performing tasks will lower the cost of goods and 
+services.159 He acknowledged that, if public policy does not adapt to such a 
+predicted revolution, “most people will end up worse off than they are 
+today.” This prediction shows how the CEO of the leading generative AI 
+company is viewing the future—a future where economic inequality is 
+accelerated by AI.  
+In addition, generative AI fuels the continued global labor disparities that 
+exist in the research and development of AI technologies. Outsourcing labor 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+49 
+ 
+ 
+to subcontractors in the Global South for the benefit of the Global North is a 
+problem inherent in the tech industry—and the entire global economic 
+ecosystem more broadly. Labor that is deemed simple and routine is often 
+outsourced to locations where workers are forced into terrible working 
+conditions with low wages. The AI supply chain reflects and reproduces the 
+inequities of imperial colonialism, where the Global North, wielding greater 
+economic power, profit from the proliferation of AI technology while 
+excluding the Global South.160  
+The development of AI has always displayed a power disparity between 
+those who work on AI models and those who control and profit from these 
+tools.161 Overseas workers training AI chatbots or people whose online 
+content has been involuntarily fed into the training models do not reap the 
+enormous profits that generative AI tools accrue.162 Instead, companies 
+exploiting underpaid and replaceable workers or the unpaid labor of artists 
+and content creators are the ones coming out on top. The development of 
+generative AI technologies only contributes to this power disparity, where 
+tech companies that heavily invest in generative AI tools benefit at the 
+expense of workers. For instance, OpenAI is projected to make $1 billion in 
+revenue by 2024.163  
+But collective worker action around AI is growing. For example, over 150 
+content moderation and data label employees in Africa recently voted to 
+unionize.164 Even more, the Writers Guild of America went on strike partly 
+over the studios refusal to negotiate on banning the use of AI to generate 
+scripts and using the writers’ written work to train AIs.165 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+50 
+ 
+ 
+HARMS 
+• Economic/Economic Loss/Loss of Opportunity: Outsourcing labor to 
+generative AI may lead to job loss and job replacement on a global 
+scale, including impacting jobs that are currently being outsourced to 
+other countries. 
+• Autonomy/Loss of Opportunity: Entire industries may be affected by 
+workplace demands for generative AI, meaning that those specializing 
+in certain industries may be unable to find work and have to shift to 
+new venues, possibly meaning education, training, and experience in 
+that field is “wasted.” 
+EXAMPLES 
+• Sama, a San Francisco-based firm, hires workers in Uganda, Kenya, 
+and India to label data for tech companies like Microsoft, Meta, and 
+Google.166 OpenAI outsourced work to Sama where Sama paid Kenyan 
+workers less than $2 per hour to label data to help make ChatGPT 
+less toxic.167 The company subjected workers to traumatic content 
+moderation practices where workers read and labeled textual 
+descriptions of hate speech, violence, and sexual abuse.168 Workers 
+became mentally scarred by the distressing nature of the work, with 
+one Sama worker describing it as “torture.”169 The traumatizing nature 
+of the work led Sama to eventually end its relationship with OpenAI in 
+February 2022, ceasing work eight months early.170 
+• In a survey of 1,000 U.S. business leaders by ResumeBuilder.com, half 
+of companies surveyed are using ChatGPT while 30% plan to and 48% 
+have replaced workers with ChatGPT.171 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+51 
+ 
+ 
+• In January 2023, BuzzFeed said it would use ChatGPT to create 
+quizzes and personalized content for its readers and employees 
+expressed concern about whether this move would lead to a 
+reduction in the workforce.172 At that time Buzzfeed contended that it 
+remains “focused on human-generated journalism in its newsroom,”173 
+but since then BuzzFeed shut down its news division as part of a 15% 
+reduction of its workforce.174 
+INTERVENTIONS 
+REDISTRIBUTE POWER AND PROFITS AMONG ALL 
+PARTICIPANTS 
+• Workplaces should not use generative AI as a means to cheapen labor 
+costs and devalue workers’ contributions. In fact, wages should be 
+increased to match the increased worker productivity from generative 
+AI.  
+• Tech companies should include voices and give decision making 
+power to those who are actually working on the development and 
+training of generative AI, especially those in the Global South. Major 
+companies need to elevate the involvement and participation of 
+workers to ensure equity. 
+• Technology vendors and service providers should invest in AI 
+research and development that improves worker productivity rather 
+than replacing job functions. 
+§ If workplaces benefit economically from generative AI, companies 
+should share in the profits with those whose labor they benefit from 
+instead of concentrating it among shareholders and top earners. 
+INVEST IN PEOPLE 
+• Employers should invest in training and job transition services where 
+they are training workers in new skills for jobs that have been changed 
+by generative AI. 
+Labor Manipulation, Theft, and Displacement 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+52 
+ 
+ 
+• Employers should invest in training where there is a growing demand 
+for new jobs that have been created by generative AI (e.g., prompt 
+engineers, machine managers, AI auditors, and AI trainers). 
+• Companies should implement policy programs where there is a 
+commitment to invest in training to retain labor rather than to cut costs 
+by reducing staffing in favor of generative AI technology. 
+• Companies, local and federal government, and other public-private 
+programs should make commitments to invest in resources that help 
+workers displaced by generative AI find alternative jobs. 
+INVEST IN COMPLEMENTARY AI 
+• Workplaces should be investing and implementing generative AI that 
+augments and complements work rather than replaces work. 
+• Tech companies should invest in AI research and development that 
+improves worker productivity rather than replacing job functions. 
+• Policymakers should regulate and redirect generative AI research to 
+develop technology for public-interest use cases rather than for 
+primarily commercial-use cases. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+53 
+ 
+ 
+Spotlight: 
+Discrimination  
+Artificial intelligence and other automated decision-making systems have 
+long been deployed in opaque and unaccountable ways that harm 
+individuals and exacerbate existing biases. Because AI is trained on 
+historical data and often used by the resource controlling actor (hiring 
+company, landlord, government benefits agency), Black people, women, 
+individuals with disabilities, and poor people are hardest hit. And the harm 
+isn’t trivial—algorithmic systems have landed innocent Black men in jail, 
+given lower credit limits to women, higher interest rates to graduates of 
+Historically Black or Latino Colleges, and prevented people from receiving 
+interviews or job offers. 
+An image generator is more likely to show a woman when you ask it to 
+generate an image of a cleaner, and white men when you ask it to generate 
+an image of a boss. Google’s Bard text generator has replicated dangerous 
+conspiracy theories. It recommended conversion therapy for gay people, 
+generated text saying that Trans people are “groomers,” and generated text 
+claiming that major parts of the holocaust was fabricated.175  
+Generative AI is not appropriate for use in determinations for important life 
+opportunities, but the public must remain vigilant in identifying inappropriate 
+use of AI for these purposes – such as a Chatbot that stands as an arbiter 
+for people on criminal justice or social services websites.  
+Discrimination is at the heart of every risk outlined in this paper, and the 
+negative effects of security breaches, privacy violations, and environmental 
+impacts will be felt most closely by marginalized communities. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+54 
+ 
+ 
+The Potential 
+Application of 
+Products Liability Law 
+BACKGROUND AND RISK  
+Products liability is an area of law that developed throughout the twentieth 
+century to respond to the harms that mass-produced products can impose 
+at scale on society. This area of law focuses on three main harms: 
+defectively designed products, defectively manufactured products, and 
+defectively marketed products. Products liability law is characterized by two 
+elements: (i) its adaptability and ability to evolve to address new types of 
+products and harms, and (ii) its concern with distinguishing blameworthily 
+harmful products from products which did harm but could not have been 
+designed, manufactured, or marketed differently—or those that were simply 
+used in an unreasonable way. 
+Like manufactured items like soda bottles, mechanized lawnmowers, 
+pharmaceuticals, or cosmetic products, generative AI models can be viewed 
+like a new form of digital products developed by tech companies and 
+deployed widely with the potential to cause harm at scale. For example, 
+generative AI products can cause harm to people’s reputations by defaming 
+them, directly abuse or facilitate abuse against people, violate intellectual 
+property rights, and violate consumers’ privacy. 
+The Potential Application of Products Liability Law 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+55 
+ 
+ 
+Products liability evolved because there was a need to analyze and redress 
+the harms caused by new, mass-produced technological products. The 
+situation facing society as generative AI impacts more people in more ways 
+will be similar to the technological changes that occurred during the 
+twentieth century, with the rise of industrial manufacturing, automobiles, and 
+new, computerized machines. The unsettled question is whether and to 
+what extent products liability theories can sufficiently address the harms of 
+generative AI. 
+So far, the answers to this question are mixed. In Rodgers v. Christie (2020), 
+for example, the Third Circuit ruled that an automated risk model could not 
+be considered a product for products liability purposes because it was not 
+“tangible personal property distributed commercially for use or 
+consumption.”176 However, one year later, in Gonzalez v. Google, Judge 
+Gould of the Ninth Circuit argued that “social media companies should be 
+viewed as making and ‘selling’ their social media products through the 
+device of forced advertising under the eyes of users.”177 Several legal 
+scholars have also proposed products liability as a mechanism for 
+redressing harms of automated systems.178 As generative AI grows more 
+prominent and sophisticated, their harms—often generated automatically 
+without being directly prompted or edited by a human—will force courts to 
+consider the role of products liability in redressing these harms, as well as 
+how old notions of products liability, involving tangible, mechanized 
+products and the companies that manufacture them, should be updated for 
+today’s increasingly digital world.179 
+HARMS 
+• 
+Physical: Generative AI may produce false information about 
+individuals, leading to physical violence and danger, or could hold 
+information that individuals are trying to delete for their own safety. 
+The Potential Application of Products Liability Law 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+56 
+ 
+ 
+• 
+Economic/Economic Loss/Loss of Opportunity: Generative AI leads 
+to loss of income for artists whose style is mimicked and may cause 
+job loss or shrinking of opportunities for work in certain industries, with 
+no redress for individuals absent some form of liability. 
+• 
+Reputational/Relationship/Social Stigmatization: Spread of incorrect 
+information about an individual can severely damage their reputation, 
+relationships, and dignity. 
+• 
+Psychological: Impacts of generative AI harms may cause emotional 
+distress, fear, helplessness, frustration, and other serious emotional 
+harm. 
+INTERVENTIONS  
+• Scholars, policymakers, and plaintiffs’ attorneys should explore ways 
+that common law and statutory products liability law regimes can apply 
+to redress generative AI harms. Products liability law itself may prevail, 
+or instead a new doctrine based on some of its tenets, but either way, 
+private people must have a remedy when they are harmed by 
+generative AI.  
+ 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+57 
+ 
+ 
+Exacerbating 
+Market Power and 
+Concentration 
+BACKGROUND AND RISK 
+Developing, training, using, and maintaining generative AI tools is a 
+resource intensive endeavor. In addition to the environmental costs 
+discussed in the Environmental Impact section above, generative AI tools 
+cost an incredibly large amount of money and computing resources to 
+develop and maintain. To maintain the underlying computing power 
+necessary to run ChatGPT, for example, experts have estimated that OpenAI 
+must spend roughly $700,000 a day,180 leading to an estimated $540 million 
+loss for OpenAI181 in 2022 alone. To compensate for this loss, OpenAI 
+sought and received an investment from Microsoft of over $10 billion dollars, 
+which included critically necessary and expensive cloud hosting services 
+using Microsoft Azure.182 OpenAI is reported to be seeking additional 
+investments of $100 billion dollars as well. And it will cost Alphabet an 
+estimated $20 million in computing costs to train its massive, 540-billion 
+parameter language model, PaLM (Pathways Language Model).183 
+The astronomical cost of large-scale AI models means that only the biggest 
+tech companies can handle—and afford—both the rapidly expanding needs 
+of maintaining and controlling the models and the public relations and 
+lobbying needs that recent generative AI advances require. One example of 
+the entrenched power influencing public opinion about generative AI is the 
+Exacerbating Market Power and Concentration 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+58 
+ 
+ 
+prevalence of the word, “foundational,” used to describe large models like 
+GPT-4 and LAION B-5, among others. As the AI Now Institute explains, the 
+term “foundational” was introduced by Stanford University in early 2022, in 
+the wake of the publication of an article listing the many existential harms 
+associated with large language models. Calling these models “foundational’’ 
+aimed to equate them (and those espousing them) with unquestionable 
+scientific advancement, a steppingstone on the path to “artificial general 
+intelligence” (AGI)—another fuzzy term evoking science-fiction notions of 
+replacing or superseding human intelligence. By describing generative AI 
+tools as foundational scientific advances, tech companies and AI evangelists 
+frame the wide-scale adoption of generative AI as inevitable. 
+In addition, many of the leading generative AI tools, as well as the training 
+methods and cloud computing services that support them, are owned and 
+maintained by a select few tech companies, including Amazon, Google, and 
+Microsoft. The dominance of these few companies in not only developing 
+generative AI but also providing the underlying tools and services that 
+generative AI requires, further concentrates a market that, despite 
+promoting “open source” technologies, is captured by a few powerful 
+companies with opaque AI development methods and incentives to restrict 
+competition. 
+HARMS 
+• Economic/Economic Loss/Loss of Opportunity: Concentration of 
+power in only a few large companies means that any individual who 
+either does not wish to work for those specific companies or has been 
+rejected by those companies may be unable to work in the generative 
+AI industry altogether. 
+• Autonomy: Big Tech’s monopoly over generative AI lessens the ability 
+for competitors to develop or for others to have access to necessary 
+resources. 
+Exacerbating Market Power and Concentration 
+  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+59 
+ 
+ 
+• Autonomy: Choice is necessarily limited with fewer actors in the 
+space. 
+• Autonomy/Discrimination: Any problems with data quality will be 
+exacerbated through re-use and spread among the few dominant 
+players.  
+• Discrimination: Any discriminatory behaviors in hiring or the 
+workplace by Big Tech companies will more directly and strongly 
+impact the field due to the limited opportunity to change employer or 
+protest treatment and remain working in the field. 
+EXAMPLES 
+• The Wall Street Journal illustrates how the generative AI “race” will 
+make Google and Microsoft richer and “even more powerful.”184  
+• The Federal Trade Commission is launching an inquiry into the 
+Business Practices of Cloud Computing Providers. 
+INTERVENTIONS 
+• Enact laws that provide additional resources to and bolster authorities 
+of Antitrust enforcers. 
+• Advocates and commentators should explicitly tie the data and 
+computing resource advantage in coverage of the industry. 
+• Reform merger guidelines to reflect how consolidation of data 
+advantages is considered in Antitrust reviews. 
+• Advocates and reporters should refrain from emboldening the “Arms 
+Race” dynamic with China propagated largely from interested industry 
+actors.
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+60 
+ 
+ 
+Recommendations 
+LEGISLATIVE AND REGULATORY 
+§ Enact a law that makes intimidating, deceiving, or deliberately 
+misinforming someone about an election or candidate illegal 
+(regardless of the means), such as the Deceptive Practices and Voter 
+Intimidation Prevention Act.  
+§ Pass the American Data Privacy Protection Act – The ADPPA will limit 
+the collection and use of personal information to that which is 
+reasonably necessary and proportionate to the purpose for which the 
+information was collected. Such limitation will limit improper secondary 
+uses of personal data, such as cross-site tracking and 
+targeting/profiling based on sensitive data. The ADPPA will also 
+restrict the use of personal data to train generative AI systems that can 
+manipulate users. 
+§ Provide additional resources to antitrust law enforcement agencies to 
+adequately monitor and take enforcement action against violations 
+related to concentration of the data and computer markets. 
+§ Impose a data minimization standard through legislative or regulatory 
+means that would limit the use of personal information for generative 
+AI training. 
+§ Enact legislation that requires both government and commercial use 
+of AI to be provably nondiscriminatory and proactively transparent by 
+mandating audits and impact assessments—and prohibit manipulative 
+or otherwise unacceptably risky uses. Both the White House AI Bill of 
+Rights and the National Institute of Standards & Technology’s AI RMF 
+provide helpful frameworks for these requirements. 
+Recommendations  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+61 
+ 
+ 
+§ Do not provide broad immunity (under Section 230 or otherwise) for 
+companies or operators of Generative AI tools. 
+§ Do not provide legislative or regulatory exemptions for copyright 
+infringement when images are used in AI training. 
+§ Do not invest more money in the development of AI without 
+dedicating comparable resources to evaluation professionals, control 
+mechanisms, and enforcement capabilities. 
+§ Ensure that entities using AI outputs are held jointly responsible with 
+entities behind the generation of those outputs for the harm that the 
+entity using AI has caused with those outputs. 
+ADMINISTRATIVE AND ENFORCEMENT 
+§ Continue to use existing consumer protection authorities, including 
+Unfair and Deceptive Acts or Practices (FTC) and Unfair, Deceptive, or 
+Abusive Acts or Practice (CFPB) authorities, to protect against 
+manipulative, deceptive, and unfair AI practices. 
+§ Establish standards through advisory opinions and policy statements 
+for evaluating intellectual property and other claims relating to 
+generative AI (e.g., copyright, trademark, etc.). 
+§ Require the publication of environmental footprints of Generative AI 
+models and their use. 
+§ Secure injunctive relief to halt the operation of generative AI systems 
+that lack necessary safeguards (as seen in Italy using GDPR). 
+§ Promulgate rules that require both government and commercial uses 
+of AI to be provably nondiscriminatory and proactively transparent by 
+mandating audits and impact assessments—and prohibit manipulative 
+or otherwise unacceptably risky uses. Both the White House AI Bill of 
+Rights and the National Institute of Standards & Technology’s AI RMF 
+provide helpful frameworks for these requirements. 
+Recommendations  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+62 
+ 
+ 
+PRIVATE ACTOR BEHAVIOR 
+§ Entities considering using generative AI procurement should critically 
+examine whether these tools are appropriate. 
+§ Entities should proactively document the data lifecycle and implement 
+data audit trails. 
+§ Individuals, companies, and research teams should develop tools to 
+detect protected information within training models – like Glaze. 
+§ Develop tools to detect deepfakes and make those tools easily 
+accessible and usable by the public to help debunk deepfakes 
+quickly. 
+§ Watermark any protected documents or images to prevent or limit 
+their use in the training of AI models. 
+§ Publish the data sources, training sets, and logic of AI systems. 
+§ Limit the scope of permissible external uses and modifications of 
+generative AI models (including through API access).  
+§ Limit permissible uses of Generative AI to low-risk settings. 
+§ Determine and publish environmental footprints for Generative AI 
+models and their use. 
+§ Employers should invest in training workers in new skills for jobs that 
+have been changed by generative AI. 
+§ Employers should invest in training where there is a growing demand 
+for new jobs that have been created by generative AI (e.g., prompt 
+engineers, machine managers, AI auditors, and AI trainers). 
+§ Companies should invest in training to retain labor rather than cutting 
+costs by reducing staff in favor of generative AI technology. 
+§ Companies, governments, and public-private programs should commit 
+resources to helping workers displaced by generative AI find 
+alternative jobs. 
+Recommendations  
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+63 
+ 
+ 
+§ Technology vendors and service providers should invest in AI 
+research and development that improves worker productivity rather 
+than replacing job functions. 
+§ Technology companies should include the voices of, and give 
+decision-making power to, those who are actually working on the 
+development and training of generative AI, especially those in the 
+Global South. Major companies need to elevate the involvement and 
+participation of workers to ensure equity. 
+§ Share profits with those whose labor helped build the systems rather 
+than concentrating it among shareholders and top earners. 
+§ Wages should be increased to match the increased worker 
+productivity from generative AI. Workplaces should not use generative 
+AI as a means to cheapen labor costs and devalue workers’ 
+contributions. 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+64 
+ 
+ 
+Appendix of Harms 
+Algorithmic harms exist 
+today—and have been 
+around for a long time. 
+However, with the 
+introduction of generative AI 
+tools like ChatGPT, the 
+scope and severity of 
+algorithmic harms have 
+exploded. In addition to 
+unique harms posed by 
+violations of data privacy 
+and algorithmic systems, 
+generative AI will accelerate 
+the disintegration of trust in 
+authoritative sources of information, exacerbate existing harms like IP theft 
+and impersonation, and undermine existing legal protections for those 
+harmed. 
+This Appendix is meant to give you a better sense of the universe of harms 
+that generative AI is causing or exacerbating right now. However, AI is 
+innovating at a rapid pace and new examples of harm emerge every day, so 
+encapsulating every potential harm that generative AI could cause would be 
+impossible. This appendix serves as a snapshot of pressing and real harms 
+caused by generative AI today, rather than a comprehensive analysis of all 
+possible harms. 
+Appendix of Harms  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+65 
+ 
+ 
+This appendix includes: 
+1. Definitions for many common harms caused by generative AI. 
+2. Examples of real-world harms caused by generative AI. 
+3. A Table comparing the harms implicated by each example. 
+COMMON AI HARMS 
+1. Physical Harms: These are harms that lead to bodily injury or death, 
+which may include acts by AI companies that facilitate or encourage 
+physical assault.  
+2. Economic Harms: These are harms that cause monetary losses or 
+decrease the value of something, which may include the harms of 
+fraudulent transactions conducted by those using AI to impersonate a 
+victim.  
+3. Reputational Harms: These harms involve injuries to someone’s 
+reputation within their community, which may in turn result in lost 
+business or social pariahdom.  
+4. Psychological Harms: These harms include a variety of negative—and 
+legally cognizable—mental responses, such as anxiety, anguish, 
+concern, irritation, disruption, or aggravation. Danielle Citron and 
+Daniel Solove place these harms within two categories: emotional 
+distress or disturbance.  
+5. Autonomy Harms: These harms restrict, undermine, or otherwise 
+influence people’s choices and include acts like coercion, 
+manipulation, failing to inform someone, acting in ways that undermine 
+a user’s choices, and inhibiting lawful behavior.  
+6. Discrimination Harms: These are harms that entrench or exacerbate 
+inequality in ways that disadvantage certain people based on their 
+demographics, characteristics, or affiliations. Discrimination harms 
+often lead to other types of AI harms. 
+7. Relationship Harms: These harms involve damaging personal or 
+professional relationships in ways that negatively impact one’s health, 
+Appendix of Harms  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+66 
+ 
+ 
+wellbeing, or functioning in society. Often, these harms damage 
+relationships by degrading trust or damaging social boundaries.  
+8. Loss of Opportunity: Related to economic, reputational, 
+discrimination, and relationship harms, loss of opportunity is an 
+especially common AI harm in which AI-mediated content or decisions 
+serve as a barrier to individuals accessing employment, government 
+benefits, housing, and educational opportunities.  
+9. Social Stigmatization and Dignitary Harms: Related to reputational, 
+discrimination, and relationship harms, these harms undermine 
+individuals’ sense of self and dignity through, e.g., loss of liberty, 
+increased surveillance, stereotype reinforcement, or other negative 
+impacts on one’s dignity.  
+REAL EXAMPLES OF HARM 
+1. Suicide: ChatGPT encouraged an individual to commit suicide.  
+2. Impersonation: Scammers used generative AI to trick a woman into 
+thinking her daughter was kidnapped, demanding $1,000,000 in 
+return for her release. 
+3. Deepfakes: A prominent investigative reporter was ridiculed online 
+after a pornographic deepfake of her went viral online. 
+4. Defamation: ChatGPT falsely included a law professor on a list of 
+professors accused of sexual assault. 
+5. Sexualization: Lensa, an AI image generation application, portrayed 
+women—particularly Asian and Black women —in a hypersexualized 
+manner regardless of the source photos provided. 
+6. Threats of Physical Harm: An individual used ChatGPT to designate 
+whether a person originating from different countries of origin should 
+be tortured or not. 
+7. Misinformation: In Turkey’s election, generative AI was used to 
+spread over 150 unwarranted claims of terrorism by a presidential 
+candidate. 
+Appendix of Harms  
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+67 
+ 
+ 
+8. Copyright Infringement: Parts of artists’ work are routinely mimicked 
+or duplicated by AI image generators, including commercially 
+protected art. 
+9. Labor Disputes: Studios have threatened to use generative AI to 
+replace striking writers, undermining labor negotiations. 
+10. 
+Data Breaches: A viral generative AI tool’s lax security practices and 
+maintenance of personal data led to personal information like name, 
+prompts, and email are exposed. 
+ 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+68 
+ 
+ 
+References 
+ 
+1 Danielle K. Citron & Daniel J. Solove, Privacy Harms, 102 B.U. L. Rev. 793 (2022). 
+2 See Joy Buolamwini & Timnit Gebru, Gender Shades: Intersectional Accuracy 
+Disparities in Commercial Gender Classification, 81 Proc. Mach. Learning Rsch. 1 (2018); 
+Gender Shades Project, http://gendershades.org/overview.html. 
+3 See, e.g., Emily M. Bender et al., On the Dangers of Stochastic Parrots: Can Language 
+Models Be Too Big?, Proc. 2021 ACM Conf. on Fairness, Accountability, & Transparency 
+610 (2021). 
+4 Press Release, FTC, New Data Shows FTC Received 2.8 Million Fraud Reports from 
+Consumers in 2021 (Feb. 22, 2022), https://www.ftc.gov/news-events/news/press-
+releases/2022/02/new-data-shows-ftc-received-28-million-fraud-reports-consumers-
+2021-0. 
+5 Pranshu Verma, They Thought Loved Ones Were Calling for Help. It was an AI Scam., 
+The Washington Post (Mar. 5, 2023), 
+https://www.washingtonpost.com/technology/2023/03/05/ai-voice-scam/; Erielle Reshef, 
+Kidnapping Scam Uses Artificial Intelligence to Clone Teen Girl’s Voice, Mother Issues 
+Warning, ABC News (Apr. 13, 2023), https://abc7news.com/ai-voice-generator-artificial-
+intelligence-kidnapping-scam-detector/13122645/.  
+6 See National Consumer Law Center & EPIC, Scam Robocalls: Telecom Providers Profit 
+(2022), https://epic.org/documents/scam-robocalls-telecom-providers-profit/. 
+7 See TrueCaller, 2022 U.S. Spam & Scam Report (2022), 
+https://www.truecaller.com/blog/insights/truecaller-insights-2022-us-spam-scam-report 
+(noting that “[t]he total money lost to scams is also comparable to the entire child care 
+budget of $39 billion for the American Rescue Plan Act. If phone scam fraud was 
+somehow eliminated, the amount saved could fund federally subsidized child care across 
+the U.S. for a full year to help families and employers.”). The same source reported $29.8 
+billion in actual consumer losses in 2021 and $19.7 billion in losses in 2020, an increase 
+of nearly $10 billion every year since 2019. 
+8 Reported losses from text scams more than doubled from $131M to $330M between 
+2021 and 2022. FTC Consumer Sentinel Network, Fraud Reports by Contact Method, 
+Reports & Amount Lost by Contact Method (2023), 
+https://public.tableau.com/app/profile/federal.trade.commission/viz/FraudReports/FraudF
+acts ("Losses & Contact Method” tab selected, with quarters 1 through 4 checked for 
+2021, 2022). 
+9 Lily Hay Newman, AI Wrote Better Phishing Emails Than Humans in a Recent Test, 
+Wired (Aug. 7, 2021), https://www.wired.com/story/ai-phishing-emails/. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+69 
+ 
+ 
+References 
+ 
+10 Pranshu Verma & Will Oremus, ChatGPT Invented a Sexual Harassment Scandal and 
+Named a Real Law Prof as the Accused, Wash. Post (Apr. 5, 2023), 
+https://www.washingtonpost.com/technology/2023/04/05/chatgpt-lies/. 
+11 Julia Angwin, Decoding the Hype About AI, Markup (Jan. 28, 2023), 
+https://themarkup.org/hello-world/2023/01/28/decoding-the-hype-about-ai. 
+12 See, e.g., James Vincent, The Swagged-out Pope is an AI Fake—and an Early Glimpse 
+of a New Reality, Verge (Mar. 27, 2023), 
+https://www.theverge.com/2023/3/27/23657927/ai-pope-image-fake-midjourney-
+computer-generated-aesthetic. 
+13 Danielle Citron and Robert Chesney have called attempts to sow distrust in real 
+information using the specter of generative AI—and the increasing success that 
+perpetrators would have as the public grows more aware of generative AI—the “Liar’s 
+Dividend.” Danielle K. Citron & Robert Chesney, Deep Fakes: A Looming Challenge for 
+Privacy, Democracy, and National Security, 107 Cal. L. Rev. 1753,22 1785–86 (2019). 
+14 See Ashley Belanger, Thousands Scammed by AI Voices Mimicking Loved Ones in 
+Emergencies, Ars Technica (Mar. 6, 2023), https://arstechnica.com/tech-
+policy/2023/03/rising-scams-use-ai-to-mimic-voices-of-loved-ones-in-financial-distress/. 
+15 OpwnAI: Cybercriminals Starting to Use ChatGPT, Check Point Rsch. (Jan. 6, 2023), 
+https://research.checkpoint.com/2023/opwnai-cybercriminals-starting-to-use-chatgpt/. 
+16 Joseph Cox, A Computer Generated Swatting Service is Causing Havoc Across 
+America, Vice (Apr. 13, 2023), https://www.vice.com/en/article/k7z8be/torswats-
+computer-generated-ai-voice-swatting. 
+17 Pranshu Verma, They Thought Loved Ones Were Calling for Help. It was an AI Scam., 
+Wash. Post (Mar. 5, 2023), https://www.washingtonpost.com/technology/2023/03/05/ai-
+voice-scam/.  
+18 Matthew Gault, AI Spam is Already Flooding the Internet and It Has an Obvious Tell, 
+Vice (Apr. 24, 2023), https://www.vice.com/en/article/5d9bvn/ai-spam-is-already-flooding-
+the-internet-and-it-has-an-obvious-tell. 
+19 Igor Bonifacic, CNET Had to Correct Most of its AI-Written Articles, Engadget (Jan. 25, 
+2023), https://www.engadget.com/cnet-corrected-41-of-its-77-ai-written-articles-
+201519489.html. 
+20 Jay Peters, BuzzFeed is Using AI to Write SEO-Bait Travel Guides, Verge (Mar. 30, 
+2023), https://www.theverge.com/2023/3/30/23663206/buzzfeed-ai-travel-guides-buzzy. 
+21 The term, “deepfake,” is a portmanteau of “deep learning” and “fake.” The term was 
+popularized by a Reddit user, @deepfakes, who posted the first viral deepfake video in 
+2017. See Moncarol Y. Wang, Don’t Believe Your Eyes: Fighting Deepfaked 
+Nonconsensual Pornography with Tort Law, 2022 U. Chi. Legal F. 415, 417–18 (2022). 
+22 See Citron & Chesney, supra note 1313, at 1757 (defining deepfakes as the “full range 
+of hyper-realistic digital falsification of images, video, and audio”). 
+23 See Wang, supra note 2121. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+70 
+ 
+ 
+References 
+ 
+24 See Anna Yamaoka-Enerklin, Disrupting Disinformation: Deepfakes and the Law, 22 
+N.Y.U. J. Legis. & Pub. Pol’y 725, 731 (2020). 
+25 See, e.g., Restatement (Second) of Torts § 525 (1977) (fraudulent misrepresentation); 
+Colo. Code Regs. § 18-5-113 (2016). 
+26 See, e.g., Cal. Penal Code § 528.5; Haw. Rev. Stat. Ann. § 711-1106.6; La. Rev. Stat. § 
+14:73.10; Miss. Code Ann. § 97-45-33; N.Y. Penal Law § 190.25; R.I. Gen Laws § 11-52-7.1; 
+Tex. Penal Code § 33.07. 
+27 See, e.g., 18 U.S.C. § 873; D.C. Code § 22-3252 (2019). 
+28 See, e.g., 18 U.S.C. § 2261A. 
+29 See Edina Harbinja et al., Governing Ghostbots, 48 Comp. L. & Sec. Rev. 105791 (2023). 
+30 See, e.g., Kat Tenbarge, Hundreds of Sexual Deepfake Ads Using Emma Watson’s 
+Face Ran on Facebook and Instagram in the Last Two Days, NBC News (Mar. 7, 2023), 
+https://www.nbcnews.com/tech/social-media/emma-watson-deep-fake-scarlett-
+johansson-face-swap-app-rcna73624; William Turton & Matthew Justus, “Deepfake” 
+Videos Like That Gal Gadot Porn are Only Getting More Convincing—and More 
+Dangerous, Vice (Aug. 27, 2018), https://www.vice.com/en/article/qvm97q/deepfake-
+videos-like-that-gal-gadot-porn-are-only-getting-more-convincing-and-more-dangerous. 
+31 See 46 States + DC + One Territory Now Have Revenge Porn Laws, Cyber Civ. Rts. 
+Initiative, https://www.cybercivilrights.org/revenge-porn-laws/ (last visited May 15, 2023); 
+Orin S. Kerr, Computer Crime Law 245–47 (4th ed. 2018); State Revenge Porn Policy, 
+EPIC, https://epic.org/state-revenge-porn-policy/. 
+32 See Restatement (Second) of Torts § 652B, 625D. 
+33 Id. § 652E. 
+34 See, e.g., Cass R. Sunstein, Falsehoods and the First Amendment, 33 Harv. J. L. & 
+Tech. 387 (2020).  
+35 See White v. Samsung Elecs. Am., Inc., 971 F.2d 1395, 1398 (9th Cir. 1992); Carson v. 
+Here’s Johnny Portable Toilets, Inc., 698 F.2d 831, 835 (6th Cir. 1983). 
+36 376 U.S. 254, 280 (1964). 
+37 485 U.S. 46, 50–52 (1988). 
+38 See, e.g., Bollea v. Gawker Media, LLC, No. 522012CA012447, 2016 WL 
+4073660 (Fla. Cir. Ct. June 8, 2016) (Hulk Hogan awarded $140 million against 
+Gawker on privacy grounds). 
+39 See Jeffrey T. Hancock & Jeremy N. Bailenson, The Social Impact of Deepfakes, 24 
+Cyberpsych., Behav., & Soc. Networking 149, 150 (2021). 
+40 See Riana Pfefferkorn, “Deepfakes” in the Courtroom, 29 Pub. Int. L.J. 245, 259–74 
+(2020); Danielle C. Breen, Silent No More: How Deepfakes will Force Courts to 
+Reconsider Video Admission Standards, 21 J. High Tech. L. 122, 132, 150–53 (2021). 
+41 United States v. Gagliardi, 506 F.3d 140, 151 (2d Cir. 2007) (citing United States v. 
+Dhinsa, 243 F.3d 635, 658 (2d Cir. 2001)). 
+42 United States v. Workinger, 90 F.3d 1409, 1415 (9th Cir. 1996). 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+71 
+ 
+ 
+References 
+ 
+43 United States v. Vayner, 769 F.3d 125, 130 (2d Cir. 2014). 
+44 Pfefferkorn, supra note 4040, at 260. 
+45 Id.; see also, e.g., Fed. R. Evid. 902(4)(A) (“A copy of an official record” is self-
+authenticating “if the copy is certified as correct by… the custodian or another person 
+authorized to make the certification.”) 
+46 Cox, supra note 1616.  
+47 Samantha Cole, ‘You Feel So Violated’: Streamer QTCinderella Is Speaking Out 
+Against Deepfake Porn Harassment, Vice (Feb. 13, 2023), 
+https://www.vice.com/en/article/z34pq3/deepfake-qtcinderella-atrioc; Deepfake Porn 
+Booms in the Age of A.I., NBC News (Apr. 28, 2022), 
+https://www.nbcnews.com/now/video/deepfake-porn-booms-in-the-age-of-a-i-
+171726917562. 
+48 Chandler Treon, ‘Please Stop’: Tiktoker Frightened After Being Harassed with AI-
+Generated Nudes of Herself, Yahoo News (May 3, 2023), 
+https://news.yahoo.com/please-stop-tiktoker-frightened-being-182335652.html. 
+49 Joseph Cox, Video Game Voice Actors Doxed and Harassed in Targeted AI Voice 
+Attack, Vice (Feb. 13, 2023), https://www.vice.com/en/article/93axnd/voice-actors-doxed-
+with-ai-voices-on-twitter. 
+50 Citron & Chesney, supra note 13, at 1793; Megan Farokhmanesh, The Debate on 
+Deepfake Porn Misses the Point, Wired (Mar. 1, 2023), 
+https://www.wired.com/story/deepfakes-twitch-streamers-qtcinderella-atrioc-pokimane/. 
+51 Citron & Chesney, supra note 1313, at 1793–94. 
+52 See, e.g., Fair Hous. Council v. Roommates.com, LLC, 521 F.3d 1157, 1168 (9th Cir. 
+2008) (holding that website that contributes materially to the alleged illegality of user 
+content is not shielded from liability under 47 U.S.C. § 230). 
+53 Citron & Chesney, supra note 1313, at 1803. 
+54 See United States v. Alvarez, 567 U.S. 709, 719 (2012) (plurality) (concluding “falsity 
+alone” could not remove expression from First Amendment protection). 
+55 Citron & Chesney, supra note 1313, at 1805–06. 
+56 47 U.S.C. § 230(c)(1). 
+57 The Supreme Court issued an opinion in Gonzalez v. Google, No. 21-1333, vacating the 
+Ninth Circuit’s decision but otherwise refused to weigh in on the proper test for Section 
+230 protection. The decision essentially leaves in place the status quo, where courts of 
+appeals have been steadily converging on a test that is increasingly skeptical of industry 
+arguments for Section 230 protection. The emerging test does not perfectly encapsulate 
+EPIC’s position on Section 230, but we follow precedent in this section. EPIC has argued 
+that Section 230(c)(1) simply means that internet companies are not to be treated the 
+same, for liability purposes, as the third parties who publish information on their services. 
+Our test will often generate the same outcome as the test that is emerging in the circuit 
+courts, but with less room for judicial discretion. See Brief for EPIC as Amicus Curiae in 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+72 
+ 
+ 
+References 
+ 
+Support of Neither Party, Gonzalez v. Google LLC, 143 S. Ct. 80 (2022) (No. 21-1333), 
+https://epic.org/wp-content/uploads/2022/12/EPIC-Amicus-Gonzalez-v.-Google-1.pdf. 
+58 See Jess Miers, Yes, Section 230 Should Protect ChatGPT and Other Generative AI 
+Tools, TechDirt (Mar. 17, 2023), https://www.techdirt.com/2023/03/17/yes-section-230-
+should-protect-chatgpt-and-others-generative-ai-tools/. 
+59 See Cristiano Lima, AI Chatbots Won’t Enjoy Tech’s Legal Shield, Section 230 Authors 
+Say, Wash. Post (Mar. 17, 2023), https://www.washingtonpost.com/politics/2023/03/17/ai-
+chatbots-wont-enjoy-techs-legal-shield-section-230-authors-say/. 
+60 Henderson v. Source for Public Data, L.P., 53 F. 4th 110, 125 (4th Cir. 2022); Lemmon v. 
+Snap, Inc., 995 F.3d 1085 (9th Cir. 2021). 
+61 See, e.g., Roommates.com, 521 F.3d at 1168; HomeAway v. City of Santa Monica, 918 
+F.3d 676 (9th Cir. 2019); Airbnb, Inc. v. City and County of San Francisco, 217 F. Supp. 3d 
+1066 (N.D. Cal. 2016); Lemmon, 995 F.3d at 1085.  
+62 Lemmon, 995 F.3d at 1092 (9th Cir. 2021); see also A.M v. Omegle.com, 614 F. Supp. 
+3d 814, 819–21 (D. Or. 2022). 
+63 47 U.S.C. § 230(f)(3). 
+64 See, e.g., Pranshu Verma and Will Oremus, ChatGPT Created a Sexual Harassment 
+Scandal and Named a Real Law Prof as the Accused, Wash. Post (Apr. 5, 2023), 
+https://www.washingtonpost.com/technology/2023/04/05/chatgpt-lies/; see also Eugene 
+Volokh, Communications Can Be Defamatory Even If Readers Realize There's a 
+Considerable Risk of Error, Volokh Conspiracy (Mar. 31, 2023), 
+https://reason.com/volokh/2023/03/31/communications-can-be-defamatory-even-if-
+readers-realize-theres-a-considerable-risk-of-error/.  
+65 See Miers, supra note 5858. 
+66 This test originated in Roommates.com, 521 F.3d at 1157, and its latest significant 
+articulation is found in Henderson, 53 F.4th at 110. 
+67 See, e.g., Henderson, 53 F.4th at 125. 
+68 Roommates.com, 521 F.3d at 1168. 
+69 The leading case on this issue is Batzel v. Smith, 333 F.3d 1018 (9th Cir. 2003), which 
+concerned whether a person who sent an email to a listserv moderator with no intention 
+of having the email posted online could be said to have “provided” information as 
+contemplated by Section 230. A split Ninth Circuit panel determined that information is 
+“provided by” a third party “when a third person or entity that created or developed the 
+information in question furnished it to the provider or user under circumstances in which 
+a reasonable person in the position of the service provider or user would conclude that 
+the information was provided for publication on the Internet or other ‘interactive 
+computer service.’” Id. at 1034 (emphasis added). Batzel could be read to require direct 
+furnishing of information to the defendant or, at the very least, some sort of relationship 
+wherein the defendant could form a reasonable basis to believe that the third party 
+intend for the defendant to publish the information. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+73 
+ 
+ 
+References 
+ 
+70 Merriam-Webster Dictionary, Provide (2023), https://www.merriam-
+webster.com/dictionary/provide.  
+71 See discussion of Batzel v. Smith, supra note 6969. 
+72 Stratton Oakmont, Inc. v. Prodigy Servs., 23 Media L. Rep. (BNA) 1794 (N.Y. Sup. Ct. 
+1995). 
+73 See, e.g., O’Korley v. Fastcase, Inc., 831 F.3d 352 (6th Cir. 2016). 
+74 Google, Block Search Engine Indexing with noindex, Search Central (Feb. 20, 2023), 
+https://developers.google.com/search/docs/crawling-indexing/block-indexing.  
+75 Available technical tools to block scrapers, such as robot.txt flags, IP blockers and 
+CAPTCHAs, can be bypassed by those determined enough to collect the data, which is 
+why companies have attempted to use legal tools such as breach of contract and the 
+Computer Fraud and Abuse Act to stop unauthorized scraping. See Kyle R. Dull & Julia B. 
+Jacobson, LinkedIn’s Data Scraping Battle with hiQ Labs Ends with Proposed Judgment, 
+National Law Review (Dec. 19, 2022), https://www.natlawreview.com/article/linkedin-s-
+data-scraping-battle-hiq-labs-ends-proposed-judgment.  
+76 For instance, in May 2018, Facebook made public the posts of as many as 14 million 
+users that thought they were only sharing with their friends or a smaller group. Kurt 
+Wagner, Facebook Says Millions of Users Who Thought They Were Sharing Privately 
+with Their Friends May Have Shared with Everyone Because of a Software Bug, Vox 
+(June 7, 2018), https://www.vox.com/2018/6/7/17438928/facebook-bug-privacy-public-
+settings-14-million-users. A few weeks later, Facebook unblocked users who had been 
+previously blocked by other users, allowing the newly unblocked users to view content 
+they should not have been per- mitted to view. Kurt Wagner, Facebook’s Year of Privacy 
+Mishaps Continues—This Time with a New Software Bug that ‘Unblocked’ People, Vox 
+(July 2, 2018), https://www.vox.com/2018/7/2/17528220/facebook-soft-ware-bug-block-
+unblock-safety-privacy.  
+77 For example, the FTC’s 2011 consent order against Facebook was based, in part, on 
+Facebook’s decisions to change privacy settings to make public information users had 
+previously set to private. See FTC, Facebook Settles FTC Charges That It Deceived 
+Consumers By Failing To Keep Privacy Promises (Nov. 29, 2011), 
+https://www.ftc.gov/news-events/news/press-releases/2011/11/facebook-settles-ftc-
+charges-it-deceived-consumers-failing-keep-privacy-promises.  
+78 Packingham v. North Carolina, 137 S. Ct. 1730, 1735 (2017) (quoting Reno v. American 
+Civil Liberties Union, 521 U.S. 844, 868 (1997)). 
+79 Ryan Browne, Italy Became the First Western Country to Ban ChatGPT. Here’s What 
+Other Countries are Doing, CNBC (Apr. 4, 2023), 
+https://www.cnbc.com/2023/04/04/italy-has-banned-chatgpt-heres-what-other-countries-
+are-doing.html; Natasha Lomas, ChatGPT Resumes Service in Italy After Adding Privacy 
+Disclosures and Controls, TechCrunch (Apr. 28, 2023), 
+https://techcrunch.com/2023/04/28/chatgpt-resumes-in-italy/. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+74 
+ 
+ 
+References 
+ 
+80 See Record Number of Data Breaches in 2021, IAPP Daily Dashboard (Jan. 25, 2022), 
+https://iapp.org/news/a/record-number-of-data-breaches-in-2021/ (citing to ITRC report 
+which estimated “1,862 breaches last year, up 68% from the year prior, and exceeded 
+2017’s previous record of 1,506”).  
+81 See Identity Theft Resource Center (ITRC), 2022 Data Breach Report 2 (Jan. 2023), 
+https://www.idtheftcenter.org/publication/2022-data-breach-report/. 
+82 U.S. Gov’t Accountability Oﬀ., GAO-14-34, Agency Responses to Breaches of Personally 
+Identiﬁable Information Need to be More Consistent 11 (2013), 
+http://www.gao.gov/assets/660/659572.pdf. 
+83 See id. at 13. 
+84 See Soc. Sec. Admin., Identity Theft and Your Social Security Number 1 (2021), 
+https://www.ssa.gov/pubs/EN-05-10064.pdf (“A dishonest person who has your Social 
+Security number can use it to get other personal information about you. Identity thieves 
+can use your number and your good credit to apply for more credit in your name. Then, 
+when they use the credit cards and don’t pay the bills, it damages your credit. You may 
+not ﬁnd out that someone is using your number until you’re turned down for credit, or 
+you begin to get calls from unknown creditors demanding payment for items you never 
+bought. Someone illegally using your Social Security number and assuming your identity 
+can cause a lot of problems.”) 
+85 See Erika Harrell, Bureau of Just. Stat., Dep’t of Just., Victims of Identity Theft, 2018 11 
+(Apr. 2020), https://bjs.ojp.gov/content/pub/pdf/vit18.pdf; Danielle K. Citron & Daniel 
+Solove, Risk and Anxiety: A Theory of Data Breach Harms, 96 Tex. L. Rev. 737, 745 
+(“Knowing that thieves may be using one’s personal data for criminal ends may produce 
+signiﬁcant anxiety.”). 
+86 See, e.g., Cyber. & Infrastructure Sec. Agency (CISA), DarkSide Ransomware: Best 
+Practices for Preventing Business Disruption from Ransomware Attacks, Alert Code AA21-
+131A (July 7, 2021), https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-131a 
+(describing one example of ransomware-as-a-service); Kaspersky, Malware-as-a-service 
+(MaaS), Encyclopedia by Kaspersky, 
+https://encyclopedia.kaspersky.com/glossary/malware-as-a-service-maas/ (last visited 
+May 15, 2023) (deﬁning the term “malware-as-a-service”); Brian Krebs, Giving a Face to 
+the Malware Proxy Service ‘Faceless’, Krebs on Security (Apr. 18, 2023), 
+https://krebsonsecurity.com/2023/04/giving-a-face-to-the-malware-proxy-service-
+faceless/ (describing a malware proxy service). 
+87 See, e.g., Elias Groll, ChatGPT Shows Promise of Using AI to Write Malware, 
+CyberScoop (Dec. 6, 2022), https://cyberscoop.com/chatgpt-ai-malware/ (“‘If not 
+ChatGPT, then a model in the next couple years will be able to write code for real world 
+software vulnerabilities,’ [Dolan-Gavitt, an assistant professor in the Computer Science 
+and Engineering Department at New York University.] added…. Benjamin Tan, a computer 
+scientist at the University of Calgary, said he was able to bypass some of ChatGPT’s 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+75 
+ 
+ 
+References 
+ 
+safeguards by asking the model to produce software piece by piece that, when 
+assembled, might be put to malicious use. ‘It doesn’t know that when you put it all 
+together it’s doing something that it shouldn’t be doing,’ Tan said.”). 
+88 See, e.g., Crane Hassold, Executive Impersonation Attacks Targeting Companies 
+Worldwide, Abnormal Blog (Feb. 16, 2023), https://abnormalsecurity.com/blog/midnight-
+hedgehog-mandarin-capybara-multilingual-executive-impersonation (“Using widely 
+available marketing technology and highly accurate translation apps, attackers can 
+rapidly scale their efforts, maximizing their reach and wreaking havoc across the globe. 
+And because many translation tools now use machine learning to improve context, such 
+as translating the meaning of a sentence rather than each word individually, they’re much 
+easier to manipulate for nefarious purposes.”) 
+89 See, e.g., Center for Strategic & International Studies, A Conversation on Cybersecurity 
+with NSA’s Rob Joyce, YouTube (Apr. 11, 2023), https://youtu.be/MMNHNjKp4Gs?t=530 
+(8:50 mark) (NSA Dir. of Cybersecurity Rob Joyce describing ChatGPT as able to optimize 
+the workflow of bad actors seeking to use zero day exploits, and for malicious foreign 
+actors to “craft very believable native-language English text that could be part of your 
+phishing campaign or part of your interaction with a person or your ability to build a 
+backstory—all the things that will allow you to do those activities, or even malign 
+influence.”). 
+90 See, e.g., Kate Park, Samsung Bans Use of Generative AI Tools like ChatGPT After 
+April Internal Data Leak, TechCrunch (May 2, 2023), 
+https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-
+chatgpt-after-april-internal-data-leak/; Dan Milmo and Agencies, Italy’s Privacy Watchdog 
+Bans ChatGPT Over Data Breach Concerns, Guardian (Apr. 1, 2023), 
+https://www.theguardian.com/technology/2023/mar/31/italy-privacy-watchdog-bans-
+chatgpt-over-data-breach-concerns. 
+91 See, e.g., Marcus Comiter, Attacking Artificial Intelligence: AI’s Security Vulnerability 
+and What Policymakers Can Do About It, Harvard Kennedy School Belfer Center for 
+Science and International Affairs (Aug. 2019), 
+https://www.belfercenter.org/publication/AttackingAI. 
+92 See, e.g., Eduard Kovacs, ChatGPT Data Breach Confirmed as Security Firm Warns of 
+Vulnerable Component Exploitation, SecurityWeek (Mar. 28, 2023), 
+https://www.securityweek.com/chatgpt-data-breach-confirmed-as-security-firm-warns-of-
+vulnerable-component-exploitation/. 
+93 See, e.g., Mark Gurman, Samsung Bans Staff’s AI Use After Spotting ChatGPT Data 
+Leak, Bloomberg (May 1, 2023), https://www.bloomberg.com/news/articles/2023-05-
+02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak. 
+94 See, e.g., Mitchell Clark & James Vincent, OpenAI is Massively Expanding ChatGPT’s 
+Capabilities to Let It Browse the Web and More, Verge (Mar. 23, 2023), 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+76 
+ 
+ 
+References 
+ 
+https://www.theverge.com/2023/3/23/23653591/openai-chatgpt-plugins-launch-web-
+browsing-third-party. 
+95 Nat’l Institute of Standards & Tech. (NIST), Artificial Intelligence Risk Management 
+Framework (AI RMF 1.0), NIST AI-100-1 (Jan. 2023), https://doi.org/10.6028/NIST.AI.100-1. 
+96 American Data Privacy and Protection Act Fact Sheet, EPIC, 
+https://epic.org/documents/american-data-privacy-and-protection-act-fact-sheet/ (last 
+visited May 15, 2023) (e.g., algorithmic impact assessments). 
+97 See, e.g., Intellectual Property Law, Georgetown Law (May 2023), 
+https://www.law.georgetown.edu/your-life-career/career-exploration-professional-
+development/for-jd-students/explore-legal-careers/practice-areas/intellectual-property-
+law/; Explore the Four Areas of IP Law, Suffolk Law (May 2023), 
+https://www.suffolk.edu/law/academics-clinics/what-can-i-study/intellectual-
+property/intellectual-property-law-basics-certificate/explore-the-four-areas-of-ip-law. 
+98 Open Letter, Ctr. for Artistic Inquiry, Restrict AI Illustration from Publishing: An Open 
+Letter (May 2, 2023), https://artisticinquiry.org/AI-Open-Letter. 
+99 Case Study Footnote: Chris Willman, AI-Generated Fake ‘Drake’/’Weeknd’ 
+Collaboration, ‘Heart on My Sleeve,’ Delights Fans and Sets Off Industry Alarm Bells, 
+Variety (Apr. 17, 2023), http://variety.com/2023/music/news/fake-ai-generated-drake-
+weeknd-collaboration-heart-on-my-sleeve-1235585451/; see also Will Knight, Algorithms 
+Can Now Mimic Any Artist. Some Artists Hate It., Wired (August 19, 2022), 
+https://www.wired.com/story/artists-rage-against-machines-that-mimic-their-work/; Sarah 
+Andersen, The Alt-Right Manipulated My Comic. Then A.I. Claimed It., N.Y. Times 
+(December 31, 2022), https://www.nytimes.com/2022/12/31/opinion/sarah-andersen-how-
+algorithim-took-my-work.html; Vanessa Thorpe, ‘ChatGPT Said I did Not Exist’: How 
+Artists and Writers are Fighting Back Against AI, Guardian (March 18, 2023), 
+https://www.theguardian.com/technology/2023/mar/18/chatgpt-said-i-did-not-exist-how-
+artists-and-writers-are-fighting-back-against-ai; Rachel Metz, These Artists Found Out 
+Their Work Was Used to Train AI. Now They’re Furious, CNN Business (October 21, 
+2022), https://www.cnn.com/2022/10/21/tech/artists-ai-images/index.html. 
+100 See, e.g., Nick Cave, Issue #218, Red Hand Files (January 2023), 
+https://www.theredhandfiles.com/chat-gpt-what-do-you-think/. 
+101 Metz, supra note 9999. 
+102 U.S. Copyright Office, Libr. of Cong., Copyright Registration Guidance: Works 
+Containing Material Generated by Artificial Intelligence, 88 Fed. Reg. 16190, 16191 (March 
+16, 2023), https://www.federalregister.gov/documents/2023/03/16/2023-
+05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-
+intelligence#footnote-8-p16191. 
+103 Press Release, U.S. Copyright Oﬃce, Copyright Oﬃce Launches New Artiﬁcial 
+Intelligence Initiative (March 16, 2023), 
+https://www.copyright.gov/newsnet/2023/1004.html.  
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+77 
+ 
+ 
+References 
+ 
+104 U.S. Copyright Oﬃce, Decision Aﬃrming Refusal of Registration of a Recent Entrance 
+to Paradise 2–3 (Feb. 14, 2022), https://www.copyright.gov/rulings-ﬁlings/review-board/
+docs/a-recent-entrance-to-paradise.pdf. 
+105 U.S. Copyright Oﬃce & Libr. of Cong., supra note 102102. 
+106 Id. at 16192. 
+107 See, e.g., U.S. Copyright Office, Cancellation Decision re: Zarya of the Dawn (Reg. No. 
+VAu001480196) 2 (Feb. 21, 2023), https://www.copyright.gov/docs/zarya-of-the-dawn.pdf. 
+108 17 U.S.C. § 103(b). 
+109 Metz, supra note 9999; Thorpe, supra note 9999; Knight, supra note 9999; Cave, 
+supra note 100100. 
+110 Willman, supra note 9999. 
+111 Andersen, supra note 9999. 
+112 U.S. Copyright Office & Libr. of Cong., supra note 102102. 
+113 See Class Action Complaint and Demand for Jury Trial, Andersen et al. v. Stability AI 
+Ltd. et al., No. 3:23-cv-00201-WHO, (N.D. Cal. Jan. 13, 2023), 
+https://stablediffusionlitigation.com/pdf/00201/1-1-stable-diffusion-complaint.pdf. 
+114 Taylor Dafoe, Getty Images Is Suing the Company Behind Stable Diffusion, Saying the 
+A.I. Generator Illegally Scraped Its Content, ArtNet (Jan. 17, 2023), 
+https://news.artnet.com/art-world/getty-images-suing-stability-ai-stable-diffusion-illegally-
+scraped-images-copyright-infringement-2243631. 
+115 Natasha Lomas, Glaze Protects Art from Prying AIs, TechCrunch (Mar. 17, 2023), 
+https://techcrunch.com/2023/03/17/glaze-generative-ai-art-style-mimicry-protection/. 
+116 Shutterstock Datasets and AI-generated Content: Contributor FAQ, Shutterstock (Mar. 
+20 2023), https://support.submit.shutterstock.com/s/article/Shutterstock-ai-and-
+Computer-Vision-Contributor-FAQ?language. 
+117 Kyle Wiggers, DeviantArt Provides a Way for Artists to Opt Out of AI Art Generators, 
+TechCrunch (Nov. 11, 2022), https://techcrunch.com/2022/11/11/deviantart-provides-a-way-
+for-artists-to-opt-out-of-ai-art-generators/. 
+118 See generally Hans-Otto Pörtner et al., Intergovernmental Panel on Climate Change, 
+Climate Change 2022: Impacts Adaptation and Vulnerability (2022), 
+https://report.ipcc.ch/ar6/wg2/IPCC_AR6_WGII_FullReport.pdf [hereinafter “IPCC 
+Report”]. 
+119 IPCC Report at 9–11. 
+120 IPCC Report at 13–14.  
+121 Emma Strubell et al., Energy and Policy Considerations for Deep Learning in NLP, Proc. 
+57th Ann. Meeting Ass’n for Comp. Linguistics 3645, 3645 (2019). 
+122 Id. 
+123 Roy Schwartz et al., Green AI, 63 Commc’ns ACM 54, 56 (2020). 
+124 Id. 
+125 Id. 
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+78 
+ 
+ 
+References 
+ 
+126 Strubell et al., supra note 121121, at 3645. 
+127 Id. 
+128 Amba Kak & Sarah Myers West, AI Now Institute, 2023 Landscape: Confronting Tech 
+Power 100 (2023), https://ainowinstitute.org/wp-content/uploads/2023/04/AI-Now-2023-
+Landscape-Report-FINAL.pdf [hereinafter “AI Now Report”]. 
+129 Mack DeGeurin, ‘Thirsty’ AI: Training ChatGPT Required Enough Water to Fill a 
+Nuclear Reactor’s Cooling Tower, Study Finds, Gizmodo (May 4, 2023), 
+https://gizmodo.com/chatgpt-ai-water-185000-gallons-training-nuclear-1850324249.  
+130 AI Now Report at 99. 
+131 Dutch Call a Halt to New Massive Data Centres, While Rules are Worked Out, 
+DutchNews (Feb. 17, 2022), https://www.dutchnews.nl/2022/02/dutch-call-a-halt-to-new-
+massive-data-centres-while-rules-are-worked-out/. 
+132 See e.g., Stephen Thomas, Who Will You Be After ChatGPT Takes Your Job, Wired 
+(Apr. 21, 2023), https://www.wired.com/story/status-work-generative-artiﬁcial-intelligence/; 
+Greg Ip, The Robots Have Finally Come for My Job, Wall St. J. (Apr. 5, 2023), 
+https://www.wsj.com/articles/the-robots-have-ﬁnally-come-for-my-job-34a69146; Jyoti 
+Mann, Sam Altman Admits OpenAI is ‘A Little Bit Scared’ of ChatGPT and Says It Will 
+‘Eliminate’ Many Jobs, Insider (Mar. 18, 2023), https://www.businessinsider.com/sam-
+altman-little-bit-scared-chatgpt-will-eliminate-many-jobs-2023-3; Steven Greenhouse, US 
+Experts Warn AI Likely to Kill oﬀ Jobs—and Widen Wealth Inequality, Guardian (Feb. 8, 
+2023), https://www.theguardian.com/technology/2023/feb/08/ai-chatgpt-jobs-economy-
+inequality.  
+133 70% of Workers Using ChatGPT At Work Are Not Telling Their Bosses; Overall Usage 
+Among Professionals Jumps to 43%, Fishbowl (Feb. 1, 2023), 
+https://www.fishbowlapp.com/insights/70-percent-of-workers-using-chatgpt-at-work-are-
+not-telling-their-boss/.  
+134 See e.g., Katie Notopoulos, A Tech News Site Has Been Using AI to Write Articles, So 
+We Did the Same Thing Here, Buzzfeed News (Jan. 12, 2023), 
+https://www.buzzfeednews.com/article/katienotopoulos/cnet-articles-written-by-ai-
+chatgpt-article; Connie Guglielmo, CNET Is Experimenting With an AI Assist. Here’s Why, 
+CNET (Jan. 16, 2023), https://www.cnet.com/tech/cnet-is-experimenting-with-an-ai-assist-
+heres-why/; Ryan Ermey, ChatGPT Wrote Part of This Article—It Didn’t Go Great, CNBC 
+(Jan. 26, 2023), https://www.cnbc.com/2023/01/26/chatgpt-wrote-part-of-this-article-it-
+didnt-go-great.html; Noor Al-Sibai & Jon Christian, BuzzFeed is Quietly Publishing Whole 
+AI-Generated Articles, Not Just Quizzes, Futurism (Mar. 30, 2023), 
+https://futurism.com/buzzfeed-publishing-articles-by-ai.  
+135 See Kevin Travers, How ChatGPT is Changing the Job Hiring Process, From the HR 
+Department to Coders, CNBC (Apr. 8, 2023), https://www.cnbc.com/2023/04/08/chatgpt-
+is-being-used-for-coding-and-to-write-job-descriptions.html.  
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+79 
+ 
+ 
+References 
+ 
+136 See, e.g., Chris Morris, A Major International Law Firm is Using an A.I. Chatbot to Help 
+Lawyers Draft Contracts: ‘It’s Saving Time at All Levels’, Fortune (Feb. 15, 2023), 
+https://fortune.com/2023/02/15/a-i-chatbot-law-firm-contracts-allen-and-overy/.  
+137 Belle Lin, Generative AI Makes Headway in Healthcare, Wall St. J. (Mar. 21, 2023), 
+https://www.wsj.com/articles/generative-ai-makes-headway-in-healthcare-cb5d4ee2.  
+138 9 in 10 Companies That are Currently Hiring Want Workers with ChatGPT Experience, 
+Resume Builder (Apr. 17, 2023), https://www.resumebuilder.com/9-in-10-companies-that-
+are-currently-hiring-want-workers-with-chatgpt-experience/.  
+139 Britney Nguyen, AI ‘Prompt Engineer’ Job Can Pay up to $375,000 a Year and Don’t 
+Always Require a Background in Tech, Insider (May 1, 2023), 
+https://www.cnbc.com/2023/04/05/chatgpt-is-the-newest-in-demand-job-skill-that-can-
+help-you-get-hired.html.  
+140 PromptBase, https://promptbase.com/.  
+141 Alyssa Lukpa, JPMorgan Restricts Employees From Using ChatGPT, Wall St. J. (Feb. 
+22, 2023), https://www.wsj.com/articles/jpmorgan-restricts-employees-from-using-
+chatgpt-2da5dc34.  
+142 Gurman, supra note 9393. 
+143 See Daron Acemoglu, Harms of AI 49 (Nat’l Bureau of Econ. Rsch., Working Paper No. 
+29247, 2021), https://www.nber.org/system/files/working_papers/w29247/w29247.pdf.  
+144 Daron Acemoglu & Pascual Restrepo, Tasks, Automation, and the Rise in US Wage 
+Inequality 35 (2022), 
+http://pascual.scripts.mit.edu/research/taskdisplacement/task_displacement.pdf.  
+145 White House, The Impact of Artificial Intelligence on the Future of Workforces in the 
+European Union and the United States of America 15 (2022), 
+https://www.whitehouse.gov/wp-content/uploads/2022/12/TTC-EC-CEA-AI-Report-
+12052022-1.pdf.  
+146 Daron Acemoglu, Automation Shouldn’t Always be Automatic: Marking Artificial 
+Intelligence Work for Workers and the World, OECD: The Forum Network (Nov. 6, 2020), 
+https://www.oecd-forum.org/posts/automation-shouldn-t-always-be-automatic-making-
+artificial-intelligence-work-for-workers-and-the-world.  
+147 Id. 
+148 Daron Acemoglu et al., AI and Jobs: Evidence from Online Vacancies 3 (Nat’l Bureau 
+of Econ. Rsch., Working Paper No. 28257, 2022), 
+https://www.nber.org/system/files/working_papers/w28257/w28257.pdf.  
+149 David H. Autor, Why Are There Still So Many Jobs? The History and Future of 
+Workplace Automation, 29 J. Econ. Persp. 3 (2015), 
+https://pubs.aeaweb.org/doi/pdfplus/10.1257/jep.29.3.3.  
+150 Tyna Eloundou et al., GPTs are GPTs: An Early Look at the Labor Market Impact 
+Potential of Large Language Models, arXiv (Mar. 23, 2023), 
+https://arxiv.org/pdf/2303.10130.pdf.  
+ 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward   
+80 
+ 
+ 
+References 
+ 
+151 Id. 
+152 Jan Hatzius et al., Goldman Sachs, The Potentially Large Effects of Artificial 
+Intelligence on Economic Growth (Briggs/Kodnani) 1 (2023), https://www.key4biz.it/wp-
+content/uploads/2023/03/Global-Economics-Analyst_-The-Potentially-Large-Effects-of-
+Artificial-Intelligence-on-Economic-Growth-Briggs_Kodnani.pdf. 
+153 Id. at 1, 6-7. 
+154 White House, supra note 145145. 
+155 White House, supra note 145145. 
+156 Chloe Xiang, Startups Are Already Using GPT-4 to Spend Less on Human Coders, 
+Motherboard (Mar. 20, 2023), https://www.vice.com/en/article/jg5xmp/startups-are-
+already-using-gpt-4-to-spend-less-on-human-coders.  
+157 Id. 
+158 Moore’s Law for Everything, Sam Altman’s Blog (Mar. 16, 2021), 
+https://moores.samaltman.com/.  
+159 Id. 
+160 Alan Chan et al., The Limits of Global Inclusion in AI Development, arXiv (Feb. 2, 2021), 
+https://arxiv.org/pdf/2102.01265.pdf.  
+161 Wendy Liu, AI Is Exposing Who Really Has Power in Silicon Valley, Atlantic (Mar. 27, 
+2023), https://www.theatlantic.com/technology/archive/2023/03/open-ai-products-labor-
+profit/673527/. 
+162 Id. 
+163 Jeffrey Dastin et al., Exclusive: ChatGPT Owner OpenAI Projects $1 Billion in Revenue 
+by 2024, Reuters (Dec. 15, 2022), https://www.reuters.com/business/chatgpt-owner-
+openai-projects-1-billion-revenue-by-2024-sources-2022-12-15/.  
+164 Billy Perrigo, 150 African Workers for ChatGPT, TikTok and Facebook Vote to 
+Unionize at Landmark Nairobi Meeting, Time (May 1, 2023) 
+https://time.com/6275995/chatgpt-facebook-african-workers-union/ 
+165 Alissa Wilkinson, The Looming Threat of AI to Hollywood, and Why It Should Matter to 
+You, Vox (May 2, 2023) https://www.vox.com/culture/23700519/writers-strike-ai-2023-
+wga.  
+166 Billy Perrigo, Exclusive: OpenAI Used Kenyan Workers on Less Than $2 Per House to 
+Make ChatGPT Less Toxic, Time (Jan. 18, 2023), https://time.com/6247678/openai-
+chatgpt-kenya-workers/.  
+167 Id. 
+168 Id. 
+169 Id. 
+170 Id. 
+171 Resume Builder, supra note 138138. 
+ 
+EPIC | Generating Harm: Generative AI’s Impact and Paths Forward  
+81
+References 
+172 Alexandra Bruell, BuzzFeed to Use ChatGPT Creator OpenAI to Help Create Quizzes 
+and Other Content, Wall St. J. (Jan. 26, 2023), https://www.wsj.com/articles/buzzfeed-to-
+use-chatgpt-creator-openai-to-help-create-some-of-its-content-11674752660.  
+173 Id. 
+174 Jacklyn Diaz & Madj Al-Waheidi, BuzzFeed Shutters Its Newsroom as the Company 
+Undergoes Layoffs, NPR (Apr. 21, 2023), 
+https://www.npr.org/2023/04/20/1171056620/buzzfeed-news-shut-down-media-layoffs.  
+175 Misinformation on Bard, Google’s New AI Chatbot, Ctr. for Countering Digit. Hate (Apr. 
+5, 2023), https://counterhate.com/research/misinformation-on-bard-google-ai-chat/. 
+176 795 F. App’x 878, 879–80 (3d Cir. 2020) (quoting Restatement (Third) of Torts: 
+Products Liability § 19(a) (Am. L. Inst. 1998)). 
+177 2 F.4th 871, 938 (9th Cir. 2021) (Gould, J., concurring in part). 
+178 See, e.g., Karni A. Chagal-Feferkorn, Am I an Algorithm or a Product? When Products 
+Liability Should Apply to Algorithmic Decision-Makers, 60 Stan. L. & Pol’y Rev. 61 (2019) 
+(distinguishing between algorithmic products that should be subject to products liability 
+and thinking algorithms that should not). 
+179 Cf. Catherine M. Sharkey, Products Liability in the Digital Age: Online Platforms as 
+“Cheapest Cost Avoiders”, 73 Hastings L.J. 1327 (2022). 
+180 Hasan Chowdhury, ChatGPT Cost a Fortune to Make with OpenAI’s Losses Growing 
+to $540 Million Last Year, Report Says, Insider (May 5, 2023), 
+https://www.businessinsider.com/openai-2022-losses-hit-540-million-as-chatgpt-costs-
+soared-2023-5.  
+181 Id. 
+182 See Cade Metz & Karen Weise, Microsoft to Invest $10 Billion in OpenAI, the Creator 
+of ChatGPT, N.Y. Times (Jan. 23, 2023), 
+https://www.nytimes.com/2023/01/23/business/microsoft-chatgpt-artificial-
+intelligence.html. 
+183 See ChatGPT and More: Large Scale AI Models Entrench Big Tech Power, AI Now 
+Institute (Apr. 11, 2023), https://ainowinstitute.org/publication/large-scale-ai-models. 
+184 Christopher Mims, The AI Boom That Could Make Google and Microsoft Even More 
+Powerful, Wall St. J. (Feb. 11, 2023), https://www.wsj.com/articles/the-ai-boom-that-could-
+make-google-and-microsoft-even-more-powerful-9c5dd2a6. 

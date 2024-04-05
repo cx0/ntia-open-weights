@@ -1,0 +1,247 @@
+ 
+ 
+1 
+ 
+March 27, 2024 
+ 
+U.S. Department of Commerce 
+National Telecommunications and Information Administration 
+1401 Constitution Avenue N.W. 
+Washington, D.C. 20230 
+ 
+Via electronic filing 
+ 
+Re: Access Now’s Submission to the NTIA concerning Dual Use Foundation Artificial Intelligence 
+Models With Widely Available Model Weights 
+ 
+Docket No. 240216-0052 
+ 
+Dear Bertram Lee and members of the National Telecommunications and Information Administration,  
+ 
+On behalf of Access Now, we are pleased to submit our comments in response to the National 
+Telecommunications and Information Administration’s (NTIA) Request for Comment (RFC) regarding 
+dual-use foundation artificial intelligence (AI) models with widely available weights.1 We appreciate 
+the opportunity to engage in this public consultation process and trust it will lead to a meaningful 
+report on the potential human rights considerations necessary in governing open advanced AI 
+models.  
+ 
+Access Now is an international organization that defends and extends the digital rights of people and 
+communities at risk worldwide.2 As part of our mission, we operate a global digital security helpline 
+for human rights defenders and journalists to identify and mitigate specific threats to their digital 
+security.3 We also engage with fellow non-profit organizations and activist communities across civil 
+society and campaign to ensure that new and emerging technologies and their investors, developers, 
+and implementers “do no harm” first and foremost. 
+ 
+Our comments are designed to highlights the need for greater research to inform the debate on the 
+risks and benefits of open models, flag the dominance of ‘Big Tech’ in AI infrastructure, and propose 
+considerations vital for safeguarding human rights in the AI development process. Particularly, the 
+need to ensure the development of foundation models are done in a resource friendly way taking into 
+consideration the impacts on marginalized communities and non-developed countries. 
+ 
+ 
+ 
+ 
+1 https://www.federalregister.gov/documents/2024/02/26/2024-03763/dual-use-foundation-artificial-
+intelligence-models-with-widely-available-model-weights.  
+2 https://www.accessnow.org/. 
+3 https://www.accessnow.org/help/helpline-services/.  
+ 
+ 
+2 
+I. 
+The Debate over Open versus Closed (Questions 2 and 3)  
+ 
+A key debate around open foundation models centers on their universal accessibility, allowing anyone 
+to access, modify, and alter their algorithms. Advocates of openness argue that this accessibility can 
+lower the entry barriers for various actors, democratizing AI development.4 Moreover, it could 
+potentially reduce industry monopolization5 by encouraging broader participation and collaboration.6 
+Advocates also argue that such openness can enhance safety and transparency, as it enables 
+comprehensive auditing.7 Open foundation models allow more actors to participate and collaborate 
+in AI research and development and be involved in threat detection including detecting and fixing 
+vulnerabilities, biases, and other imperfections present in open models.8 However, scholars also 
+caution that the efficacy of auditing as a safety measure hinges on the availability of significant 
+resources and aligned incentives.9 
+ 
+On the other hand, one of the core risks of open foundation models stems from the fact that because 
+everyone can access, build, and alter the weights, the developers of these models have no control 
+over who has access to them and how they are used. As a result, bad actors might exploit these open 
+models for their own benefits.10 Nefarious actors can access them, remove built-in safety features, and 
+potentially misuse them for malicious purposes, from malevolent actors creating disinformation to 
+generating harmful imagery and deceptive, biased, and abusive language at scale. Monitoring the 
+spread and malicious use of open foundation models is another challenge, mainly due to their 
+widespread availability, and effective oversight hinges largely on the willingness of those employing 
+those models to be transparent.11  
+ 
+ A clear divide exists between the powerful and influential actors advocating for restricted access, or 
+closed access, to their foundation models and those releasing their models openly. Companies such 
+as OpenAI contend that their models are too powerful to release fully openly, thus only allowing 
+access solely through APIs (Application Programming Interfaces). OpenAI has been explicit about the 
+reasons for choosing an API model over open sourcing their models, highlighting concerns around 
+ 
+4 Sayash Kapoor, et al., On the Societal Impact of Open Foundation Models, Stanford University HAI (Feb. 27, 
+2024), https://hai.stanford.edu/news/societal-impact-open-foundation-models; Kyle Miller, Open Foundation 
+Models: Implications of Contemporary Artificial Intelligence, Center for Security and Emerging Technology (CSET) 
+(Mar. 12, 2024), https://cset.georgetown.edu/article/open-foundation-models-implications-of-contemporary-
+artificial-
+intelligence/#:~:text=For%20some%2C%20safety%20concerns%20may,misuse%20them%20for%20malicious%
+20purposes.  
+5 Jai Vipra and Anton Korinek, Market concentration implications of foundation models: The Invisible Hand of 
+ChatGPT, Brookings Institute (Sept. 7, 2023), https://www.brookings.edu/articles/market-concentration-
+implications-of-foundation-models-the-invisible-hand-of-chatgpt/.  
+6 Kapoor, et al., On the Societal Impact of Open Foundation Models. 
+7 Id.  
+8 Id. 
+9 David G. Widder, Sarah Myers West, and Meredith Whittaker, Open (For Business): Big Tech, Concentrated Power, 
+and the Political Economy of Open AI (Aug. 17, 2023), at 16, http://dx.doi.org/10.2139/ssrn.4543807 
+10 Id. at 17; Irene Solaiman, The gradient of generative AI release: Methods and considerations, (Proc. of the 2023 
+ACM Conference on Fairness, Accountability, and Transparency, June 2023) at 8-9, 
+https://arxiv.org/pdf/2302.04844.pdf. 
+11 Miller, Open Foundation Models: Implications of Contemporary Artificial Intelligence.  
+ 
+ 
+3 
+misuse, the complexities and costs associated with deploying large models, and the ability to manage 
+and mitigate risks more effectively. The company argues that the potential dangers of their AI 
+products necessitate restricted access, maintaining control over them.12 
+ 
+The challenge lies in the fact that both arguments hold merit: should we place our trust in large, 
+powerful companies to wield control over these models and to ‘do the right thing’, or should we 
+strive to mitigate the evident risks stemming from increasingly powerful open foundation 
+models? 
+ 
+II. 
+Corporate Dominance in AI Infrastructure (Question 9)  
+ 
+The debate between open and closed foundation models often overshadows a critical underlying 
+issue: the dependency on infrastructure necessary for AI development, namely chips, data, and 
+computational power.13 While it is obviously important to do what we can to prevent the harms that 
+can come from open and closed AI models, such as increased production of non-consensual intimate 
+images (NCII), the NTIA must think broadly about how developments in AI are reshaping or 
+consolidating corporate power, especially with regard to ‘Big Tech.’  
+ 
+Infrastructure is crucial and understanding the dynamics of companies like Amazon Web Services 
+(AWS) sheds light on the broader implications. For instance, StabilityAI, known for its open-source 
+image generation model Stable Diffusion, secured $100 million in funding, but according to Semafor, 
+burned through a significant portion of that money in paying a massive AWS bill almost immediately.14 
+Interestingly, Amazon also announced that it will invest up to $4 billion in the not-open-source AI 
+startup Anthropic,15 illustrating a central point: the outcome of the debate on open versus closed AI is 
+on a basic level irrelevant to infrastructure providers. One way or another, with increased demand for 
+compute power, this translates into significant revenue. 
+ 
+Microsoft's relationship with OpenAI, despite the latter’s closed nature, and its partnerships and 
+investments with companies like the French company Mistral, which takes an open-source approach, 
+further exemplifies the situation.16 Companies with significant computing infrastructure are 
+incentivized to support the proliferation of AI technology, open or closed, because it leads to 
+increased demands for computing power.  
+ 
+ 
+12 Cecilia Kang, OpenAI’s Sam Altman Urges A.I. Regulation in Senate Hearing, Washington Post (May 16, 2023), 
+https://www.nytimes.com/2023/05/16/technology/openai-altman-artificial-intelligence-regulation.html.  
+13 Id. 
+14 Reed Albergotti, Stability AI is on shaky ground as it burns through cash and looks at a management overhaul, 
+Semafor (Apr. 7, 2023), https://www.semafor.com/article/04/07/2023/stability-ai-is-on-shaky-ground-as-it-
+burns-through-cash.  
+15 Jeffrey Dastin, Amazon steps up AI race with Anthropic investment, Reuters (Sept. 29, 2023), 
+https://www.reuters.com/markets/deals/amazon-steps-up-ai-race-with-up-4-billion-deal-invest-anthropic-
+2023-09-25/.  
+16 Microsoft and OpenAI extend partnership, Microsoft Blog (Jan. 23, 2023), 
+https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/; Emilia Dang, Microsoft’s 
+Mistral deal beefs up Azure without spurning OpenAI, The Verge (Mar. 4, 2024), 
+https://www.theverge.com/24087008/microsoft-mistral-openai-azure-europe. 
+ 
+ 
+4 
+The current discourse on open versus closed offers no clear alternative to the dominance of ‘Big 
+Tech’ in AI. Regardless of a model's openness, the necessary infrastructure remains under the 
+control of a few major players. Thus, those with the means to provide compute resources stand to 
+benefit in either scenario, underscoring a fundamental challenge in shifting away from Big Tech's grip 
+on AI development. 
+ 
+III. 
+Power Asymmetries, Environmental Impacts, and Labor Exploitation (Question 9) 
+ 
+In the growing debate on how to regulate the use of AI systems, including, open or closed foundation 
+models, considering the impact of AI on the Global South and the colonial context in which much of 
+this material and labor exploitation takes place is crucial.17 What does a foundation model depend 
+on? What is required to build it? What does it extract from the planet? These are critical 
+questions and issues we urge NTIA to take into consideration.  
+ 
+As it stands, many of the social and economic benefits of artificial intelligence remain geographically 
+concentrated in Western countries and deployed globally, which can asymmetrically impose cultural 
+values.18 Building large-scale models also requires significant human labor, a task that is often 
+outsourced, widening the gap between the corporations that design and market these technologies 
+and the adverse working conditions involved in their development and training. For instance, 
+Google’s Bard model relied on hired workers recruited through outsourcing firms, who received 
+minimal training and reportedly worked under tight deadlines.19 Indeed, documents showed workers 
+were under pressure to meet deadlines under three minutes.20 Similarly, OpenAI's employment of 
+workers in Kenya via an outsourcing firm subjected workers to continuously engage with harmful 
+content for low wages, devoid of any support.21  
+ 
+The development of AI not only demands significant human labor but also consumes vast planetary 
+resources. For example, the mining of rare earth minerals critical for AI technology often occurs in 
+places like the Congo,22 while the Global South faces environmental degradation from the disposal of 
+ 
+17 Anibal Monasterio Astobiza, et.al, Ethical Governance of AI in the Global South: A Human Rights Approach to 
+Responsible Use of AI, (Proc. of the 2021 Summit of the Intl’ Society for the Study of Info., 2022), 
+httpps://doi.org/10.3390/proceedings2022081136.  
+18 Id.; Shakir Mohamed, Marie-Therese Png, and William Isaac, Decolonial AI: decolonial theory as sociotechnical 
+foresight in artificial intelligence, (Philosophy & Technology, 2020) at 7, 9, https://arxiv.org/pdf/2007.04068.pdf.  
+19 Hasan Chowdhury, Google's ChatGPT rival is trained by workers who are under pressure to audit AI answers in as 
+little as 3 minutes, documents show, Business Insider (Jul. 12, 2023), https://www.businessinsider.com/googles-
+bard-ai-chatgpt-trained-under-pressure-workers-2023-
+7#:~:text=Google's%20Bard%20is%20trained%20by,and%20are%20given%20minimal%20training;  
+20 Id.  
+21 Annie Njanja, Workers that made ChatGPT less harmful ask lawmakers to stem alleged exploitation by Big Tech, 
+Tech Crunch (Jul. 14, 2023), https://techcrunch.com/2023/07/14/workers-that-made-chatgpt-less-harmful-ask-
+lawmakers-to-stem-alleged-exploitation-by-big-tech/?guccounter=1; OpenAI and Sama hired underpaid Workers 
+in Kenya to filter toxic content for ChatGPT, Business and Human Rights Resource Center (Jan. 23, 2023), 
+https://www.business-humanrights.org/en/latest-news/openai-and-sama-hired-underpaid-workers-in-kenia-
+to-filter-toxic-content-for-chatgpt/.  
+22 Monasterio Astobiza, et.al, Ethical Governance of AI in the Global South: A Human Rights Approach to 
+Responsible Use of AI.  
+ 
+ 
+5 
+toxic byproducts.23 Highlighting the environmental toll, Timnit Gebru, Emily Bender, Angelina 
+McMillan-Major, and Margaret Mitchell in "On the Dangers of Stochastic Parrots: Can Language Models 
+Be Too Big?" point out the substantial carbon footprint of AI model training, comparable to the energy 
+used for a trans-American flight.24 This disparity underscores the need for a more equitable and 
+sustainable approach to AI development and deployment. 
+ 
+Companies often disclose little to no information about the labor practices that support their data 
+work used to fuel their model. This opacity creates an additional obstacle to democratic and open 
+access to resources essential for the creation, training, and deployment of large-scale models. We 
+therefore urge for the NTIA to advocate for transparency from developers regarding the 
+environmental impact and labor conditions throughout the lifecycle of their foundation models. 
+ 
+Furthermore, we urge the NTIA to advocate for public-facing transparency standards on 
+resource consumption and greenhouse gas emissions of foundation models. Such standards 
+should cover all aspects of model development, including design, data management, and training, to 
+inform the public and policymakers about the ecological footprint of these technologies and support 
+the creation of sustainable AI policies. 
+ 
+IV. 
+Conclusion  
+ 
+Navigating the complexities of AI governance requires a nuanced approach, particularly concerning 
+the dichotomy between open and closed foundation models. This calls for more research to 
+empirically assess and inform the ongoing debate about these issues, including the marginal 
+risks of open systems.25 There is currently no obvious alternative to the dominance of ‘Big Tech’ 
+in AI and the necessary infrastructure remains under the control of a few major players that 
+stand to benefit either way.  
+ 
+The forthcoming report from the NTIA offers a chance to promote the development and use of AI 
+systems in a sustainable, resource-friendly way that considers the impact of models on marginalized 
+communities and how those communities intersect with the Global South. Because these 
+communities are often excluded from conversations and decision making, it’s imperative the NTIA 
+assesses how opening or closing models influences these communities, recognizing both the unique 
+benefits and risks involved. 
+ 
+For any questions or to connect with us about our work please contact Willmary Escoto, U.S. Policy 
+Counsel, willmary@accessnow.org.  
+ 
+23 Id.  
+24 Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Margaret Mitchell, On the Dangers of Stochastic 
+Parrots: Can Language Models Be Too Big? (Conf. on Fairness, Accountability, and Transparency, 2021) at 612, 
+https://dl.acm.org/doi/pdf/10.1145/3442188.3445922  
+25 Kapoor, et al., On the Societal Impact of Open Foundation Models.  

@@ -1,0 +1,154 @@
+ 
+ 
+ 
+Charles Crain 
+ 
+Vice President, 
+Domestic Policy  
+ 
+ 
+1 
+March 27, 2024 
+ 
+The Honorable Alan Davidson 
+Assistant Secretary of Commerce for Communications and Information 
+National Telecommunications and Information Administration 
+U.S. Department of Commerce 
+1401 Constitution Avenue NW 
+Washington, DC 20230 
+ 
+Re: 
+Docket No. NTIA-2023-0009: Dual Use Foundation Artificial Intelligence Models With 
+Widely Available Model Weights 
+ 
+Dear Assistant Secretary Davidson, 
+ 
+The National Association of Manufacturers (“NAM”) appreciates this opportunity to provide comment 
+to the National Telecommunications and Information Administration (“NTIA”) in response to its 
+request for comments (“RFC”) on appropriate policy and regulatory approaches to dual-use 
+foundation models for which model weights are widely available (“open foundation models”).1 
+ 
+The NAM is the voice of the manufacturing industry and the leading advocate for a policy agenda 
+that helps manufacturers compete in the global economy. The NAM is the largest U.S. 
+manufacturing association, representing small and large manufacturers in every industrial sector and 
+in all 50 states. Manufacturing employs nearly 13 million people, contributes $2.85 trillion to the U.S. 
+economy annually and accounts for 53% of private-sector research and development. 
+ 
+Manufacturers have been developing and deploying intelligent systems and artificial intelligence 
+(“AI”) technology for many years. These innovative approaches to modern manufacturing improve 
+safety on the shop floor and for the customer and enhance the efficiency of manufacturing processes 
+and operations. They also allow manufacturers to better manage supply chains, perform predictive 
+maintenance, design new products and more. AI has become essential to modern, smart 
+manufacturing—known as “Manufacturing 4.0.” AI contributes to the growth of the manufacturing 
+economy and bolsters U.S. global manufacturing leadership. That is why the NAM believes that 
+policy approaches to AI should further its development and support its responsible use by 
+manufacturers across a wide range of applications. 
+ 
+The NAM has called for policy approaches that promote manufacturers’ continued access to the 
+widest possible choice of AI technologies. With respect to NTIA’s RFC on the potential risks, benefits 
+and implications of open foundation models, access to these models and to the AI systems 
+developed from such models enables manufacturers’ use of a wide range of AI innovations, offering 
+significant public policy benefits to the manufacturing sector and to industry at large. As such, the 
+NAM respectfully encourages NTIA to enhance, rather than restrict, access to open foundation 
+models. 
+ 
+ 
+ 
+ 
+ 
+1 Federal Register Vol. 89, No. 38, Monday, February 26, 2024, pp. 14059-14063. 
+I. 
+Open foundation models contribute to innovation, choice and transparency. 
+ 
+Access to open foundation models fosters increased development and use of AI technologies 
+because the ability to change these models’ weights enables companies to develop new AI 
+capabilities. The cost of developing and training an AI model is considerable, if not prohibitive. This 
+leads to “the concentration of access to foundation models into a small subset of organizations,” 
+which the RFC notes, rightly, “poses the risk of hindering [AI] innovation.”2 Making a model’s weights 
+widely available allows any interested party to develop new AI capabilities without having to incur 
+these costs. This lowers barriers to entry in AI development by providing new opportunities for AI 
+innovation. This means greater competition among, and choice between, developers of AI systems.  
+ 
+Critically, enhanced access to open foundation models will benefit not just tech entrepreneurs, but 
+also companies throughout the manufacturing sector whose business is not AI development and 
+commercialization but that want to use AI technology. Access to the weights of a foundation model 
+affords these manufacturers the opportunity to adapt these technologies to their specific needs. 
+Open foundation models are thus a flexible, market-based way to match technology supply and 
+demand. 
+ 
+Enhanced transparency can provide additional public policy benefits. For example, the Foundation 
+Model Transparency Index shows that “open developers are consistently more transparent than 
+closed developers.”3 Manufacturers agree with NTIA that “open foundation models can allow for 
+more transparency and enable broader access to allow greater oversight by technical experts, 
+researchers, academics, and those from the security community.”4 The availability of model weights 
+allows independent examination of a model to ensure it is fit for purpose and to identify and mitigate 
+its vulnerabilities. 
+ 
+Given the importance of manufacturers’ access to open foundation models, the NAM respectfully 
+encourages NTIA to exercise caution in pursuing policy and regulatory approaches that could restrict 
+it. 
+ 
+ 
+II. 
+Restrictive policies should undergo strict scrutiny to avoid hampering innovation. 
+ 
+Research into AI and the development of AI technologies are proceeding rapidly. This has fueled 
+speculation about both AI’s promise for humanity and the risks it poses. AI policymaking should not 
+be based on speculation, but rather on actual evidence. With respect to manufacturers’ access to 
+open foundation models, evidence-based regulatory decisions will ensure that any restrictions 
+adopted do not unnecessarily impede innovation. Specifically, the NAM urges NTIA to demonstrate 
+that the risks that any restrictions seek to mitigate are sufficiently likely to materialize, rather than 
+theoretical or unproven. 
+ 
+Foundation models take their name from their ability to be trained to perform a wide variety of tasks 
+and to support a wide variety of use cases. As a result, policies restricting access to open foundation 
+models are likely to affect not just use cases that raise concerns, but also non-problematic uses that 
+are beneficial to society and the economy. In particular, most of the concerns discussed in the RFC 
+are raised by generative AI, but foundation models can be used to develop other types of AI 
+systems—what is generally called analytical AI—that are in wide use in the manufacturing industry. 
+ 
+2 Id. at p. 14060. 
+3 “The Foundation Model Transparency Index”, published by Stanford University’s Center for Research on 
+Foundation Models, Stanford Institute for Human-Centered Artificial Intelligence, October 2023, available at 
+https://arxiv.org/abs/2310.12941 
+4 RFC, at p. 14060. 
+It is critical that manufacturers’ use of analytical AI be as unaffected as possible by any restrictions 
+that might be imposed because of concerns about generative AI. 
+ 
+Another important issue as NTIA considers potential restrictions on open foundation models is 
+whether, and if so to what extent, any restrictions would have unintended consequences on 
+legitimate businesses. Some developers of foundation models make widely available not only the 
+weights of their models but also their source code (“open source foundation models”). Anyone can 
+adapt and update such models, not just to remove the safeguards that prevent them from generating 
+problematic content, but also to give them new features, to augment their capabilities or to run them 
+on servers not controlled by the original developers. Anyone can make these modifications, including 
+malicious actors who will largely not be affected by policy restrictions on model weights. Legitimate 
+businesses, by contrast, will comply with the restrictions. The presence in the global marketplace of 
+open source foundation models thus raises the question of whether restrictions on open foundation 
+models will have the unintended consequence of hampering legitimate and beneficial uses of these 
+models without curbing malicious uses. 
+ 
+Finally, manufacturers urge NTIA to bear in mind the global nature of the marketplace for innovative 
+AI technologies and products. If the United States pursues restrictive AI policies, including 
+restrictions on open foundation models, it risks inhibiting innovation by manufacturers in the U.S.—
+and curbing the job creation and economic development associated with groundbreaking 
+technological advances. It is therefore important to ensure that such policies are aligned with those 
+enacted by other major countries where AI technologies and products are developed, to avoid being 
+undercut by their potentially more permissive regimes. 
+ 
+* * * * 
+ 
+Manufacturers appreciate the emphasis that NTIA has traditionally put on the promotion of 
+innovation, and the industry encourages NTIA to continue to prioritize innovation as it considers 
+potential restrictions on manufacturers’ access to open foundation models. The NAM looks forward 
+to continuing to support the development of AI policies that maintain the United States’ position as a 
+global leader in AI and smart manufacturing. 
+ 
+Sincerely, 
+ 
+ 
+ 
+ 
+ 
+Charles Crain 
+Vice President, Domestic Policy 

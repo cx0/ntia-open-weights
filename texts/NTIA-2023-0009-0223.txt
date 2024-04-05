@@ -1,0 +1,302 @@
+8605 Santa Monica Blvd PMB 63639
+West Hollywood | CA | 90069-4109 | United States
+opensource.org
+March 27, 2024
+Mr. Bertram Lee
+National Telecommunications and Information Administration (NTIA)
+U.S. Department of Commerce
+1401 Constitution Avenue NW
+Washington, DC 20230
+RE: [Docket Number 240216-0052] Dual Use Foundation Artificial Intelligence
+Models with Widely Available Model Weights
+Dear Mr. Lee:
+The Open Source Initiative (“OSI”) appreciates the opportunity to provide our views on the
+above referenced matter. As steward of the Open Source Definition,1 the OSI sets the
+foundation for Open Source software, a global public good that plays a vital role in the
+economy and is foundational for most technology we use today. As the leading voice on the
+policies and principles of Open Source, the OSI helps build a world where the freedoms and
+opportunities of Open Source software can be enjoyed by all and supports institutions and
+individuals working together to create communities of practice in which the healthy Open
+Source ecosystem thrives. One of the most important activities of the OSI, a California
+public benefit 501(c)(3) organization founded in 1998, is to maintain the Open Source
+Definition for the good of the community.2
+The OSI is encouraged by the work of NTIA to bring stakeholders together to understand
+the lessons from the Open Source software experience in having a recognized, unified
+Open Source Definition that enables an ecosystem whose value is estimated to be worth
+$8.8 trillion.3 As provided below in more detail, it is essential that federal policymakers
+encourage Open Source AI models to the greatest extent possible, and work with
+3 Hoffmann, Manuel and Nagle, Frank and Zhou, Yanuo, The Value of Open Source Software (January
+1, 2024). Harvard Business School Strategy Unit Working Paper No. 24-038, Available at SSRN:
+https://ssrn.com/abstract=4693148 or http://dx.doi.org/10.2139/ssrn.4693148
+2 The OSI is a public charity with no beneficial owners and no corporate controllers, but with 80+
+civil society Affiliates working on Open Source. We are incorporated in California, USA, but with a
+global membership and mission of promoting and defending Open Source software on behalf of
+the general public and of building bridges within its global community.
+1 The Open Source Definition found at https://opensource.org/osd.
+1
+organizations like the OSI which is endeavoring to create a unified, recognized definition of
+Open Source AI.
+The Power of Open Source
+Open Source delivers autonomy and personal agency to software users which enables a
+development method for software that harnesses the power of distributed peer review and
+transparency of process. The promise of Open Source is higher quality, better reliability,
+greater flexibility, lower cost, and an end to proprietary lock-in.
+Open Source software is widely used across the federal government and in every critical
+infrastructure sector. “The Federal Government recognizes the immense benefits of Open
+Source software, which enables software development at an incredible pace and fosters
+significant innovation and collaboration.”4 For the last two decades, authoritative direction
+and educational resources have been given to agencies on the use, management and
+benefits of Open Source software.5
+Moreover, Open Source software has direct economic and societal benefits. Open Source
+software empowers companies to develop, test and deploy services, thereby substantiating
+market demand and economic viability. Furthermore, it reduces costs for essential
+applications like databases within these services (Hoffmann, Nagle and Zhou found that
+firms would need to spend 3.5 times more on software than they currently do if OSS did
+not exist).6 By leveraging Open Source, companies can accelerate their progress and focus
+on innovation. Many of the essential services and technologies of our society and economy
+are powered by Open Source software, including, e.g., the Internet.7
+7 BIND is the most commonly used DNS server software on the Internet. See
+https://www.isc.org/bind/. See Chinmayi Sharma, “Tragedy of the Digital Commons”, North Carolina
+6 “The Value of Open Source Software”, Working Paper 24-038, Harvard Business Review, January
+2024, found at:
+https://www.hbs.edu/ris/Publication%20Files/24-038_51f8444f-502c-4139-8bf2-56eb4b65c58a.pdf.
+5 The earliest and most comprehensive such guidance is the “DoD Open Source Software FAQ”,
+Office of the DoD CIO, dated 2021-10-28, found at:
+https://dodcio.defense.gov/open-source-software-faq/#frequently-asked-questions-regarding-open-
+source-software-oss-and-the-department-of-defense-dod. See also, generally, U.S. Digital Services,
+“Digital Services Playbook” (2014) which encourages a ‘default to open’ policy for federal IT, found at:
+https://playbook.cio.gov/.
+4 Office of the National Cyber Director, Executive Office of the President, Cybersecurity and
+Infrastructure Security Agency, DHS, National Science Foundation, Defense Advanced Research
+Projects Agency, and Office of Management and Budget, Executive Office of the President, “Request
+for Information on Open-Source Software Security: Areas of Long-Term Focus and Prioritization”,
+August 10,2023, found at:
+https://www.federalregister.gov/documents/2023/08/10/2023-17239/request-for-information-on-op
+en-source-software-security-areas-of-long-term-focus-and-prioritization.
+2
+The Open Source Definition has demonstrated that massive social benefits accrue when
+the barriers to learning, using, sharing and improving software systems are removed. The
+core criteria of the Open Source Definition – free redistribution; source code; derived
+works; integrity of the author's source code; no discrimination against persons or groups;
+no discrimination against fields of endeavor; distribution of license; license must not be
+specific to a product; license must not restrict other software; license must be
+technology-neutral – have given users agency, control and self-sovereignty of their
+technical choices and a dynamic ecosystem based on permissionless innovation.
+A recent study published by the European Commission estimated that companies located
+in the European Union invested around €1 billion in Open Source Software in 2018, which
+brought about a positive impact on the European economy of between €65 and €95
+billion.8
+This success and the potency of Open Source software has for the last three decades relied
+upon the recognized unified definition of Open Source software and the list of Approved
+Licenses that the Open Source Initiative maintains.9
+OSI believes this “open” analog is highly relevant to Open Source AI as an emerging
+technology domain with tremendous potential for public benefit.
+Distinguishing the Open Source Definition
+The OSI Approved License® trademark and program creates a nexus of trust around which
+developers, users, corporations and governments can organize cooperation on Open
+Source software. However, it is generally agreed that the Open Source Definition, drafted
+26 years ago and maintained by the OSI, does not cover this new era of AI systems.
+AI models are not just code; they are trained on massive datasets, deployed on intricate
+computing infrastructure, and accessed through diverse interfaces and modalities. With
+traditional software, there was a very clear separation between the code one wrote, the
+compiler one used, the binary it produced, and what license they had. However, for AI
+models, many components collectively influence the functioning of the system, including
+the algorithms, code, hardware, and datasets used for training and testing. The very notion
+9 See https://opensource.org/licenses for a full list.
+8 PRESS RELEASE, “Commission publishes study on the impact of Open Source on the European
+economy”, 06 September 2021, found at:
+https://digital-strategy.ec.europa.eu/en/news/commission-publishes-study-impact-open-source-eur
+opean-economy#:~:text=It%20is%20estimated%20that%20companies,65%20and%20%E2%82%AC95
+%20billion.
+Law Review, October 2022, found at:
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4245266. See also,
+3
+of modifying the source code (which is important in the [Open Source Definition]) becomes
+fuzzy. For example, there is the key question of whether the training dataset, the model
+weights, or other key elements should be considered independently or collectively as the
+source code for the model/weights that have been trained.10
+AI (specifically the Models that it manifests) include a variety of technologies, each is a vital
+element to all Models.11
+This challenge is not new. In its guidance on use of Open Source software, the US
+Department of Defense distinguished open systems from open standards, that while
+“different from Open Source software, they are complementary and can work well
+together”12:
+“Open standards make it easier for users to (later) adopt an Open Source software
+program, because users of open standards aren’t locked into a particular
+implementation. Instead, users who are careful to use open standards can easily
+switch to a different implementation, including an OSS implementation. … Open
+standards also make it easier for OSS developers to create their projects, because
+the standard itself helps developers know what to do. Creating any interface is an
+effort, and having a predefined standard helps reduce that effort greatly.
+“OSS implementations can help create and keep open standards open. An OSS
+implementation can be read and modified by anyone; such implementations can
+quickly become a working reference model (a “sample implementation” or an
+“executable specification”) that demonstrates what the specification means
+(clarifying the specification) and demonstrating how to actually implement it.
+Perhaps more importantly, by forcing there to be an implementation that others can
+examine in detail, resulting in better specifications that are more likely to be used.
+“OSS implementations can help rapidly increase adoption/use of the open standard.
+OSS programs can typically be simply downloaded and tried out, making it much
+easier for people to try it out and encouraging widespread use. This also pressures
+proprietary implementations to limit their prices, and such lower prices for
+proprietary software also encourages use of the standard.
+12 Office of the Chief Information Officer, U.S. Department of Defense, “DoD Open Source Software
+FAQ”, found at: https://dodcio.defense.gov/open-source-software-faq/.
+11 See NIST, ‘Artificial Intelligence: Overview” at https://www.nist.gov/artificial-intelligence.
+10 The OSI was a participant in the “Columbia Convening on “Openness and AI”, a recent gathering of
+over 40 experts and stakeholders in the field of Artificial Intelligence (AI), sponsored by Mozilla and
+the Columbia Institute of Global Politics. See
+https://blog.mozilla.org/en/mozilla/ai/introducing-columbia-convening-openness-and-ai/#:~:text=Ou
+r%20shared%20hope%20is%20that,shared%20understandings%20and%20next%20steps. A
+Technical Readout (was well as a companion Policy Readout), to be published shortly, explores these
+and related issues.
+4
+“With practically no exceptions, successful open standards for software have OSS
+implementations.”13
+Towards a Unified Vision of what is ‘Open Source AI’
+With these essential differentiating elements in mind, last summer, the OSI kicked off a
+multi-stakeholder process to define the characteristics of an AI system that can be
+confidently and generally understood to be considered as “Open Source”.
+This collaboration utilizes the latest definition of AI system adopted by the Organization for
+Economic Cooperation and Development (OECD), and which has been the foundation for
+NIST’s “AI Risk Management Framework”14 as well as the European Union’s AI Act:15
+“An AI system is a machine-based system that, for explicit or implicit objectives,
+infers, from the input it receives, how to generate outputs such as predictions,
+content, recommendations, or decisions that can influence physical or virtual
+environments. Different AI systems vary in their levels of autonomy and
+adaptiveness after deployment.” 16
+Since its announcement last summer, the OSI has had an open call for papers and held
+open webinars in order to collect ideas from the community describing precise problem
+areas in AI and collect suggestions for solutions.17 More than 6 community reviews – in
+Europe, Africa, and various locations in the US – have taken place in 2023, coinciding with a
+first draft of the Open Source AI Definition.18 This year, the OSI has coordinated working
+groups to analyze various foundation models, released three more drafts of the Definition,
+18 The Open Source AI Definition – draft v. 0.0.6
+https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-6.
+17 A chronology of relevant activity can be followed at:
+https://opensource.org/deepdive#see_all_we_achieved_in_2023.
+16 "OECD Recommendation of the Council on Artificial Intelligence
+https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449.
+15 “OECD updates definition of Artificial Intelligence ‘to inform EU’s AI Act’”, Euractive.com, November
+9, 2023 (updated: November 14, 2023), found at:
+https://www.euractiv.com/section/artificial-intelligence/news/oecd-updates-definition-of-artificial-int
+elligence-to-inform-eus-ai-act/.
+14 Found at: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf. January 2023 by (Adapted from:
+OECD Recommendation on AI:2019; ISO/IEC 22989:2022)”.
+13 Ibid. See “Q: How does Open Source software work with open systems/open standards?”, found
+at:
+https://dodcio.defense.gov/open-source-software-faq/#q-how-does-open-source-software-work-wit
+h-open-systemsopen-standards.
+5
+hosted bi-weekly public town halls to review and continues to get feedback from a wide
+variety of stakeholders, including:
+●
+System Creators (makes AI system and/or component that will be studied,
+used, modified, or shared through an Open Source license;
+●
+License Creators (writes or edits the Open Source license to be applied to the
+AI system or component; includes compliance;
+●
+Regulators (writes or edits rules governing licenses and systems (e.g.
+government policy-maker); Licensees (seeks to study, use modify, or share an
+Open Source AI system (e.g. AI engineer, health researcher, education
+researcher);
+●
+End Users (consumes a system output, but does not seek to study, use,
+modify, or share the system (e.g., student using a chatbot to write a report,
+artist creating an image);
+●
+Subjects (affected upstream or downstream by a system output without
+interacting with it intentionally; includes advocates for this group (e.g. people
+with loan denied, or content creators.
+What is Open Source AI?
+An Open Source AI is an AI system made available to the public under terms that grant the
+freedoms to:
+●
+Use the system for any purpose and without having to ask for permission.
+●
+Study how the system works and inspect its components.
+●
+Modify the system for any purpose, including to change its output.
+●
+Share the system for others to use with or without modifications, for any
+purpose.
+Precondition to exercise these freedoms is to have access to the preferred form to make
+modifications to the system.19
+The OSI expects to wrap up and report the outcome of in-person and online meetings and
+anticipates having the draft endorsed by at least 5 reps for each of the stakeholder groups
+with a formal announcement of the results in late October.
+To address the need to define rules for maintenance and review of this new Open Source
+AI Definition, the OSI Board of Directors20 approved the creation of a new committee to
+20 The OSI is managed by a member-elected board of directors that is the ultimate authority
+responsible for the organization. More information on the OSI board and governance can be found
+at: https://opensource.org/board.
+19 The latest drafts can always be found on opensource.org/deepdive/drafts.
+6
+oversee the development of the Open Source AI Definition, approve version 1.0, and set
+rules for the maintenance of Definition.
+Some preliminary observations based on these efforts to date:
+●
+It is generally recognized, as indicated above, that the Open Source Definition
+as created for software does not completely cover this new era of Open
+Source AI. This is not a software-only issue and is not something that can be
+solved by applying the same exact terms in the new territory of defining
+Open Source AI. The Open Source AI definition will start from the core
+motivation of the need to ensure users of AI systems retain their autonomy
+and personal agency.
+●
+To the greatest degree practical, Open Source AI should not be limited in
+scope, allowing users the right to adopt the technology for any purpose. One
+of the key lessons and underlying successes of the Open Source Definition is
+that field-of-use restrictions deprive creators of software to utilize tools in a
+way to affect positive outcomes in society.
+●
+Reflecting on the past 20-to-30 years of learning about what has gone well
+and what hasn’t in terms of the open community and the progress it has
+made, it’s important to understand that openness does not automatically
+mean ethical, right or just. Other factors such as privacy concerns and safety
+when developing open systems come into play, and in each element of an AI
+model – and when put together as a system — there is an ongoing tension
+between something being open and being safe, or potentially harmful.
+●
+Open Source AI systems lower the barrier for stakeholders outside of large
+tech companies to shape the future of AI, enabling more AI services to be
+built by and for diverse communities with different needs that big companies
+may not always address.
+●
+Similarly, Open Source AI systems make it easier for regulators and civil
+society to assess AI systems for compliance with laws protecting civil rights,
+privacy, consumers, and workers. They increase transparency, education,
+testing and trust around the use of AI, enabling researchers and journalists
+to audit and write about AI systems’ impacts on society.
+●
+Open source AI systems advance safety and security by accelerating the
+understanding of their capabilities, risks and harms through independent
+research, collaboration, and knowledge sharing.
+●
+Open source AI systems promote economic growth by lowering the
+barrier for innovators, startups, and small businesses from more diverse
+communities to build and use AI. Open models also help accelerate
+scientific research because they can be less expensive, easier to
+fine-tune, and supportive of reproducible research.
+7
+**************
+The OSI looks forward to working with NTIA as it considers the comments to this RFI, and
+stands ready to participate in any follow on discussions to this or the general topic of ‘Dual
+Use Foundation Artificial Intelligence Models With Widely Available Model Weights’. As
+shared above, it is essential that federal policymakers encourage Open Source AI models to
+the greatest extent possible,21 and work with organizations like the OSI and others who are
+endeavoring to create a unified, recognized definition of Open Source AI.
+Respectfully submitted,
+THE OPEN SOURCE INITIATIVE
+For more information, contact:
+Stefano Maffulli, Executive Director
+stefano@opensource.org
+Deb Bryant, US Policy Director
+deb.bryant@opensource.org
+21 “Openness and Transparency in AI Provide Significant Benefits for Society”, Joint Letter from civil
+society organizations to Secretary Gina Raimundo (U.S. Department of Commerce), March 25,2024,
+found at:
+https://cdt.org/wp-content/uploads/2024/03/Civil-Society-Letter-on-Openness-for-NTIA-Process-Mar
+ch-25-2024.pdf.
+8

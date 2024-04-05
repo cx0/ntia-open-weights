@@ -1,0 +1,380 @@
+ 
+ 
+ 
+ 
+ 
+600 14th St. NW, Suite 300 
+Washington, D.C. 20005 
+March 27, 2024 
+Department of Commerce 
+NaƟonal TelecommunicaƟons and InformaƟon AdministraƟon 
+1401 ConsƟtuƟon Ave, NW 
+Washington, DC 20230 
+Subject: NTIA–2023–0009 - Dual Use FoundaƟon ArƟﬁcial Intelligence Models with Widely Available 
+Model Weights 
+Dear Administrator Davidson,  
+On behalf of InternaƟonal Business Machines CorporaƟon (IBM), we welcome the opportunity to 
+respond to the NaƟonal TelecommunicaƟons and InformaƟon AdministraƟon’s (NTIA) request for 
+comment on dual use foundaƟon arƟﬁcial intelligence models with widely available model weights. The 
+topic is a criƟcal one, and NTIA’s recommendaƟons will have an impact on the U.S.’s conƟnued 
+leadership in this emerging technology. As the agency evaluates these challenging quesƟons, we 
+recommend that NTIA:  
+• 
+Ensure that any regulaƟons designed to miƟgate AI safety risks posed by widely available model 
+weights follow the science, rather than pre-empt it; 
+• 
+Work with NIST and other stakeholders to co-develop and test precise regulatory intervenƟons 
+that miƟgate speciﬁc AI safety risks; and 
+• 
+Preserve and prioriƟze the criƟcal beneﬁts of open innovaƟon ecosystems for AI for increasing AI 
+safety, advancing naƟonal compeƟƟveness, and promoƟng democraƟzaƟon and transparency of 
+this technology.   
+IBM commends NTIA for its thorough approach to invesƟgaƟng these challenging quesƟons around the 
+potenƟal risks and beneﬁts of dual-use foundaƟon models with widely available model weights. IBM 
+strongly believes that while not every AI model can or will be “open,” protecƟng an open innovaƟon 
+ecosystem for AI in which model weights are widely available should be policymakers’ highest priority for 
+advancing U.S. leadership in AI. AddiƟonally, IBM recommends NTIA acknowledge the lack of robust 
+scienƟﬁc evidence that would be suﬃcient to jusƟfy any restricƟons on an open innovaƟon ecosystem 
+for AI.  
+IBM has been a global leader in invesƟgaƟng and advancing the potenƟal of AI since the term “arƟﬁcial 
+intelligence” was coined at the seminal conference at Dartmouth University which IBM cosponsored in 
+1956.1 We look forward to sharing our experƟse with policymakers to maximize the beneﬁts AI will oﬀer, 
+so long as it is deployed in safe and trustworthy manner.  
+Respecƞully,  
+ 
+Darío Gil  
+Senior Vice President and Director, IBM Research 
+ 
+ 
+1 htps://home.dartmouth.edu/about/arƟﬁcial-intelligence-ai-coined-dartmouth 
+ 
+ 
+ 
+ 
+ 
+ 
+IBM urges policymakers and all AI stakeholders to embrace a degree of epistemic humility when 
+evaluaƟng the potenƟal risks of dual-use foundaƟon models with widely evaluable model weights. 
+Policymakers are right to want to minimize the risk of harm that AI could pose. However, there is a 
+glaring absence of evidence suggesƟng that many AI safety risks – parƟcularly existenƟal risks – are 
+imminent or even likely, or that widely available model weights could increase them. For example, a 
+recent study led by researchers at Stanford University and Princeton University found litle to no 
+evidence supporƟng the argument that widely available model weights posed any marginal increase in 
+societal risk across key categories, such as biosecurity and disinformaƟon.2  
+This is not to say that safety risks of dual-use foundaƟon models, including those potenƟally exacerbated 
+by the widely available model weights, will not or cannot emerge as this technology matures. But 
+policymakers should recognize three criƟcal factors that jusƟfy a more prudent approach than taking 
+early acƟon to restrict access to model weights: 
+• 
+The science of evaluaƟng AI models for potenƟal safety risks is extremely immature. The U.S., 
+United Kingdom, and Japan have taken the laudable step to launch AI Safety InsƟtutes to 
+speciﬁcally develop “science-based and empirically backed guidelines and standards for AI 
+measurement and policy, laying the foundaƟon for AI safety across the world.”3 UnƟl this 
+science is more mature and such guidelines actually exist, decisions about how to address 
+potenƟal risks will be necessarily under-informed.  
+• 
+Open access to model weights will be a key driver of miƟgaƟons to AI safety risks. 
+Undermining an open ecosystem around AI, in which a wide and diverse group of stakeholders 
+has the freedom to scruƟnize, break down, and improve upon these technologies, would 
+signiﬁcantly increase the U.S.’ risk exposure to AI by sacriﬁcing one of our most eﬀecƟve 
+resources for combaƫng risk.  
+• 
+The broad economic and social beneﬁts of openness are overwhelming. Any restricƟons on 
+access to model weights will have signiﬁcant downstream eﬀects that would erode open 
+ecosystems in the US and globally. Such restricƟons would hurt U.S. naƟonal security and 
+economic leadership, enable anƟcompeƟƟve market dynamics, and create signiﬁcant barriers to 
+the democraƟzaƟon and transparency of this criƟcal technology.  
+NTIA also asks for input on potenƟal regulatory models that could increase the beneﬁts and/or decrease 
+the risk of dual use foundaƟon models with widely available model weights. One model worth exploring 
+is partnering with the NIST AI Safety InsƟtute (AISI) to develop a “regulatory sandbox for regulaƟon,” 
+rather than a sandbox for technology development. Similar iniƟaƟves have proven successful in other 
+countries, such as the IMDA AI Verify FoundaƟon in Singapore, which houses AI Verify – “an AI 
+governance tesƟng framework and soŌware toolkit that validates the performance of AI systems against 
+a set of internaƟonally recognised principles through standardised tests.”4 Eﬀorts such as AI Verify and 
+other regulatory sandboxes are vital tools for promoƟng iteraƟve developments to regulatory  
+ 
+2 htps://crfm.stanford.edu/open-fms/ 
+3 htps://www.nist.gov/arƟﬁcial-intelligence/arƟﬁcial-intelligence-safety-insƟtute 
+4 htps://aiverifyfoundaƟon.sg/what-is-ai-verify/ 
+ 
+ 
+ 
+ 
+ 
+ 
+frameworks, and oﬀer the signiﬁcant beneﬁt of being ﬂexible, adapƟve, and growth- and evoluƟon-
+oriented.  
+Novel regulatory approaches may be warranted at some point to address potenƟal risks of foundaƟon 
+models, but the consequences of an imprecise approach to regulaƟon are too great to risk untested 
+soluƟons. As NIST works to develop the scienƟﬁc understanding of idenƟfying and evaluaƟng AI safety 
+risks, an NTIA-led pilot that works with NIST to test and iterate on regulatory responses to novel risks not 
+already addressed by exisƟng regulatory frameworks would be extremely beneﬁcial.  
+Another regulatory model worth exploring as part of this sandbox approach is creaƟng a toolbox of 
+regulatory soluƟons that could be leveraged if and when certain milestones in the science of AI safety 
+evaluaƟons are achieved. This “condiƟonal regulaƟon” approach should focus on domains of AI that 
+many believe to be intrinsically higher risk, such as bioengineering.5 While it is intuiƟve that an AI model 
+capable of generaƟng novel molecular structures for pharmaceuƟcal research might be able to also 
+design dangerous biological agents, there are no widely-agreed upon, standardized processes for 
+empirically detecƟng this capability in a model, nor evaluaƟng whether access to such a model could 
+increase marginal societal risk of harm. As NIST’s AI Safety InsƟtute develops these processes and 
+evaluaƟons, NTIA could propose relevant regulatory agencies work with the InsƟtute to co-develop and 
+test regulatory intervenƟons precisely targeted to miƟgate such risks that would only go into eﬀect aŌer 
+this scienƟﬁcally-grounded understanding is established.  
+Just as IBM is working with NIST through the AI Safety InsƟtute ConsorƟum to advance the science of 
+evaluaƟng and miƟgaƟng AI safety risks, IBM is eager to work with NTIA and other policymakers and 
+stakeholders to apply that science to risk- and evidence-based regulatory intervenƟons. 
+What, if any, are the risks associated with widely available model weights? 
+The main risk commonly associated with widely available model weights is that it can enable bad actors 
+to modify or remove built in guardrails intended to prevent misuse. This concern does not acknowledge 
+the fact that future innovaƟons – themselves enabled by access to widely available model weights – 
+could reduce this risk.  
+ 
+It is also important to recognize that these risks do not exist in a vacuum. While a bad actor could 
+theoreƟcally modify an open source model to perform malicious acƟvity, such as generaƟng malware 
+that can steal conﬁdenƟal informaƟon, such acƟviƟes are sƟll criminal oﬀenses, regardless of whether 
+the malware was AI-generated or not. Of course, malicious hacking sƟll occurs even though it is illegal. 
+Nonetheless, legal and regulatory frameworks that impose penalƟes for harmful applicaƟons of a 
+technology can sƟll address both the risks and the harms associated with such acƟviƟes, regardless of 
+the tools bad actors choose to employ in such criminal enterprises.  
+ 
+ 
+5 htps://www.gov.uk/government/publicaƟons/ai-safety-summit-introducƟon/ai-safety-summit-introducƟon-
+html#scope-of-the-ai-safety-summit-what-is-fronƟer-ai 
+ 
+ 
+ 
+ 
+ 
+ 
+CriƟcally, the NIST AISI is tasked with idenƟfying these risks. While responses to this Request for 
+Comment may help shape and advance this work, NTIA should defer to NIST’s determinaƟons when 
+completed to ensure that any potenƟal downstream regulaƟon is truly evidence-based. 
+How do these risks compare to those associated with closed models? 
+It is naïve to assume that bad actors – state actors or otherwise – will be unable to leverage AI to cause 
+harm just because they do not have access to model weights. RestricƟng access to model weights by 
+requiring all interacƟon with an AI model to go through an API, for example, has not proven eﬀecƟve at 
+reducing risk. A harassment campaign devoted to generaƟng and disseminaƟng deepfake pornography 
+of Taylor SwiŌ and other celebriƟes leveraged consumer-facing image generaƟon tools that processed 
+user requests through an API to generate this imagery.6 While closed models may someƟmes introduce 
+fricƟon into the process of using AI for undesirable purposes, it has not proven to be nearly as durable or 
+robust an approach to prevenƟng AI safety risks as many advocates of restricƟng access to model 
+weights claim it to be.  
+AddiƟonally, as Arvind Narayanan and Sayash Kapoor of Princeton University note, “AI safety” is not a 
+property of a model, but a contextually dependent evaluaƟon based on mulƟple factors.7 How a model 
+is released, including whether model weights are made widely available, can be a relevant factor in 
+evaluaƟng safety, but there is simply not suﬃcient evidence to indicate that open release strategies 
+marginally increase risks.8 Thus, it is diﬃcult to draw any meaningful contrast between simply “open” 
+and “closed” models in terms of safety risk.  
+This highlights the signiﬁcant need for addiƟonal clarity and nuance in how stakeholders talk about “AI 
+safety” and “AI risk.” Just as “safety” is not a model property, many of the risks of AI are not unique to AI, 
+yet are discussed as AI-speciﬁc challenges that can be addressed at the technology layer, rather than the 
+applicaƟon layer, with AI-speciﬁc regulatory soluƟons.9 We know this is not the case for many of the 
+most prominent risks of AI, such as malicious use of deepfakes – while it is true generaƟve AI can 
+exacerbate these harms, many soluƟons are straighƞorward and are technology neutral, centered on 
+holding bad actors liable for the harm they cause.10 The NIST AI Safety InsƟtute is tasked with addressing 
+many of these quesƟons surrounding taxonomy, and we believe that other agencies and stakeholders 
+can and should play a meaningful role in that process. 
+What, if any, risks could result from diﬀerences in access to widely available models across diﬀerent 
+jurisdicƟons? 
+RestricƟons on access to model weights, which if imposed will vary across jurisdicƟons, are unlikely to 
+meaningfully address AI safety risks and could pose signiﬁcant unintended consequences.  
+ 
+6 htps://www.nyƟmes.com/2024/02/05/business/media/taylor-swiŌ-ai-fake-images.html 
+7 htps://www.aisnakeoil.com/p/ai-safety-is-not-a-model-property 
+8 htps://crfm.stanford.edu/open-fms/ 
+9 htps://newsroom.ibm.com/Whitepaper-A-Policymakers-Guide-to-FoundaƟon-Models 
+10 htps://newsroom.ibm.com/Blog-Heres-What-Policymakers-Can-Do-About-Deepfakes 
+ 
+ 
+ 
+ 
+ 
+ 
+First, model weights are easily portable digital ﬁles that can be disseminated undetected with minimal 
+cost on consumer hardware and communicaƟon plaƞorms. Thus, a bad actor could easily disseminate 
+model weights across jurisdicƟons.  
+Second, restricƟons on access to model weights in a parƟcular jurisdicƟon will only deter good actors 
+from accessing them in that jurisdicƟon. As described in response to other quesƟons, these “good 
+actors” in open ecosystems are criƟcal drivers of innovaƟon, using AI to deliver greater economic and 
+social beneﬁts and advancing AI safety research. Thus, one of the most likely outcomes of jurisdicƟonal 
+variaƟons in access to model weights is that the most restricƟve jurisdicƟons will also be the most 
+limited in their ability to beneﬁt from AI.  
+What beneﬁts do open model weights oﬀer for compeƟƟon and innovaƟon, both in the AI 
+marketplace and in other areas of the economy? In what ways can open dual-use foundaƟon models 
+enable or enhance scienƟﬁc research, as well as educaƟon/training in computer science and related 
+ﬁelds? 
+Open innovaƟon ecosystems in which model weights are widely available can oﬀer signiﬁcant economic 
+and social beneﬁts for the AI ecosystem and beyond.11  
+The most obvious beneﬁt of an open ecosystem is that it lowers the barrier to entry for compeƟƟon and 
+innovaƟon. By making many of the technical resources necessary to develop and deploy AI more readily 
+available, including model weights, open ecosystems enable small and large ﬁrms alike, as well as 
+research insƟtuƟons, to develop new and compeƟƟve products and services without steep, and 
+potenƟally prohibiƟve, upfront costs. And there is tremendous demand from businesses for these kinds 
+of resources. Not only does IBM rely on collaboraƟve technologies like open source, we also make them 
+available through IBM’s watsonx plaƞorm, as our clients value access to a variety of powerful tools and 
+models from the open innovaƟon community like Meta’s Llama2-chat 70 billion parameter model 
+alongside our proprietary oﬀerings for specialized enterprise use cases.12 
+Openness and innovaƟon go hand-in-hand, and open ecosystems can drive AI advancements in three key 
+ways.  
+First, more compeƟƟon means everyone must raise the bar. Companies should compete based on how 
+well they can tailor and deploy AI in valuable ways, rather than on how eﬀecƟvely they can hoard the 
+resources and enact barriers of entry to develop AI.  
+Second, more access to AI means more stakeholders can idenƟfy opportuniƟes to improve AI 
+technologies and more easily pursue novel and valuable applicaƟons for AI. Combined, an open AI 
+ecosystem is dramaƟcally more innovaƟve, inclusive, and compeƟƟve than a closed one. 
+ 
+ 
+11 htps://www.ibm.com/policy/why-we-must-protect-an-open-innovaƟon-ecosystem-for-ai/ 
+12 htps://developer.ibm.com/arƟcles/awb-the-open-source-ecosystem-of-watsonx/; 
+htps://newsroom.ibm.com/2023-08-09-IBM-Plans-to-Make-Llama-2-Available-within-its-Watsonx-AI-and-Data-
+Plaƞorm  
+ 
+ 
+ 
+ 
+ 
+ 
+Third, just as openness drives compeƟƟon, it also drives democraƟzaƟon. Open ecosystems mean more 
+opportuniƟes for anyone to explore, test, modify, study, and deploy AI, which can dramaƟcally lower the 
+bar to deploying AI for socially beneﬁcial applicaƟons. This is why IBM partnered with NASA to develop a 
+geospaƟal foundaƟon model and make it available under an open source license.13 The model can 
+analyze NASA’s geospaƟal data up to four Ɵmes faster than state-of-the-art deep-learning models, with 
+half as much labeled data, making it a powerful tool to accelerate climate-related discoveries. Since it is 
+openly available, anyone – including non-governmental organizaƟons, governments, and other 
+stakeholders – can leverage this model freely to drive eﬀorts to build resilience to climate change. 
+It is much easier to learn about a subject when you can access the materials for free. An open innovaƟon 
+ecosystem unleashes a signiﬁcantly broader pool of AI talent, as students, academics, and exisƟng 
+members of the workforce can more easily access the resources necessary to acquire AI skills. This is 
+part of the reason IBM contributes hundreds of open models and datasets to Hugging Face, the leading 
+open source collaboraƟon plaƞorm for the machine learning community building the future of AI.14 IBM 
+has also commited to training 2 million people in AI by 2026, with a focus on underrepresented 
+communiƟes, by partnering with universiƟes around the world to provide AI training resources and by 
+making AI coursework available for free on our SkillsBuild plaƞorm.15 
+How can making model weights widely available improve the safety, security, and trustworthiness of 
+AI and the robustness of public preparedness against potenƟal AI risks? 
+As with open source soŌware, open models can enable a higher level of scruƟny from the community, 
+greatly increasing the likelihood that vulnerabiliƟes are idenƟﬁed and patched. This means that open AI 
+models can be as trusted, secure, and ﬁt for use in diﬀerent contexts as proprietary models. 
+Openness can also drive innovaƟons that can improve safety. For example, Stanford researchers 
+developed a novel technique called “meta-learned adversarial censoring (MLAC)” that can greatly 
+impede eﬀorts to manipulate a model to perform harmful acƟvity, even with access to model weights.16 
+These researchers themselves relied on open model weights for a language model to test and evaluate 
+their technique – a feat that would not have been possible were model weights restricted.  
+In some contexts, AI safety can also depend on the ability for diverse stakeholders to scruƟnize and 
+evaluate models to idenƟfy any vulnerabiliƟes, idenƟfy undesirable behaviors, and ensure they are 
+funcƟoning properly. However, without “deep access,” which includes access to model weights, these 
+evaluaƟons will be severely limited in their eﬀecƟveness.17  
+At a high level, wide access to model weights means more good actors, including those in governments, 
+industry, civil society, academia, and the general public, can leverage AI to miƟgate the potenƟal impacts 
+of harmful applicaƟons of AI. RestricƟons on access to open model weights will mean suﬃciently-
+ 
+13 htps://research.ibm.com/blog/nasa-hugging-face-ibm 
+14 htps://huggingface.co/ibm 
+15 htps://newsroom.ibm.com/2023-09-18-IBM-Commits-to-Train-2-Million-in-ArƟﬁcial-Intelligence-in-Three-Years,-
+with-a-Focus-on-Underrepresented-CommuniƟes 
+16  htps://arxiv.org/pdf/2211.14946.pdf 
+17 htps://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/6/336/ﬁles/2024/03/Safe-Harbor-0e192065dccf6d83.pdf 
+ 
+ 
+ 
+ 
+ 
+moƟvated bad actors will sƟll be able to leverage AI to cause harm, whereas good actors, who respect 
+the rule of law, will not be able to suﬃciently build resilience to these harms.  
+Are there eﬀecƟve ways to create safeguards around foundaƟon models, either to ensure that model 
+weights do not become available, or to protect system integrity or human well-being (including 
+privacy) and reduce security risks in those cases where weights are widely available? 
+There are emerging techniques to create safeguards for foundaƟon models when weights are widely 
+available. In addiƟon to the Stanford University researchers’ MLAC technique described earlier, Meta has 
+developed a watermarking technique called Stable Signature that embeds a watermark in generated 
+images.18 Watermarking is currently an unreliable method for detecƟng syntheƟc content as watermarks 
+can typically be easily edited out by end users. Stable Signature applies a watermark, which could 
+indicate the model version and user, at the model level in a way that is not aﬀected by addiƟonal ﬁne-
+tuning or image manipulaƟon.19  
+What are the prospects for developing eﬀecƟve safeguards in the future? 
+FoundaƟon models are sƟll an emerging technology and there will be enormous amounts of innovaƟon 
+over the coming decade. While it is impossible to predict exactly what kinds of technologies will be 
+developed, novel safeguards, new types of algorithm architectures, methods for governance, 
+watermarking and detecƟon techniques, and more will emerge that will have signiﬁcant posiƟve impact 
+for safety.  
+ 
+Fostering the development of these safeguards should be a top priority for the NIST AISI. And criƟcally, 
+the AISI and the enƟre AI ecosystem will be signiﬁcantly more successful in developing these safeguards 
+if model weights are widely available.   
+In which ways is open-source soŌware policy analogous (or not) to the availability of model weights? 
+Are there lessons we can learn from the history and ecosystem of open-source soŌware, open data, 
+and other “open” iniƟaƟves for open foundaƟon models, parƟcularly the availability of model 
+weights? 
+There are many lessons to be learned from past debates about the safety and security of open-source 
+soŌware (OSS) that can add clarity to debates around the perceived safety risks of open foundaƟon 
+models. Of these, the most important is that openness has always been a force for improving safety and 
+security. For decades, increased transparency and access to source code has enabled a broad and diverse 
+stakeholder community to idenƟfy and ﬁx vulnerabiliƟes, increase performance and resilience, and raise 
+the bar for security overall.  
+For example, in 2000, Red Hat and the U.S. NaƟonal Security Agency (NSA) developed Security-Enhanced 
+Linux (SELinux), a Linux kernel module that can modify Linux distribuƟons to provide robust security 
+features.20 SELinux is both made available as OSS and is built on top of exisƟng OSS – representaƟve of 
+the feedback loop for improving security that openness can enable.  
+ 
+18 htps://ai.meta.com/blog/stable-signature-watermarking-generaƟve-ai/ 
+19 htps://ai.meta.com/blog/stable-signature-watermarking-generaƟve-ai/ 
+20 htps://www.redhat.com/en/topics/linux/what-is-selinux 
+ 
+ 
+ 
+ 
+ 
+Present-day arguments that access to model weights increase safety risks share parallels with debunked 
+past arguments that providing broad access to source code could make it easier for bad actors to exploit 
+it. While policymakers are right to be asking the quesƟon of whether potenƟally dangerous misuse of AI 
+will be enabled by access to model weights, they should be careful to acknowledge that similar concerns 
+about OSS have rouƟnely been proven wrong, and that openness was a key driver in miƟgaƟng safety 
+and security concerns.  
+What security, legal, or other measures can reasonably be employed to reliably prevent wide 
+availability of access to a foundaƟon model’s weights, or limit their end use? 
+There are unlikely any legal measures that can reliably or sustainably limit access to model weights for 
+highly capable models on a global scale. Two of the most commonly proposed soluƟons – government-
+issued licenses to develop or operate a highly-capable model and export controls on model weights -- 
+would both come with extreme consequences for U.S. compeƟƟveness. And as described elsewhere, not 
+only would such eﬀorts do litle to advance AI safety in the short term, but they risk undermining it in 
+the longer term by limiƟng the ability for good actors to contribute to AI safety soluƟons and to take 
+advantage of AI for beneﬁcial applicaƟons.  
+What role, if any, should the U.S. government take in seƫng metrics for risk, creaƟng standards for 
+best pracƟces, and/or supporƟng or restricƟng the availability of foundaƟon model weights? Should 
+other government or non-government bodies, currently exisƟng or not, support the government in 
+this role? Should this vary by sector? 
+Standards-seƫng and scienƟﬁc agencies, parƟcularly NIST through its AI Safety InsƟtute, have a criƟcally 
+important role to play in developing methods to evaluate AI models, measure risk, and develop 
+safeguards. This work should be conducted in close collaboraƟon with other agencies and stakeholders 
+outside of government. The AI Safety InsƟtute ConsorƟum is a worthwhile model which, while sƟll new, 
+shows promise to ensure that these standards are informed by robust scienƟﬁc evidence and community 
+consensus.  
+U.S. agencies should work with their counterparts around the world to share best pracƟces, avoid 
+pursuing redundant lines of research, and facilitate the development and mutual adopƟon of consensus 
+standards around AI risk. Governments should not create a new internaƟonal body, as some have 
+proposed, to oversee and steer this work globally. Proposed models such as the InternaƟonal Atomic 
+Energy Agency (IAEA), which promotes responsible use of nuclear technology globally, are simply not 
+useful to adopt for AI, and an internaƟonal body would quickly become heavily poliƟcized.  
+NoƟng that E.O. 14110 grants the Secretary of Commerce the capacity to adapt the threshold, is the 
+amount of computaƟonal resources required to build a model, such as the cutoﬀ of 10^26 integer or 
+ﬂoaƟng-point operaƟons used in the ExecuƟve Order, a useful metric for thresholds to miƟgate risk in 
+the long-term, parƟcularly for risks associated with wide availability of model weights? 
+Compute requirements are not a useful metric for idenƟfying safety risks. First, as described above, AI 
+safety is a context-dependent evaluaƟon of mulƟple factors, not a disƟnct property of a model. Second, 
+compute requirements do not necessarily indicate dangerous capabiliƟes. As the ﬁeld matures, greater 
+levels of performance are being achieved with smaller and smaller models. Any compute threshold  
+ 
+ 
+ 
+ 
+ 
+ 
+intended to diﬀerenƟate between low and high capability models will quickly become obsolete for this 
+reason.  
+Conclusion 
+NTIA should not consider any restricƟons on how model weights can be distributed or accessed unƟl it 
+has the necessary scienƟﬁc evidence to understand if such restricƟons would be necessary, eﬀecƟve, 
+and worth the tradeoﬀs that would come with them. NTIA should acknowledge that it does not yet have 
+this evidence and should work with the NIST AISI and other stakeholders to help develop it. At present, 
+any restricƟons on the open innovaƟon ecosystem for AI would signiﬁcantly hinder U.S. leadership in AI 
+without meaningfully addressing AI safety risks.  

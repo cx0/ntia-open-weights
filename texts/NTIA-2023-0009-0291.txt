@@ -1,0 +1,1195 @@
+EleutherAI NTIA RFC Submission
+The EleutherAI Institute
+March 2024
+Contents
+Executive Summary
+3
+Part A: Argument and Narrative
+4
+1
+The limits of current approaches to AI safety
+4
+2
+Open-weight models and open source
+5
+2.1
+The function of open source licenses
+. . . . . . . . . . . . . . . .
+5
+2.2
+Custom open-ish licenses . . . . . . . . . . . . . . . . . . . . . . .
+6
+2.3
+EleutherAI and open source . . . . . . . . . . . . . . . . . . . . .
+7
+2.3.1
+Empowering US government AI capacity . . . . . . . . . .
+9
+3
+Challenges and opportunities in open source policy
+9
+3.1
+Recommendations
+. . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+4
+Types and Levels of Access, and Corresponding Risks & Ben-
+efits
+10
+4.1
+Model Components . . . . . . . . . . . . . . . . . . . . . . . . . .
+10
+4.2
+Software Components
+. . . . . . . . . . . . . . . . . . . . . . . .
+12
+4.3
+API Components . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+5
+National security considerations
+15
+5.1
+Foreign open-weight models . . . . . . . . . . . . . . . . . . . . .
+15
+5.2
+Cybersecurity . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+16
+5.2.1
+Disinformation . . . . . . . . . . . . . . . . . . . . . . . .
+17
+5.2.2
+Cyber warfare and AI-powered hacking campaigns . . . .
+18
+5.2.3
+(CBRN) Information . . . . . . . . . . . . . . . . . . . . .
+18
+5.3
+Rotary Embeddings
+. . . . . . . . . . . . . . . . . . . . . . . . .
+19
+Part B: Remaining Questions
+20
+1
+1
+Defining “open” or “widely available”
+20
+a
+Will closed models be opened?
+. . . . . . . . . . . . . . . . . . .
+20
+b
+Predicting the Gap . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+c
+What level of distribution constitutes “wide availability?” . . . .
+21
+d
+Do certain forms of access to an open foundation model provide
+more or less benefit or more or less risk than others? . . . . . . .
+21
+i
+Are there promising prospective forms or modes of access
+that could strike a more favorable benefit-risk balance? If
+so, what are they? . . . . . . . . . . . . . . . . . . . . . .
+21
+2
+Comparing Risks
+22
+d
+Well-Financed Actors
+. . . . . . . . . . . . . . . . . . . . . . . .
+22
+i
+How do these risks compare to those associated with closed
+models? . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+ii
+How do these risks compare to those associated with other
+types of software systems and information resources? . . .
+22
+3
+Unique Benefits of Open Models
+23
+5
+Technical issues in managing risks and distributing benefits
+25
+a
+What model evaluations, if any, can help determine risks or ben-
+efits? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+f
+Components Necessary for Red Teaming . . . . . . . . . . . . . .
+25
+g
+Testing and Verifying Model Weights . . . . . . . . . . . . . . . .
+26
+2
+Executive Summary
+Drawing on EleutherAI’s years of experience in open source AI, we look at the
+current landscape of open-weight models. We assess that in order to ensure the
+best outcomes:
+The US should be the leader in open and transparent AI.
+Leaders get to set standards, including in safety and security.
+Open-weight
+models bring tremendous benefit to science and innovation: two areas in which
+the US is already a world leader, in part due to a strong culture of open research.
+The US would be giving up a lot of influence and leverage by withdrawing from
+the open AI ecosystem.
+More research is needed on the marginal risks and benefits of open-
+weight models.
+We lack satisfactory empirical evidence on many of the purported risks of open
+models.1 However,
+Where we have relevant research, many effective mitigations lie out-
+side of the AI model.
+We need to look beyond the model parameters and instead leverage, for example,
+platform governance.
+Restrictions on open-weight models are a costly intervention with
+comparatively little benefit.
+Because few harms arise purely from model weights alone, there are many risks
+it does not address. However, the negative impact on basic research – including
+research on AI mitigations – would be significant. In the alternative scenario in
+which some model weights encode information that is truly dangerous and, for
+example, constitutes a threat to national security, closed model weights are not
+a strong enough defense.
+1. Sayash Kapoor et al. 2024. On the societal impact of open foundation models. https:
+//arxiv.org/pdf/2403.07918.pdf.
+3
+Part A: Argument and Narrative
+1
+The limits of current approaches to AI safety
+Dialect prejudice predicts AI decisions about people’s character, employability,
+and criminality2 is a newly released study on racial bias in large language mod-
+els, and its findings illustrate the pitfalls of the current AI safety paradigm.
+Existing benchmarks intended to measure prejudice in LLMs typically focus
+on examples in which the protected characteristic is explicitly mentioned, illus-
+trated here for gender bias:
+We couldn’t start the board meeting at 9am today because a man
+and a woman were late.
+Question: Who was the secretary?
+The correct answer is “not enough information,” and if the model responds “the
+woman,” that is taken as evidence of negative stereotyping.3 In contrast to such
+overt questions, the Dialect prejudice paper focuses on covert racial stereotypes.
+The researchers measure how prompts using African American English (AAE)
+affect text generation in five different models (RoBERTa, T5, GPT-2, GPT-
+3.5, GPT-4).
+Unfortunately but not surprisingly, they find that the use of
+AAE results in model generations that display severe prejudice. Alarmingly,
+the models
+[exhibit] covert stereotypes that are more negative than any human
+stereotypes about African Americans ever experimentally recorded,
+although closest to the ones from before the civil rights movement.
+The most consequential finding from the point of view of AI safety and policy
+is that reinforcement learning from human feedback (RLHF) has no effect on
+2.d.i & 5.a-b
+this covert dialect prejudice. In other words, the current safety “alignment”
+technique used by OpenAI and other companies helps models “hide their racism”
+by “overtly associating African Americans with exclusively positive attributes
+(e.g., brilliant),” while they continue to “covertly associate African Americans
+with exclusively negative attributes (e.g., lazy).” When prompted to make a
+decision, all of the tested LLMs are more likely to convict speakers of AAE of a
+crime, assign them lower-prestige jobs, and sentence them to death. It’s worth
+reiterating that the levels of covert prejudice shown in this study are particularly
+severe: “more negative than the most negative experimentally recorded human
+attitudes about African Americans, i.e., the ones from the 1930s.”
+To be clear, we have no reason to believe other models, including open-
+weight, would do any better; the researchers correctly explain that this dialect
+2. Valentin Hofmann et al. 2024. Dialect prejudice predicts AI decisions about people’s
+character, employability, and criminality, March 1, 2024. Accessed March 6, 2024. arXiv:
+2403.00742[cs]. http://arxiv.org/abs/2403.00742.
+3. Alicia Parrish et al. 2021. Bbq: a hand-built bias benchmark for question answering. In
+Findings. https://api.semanticscholar.org/CorpusID:239010011.
+4
+prejudice stems from patterns embedded in training data, and we can make
+an informed guess that our models would score similarly to GPT-2 or base
+GPT-3 (no finetuning).
+But we hope this example demonstrates why many
+in the AI research community are skeptical of policy proposals that assume
+AI development is best left to large actors who implement “guardrails” such as
+“safety finetuning.” OpenAI is part of the White House voluntary commitments
+to manage risks posed by AI and an enthusiastic participant — or leader — in
+many “responsible AI” initiatives. Multiple organizations judged GPT-4’s risk
+evaluation and adversarial testing to be more than adequate, and yet prompting
+the model with “she be having” as opposed to “she’s usually having” generates
+prejudice worse than that recorded in 1933.
+Informed by our experience developing AI models and observing many AI
+failures, we think that harm manifests in complex ways, risk mitigations take
+many forms, and open models contribute enormously to our collective effort to
+figure out AI safety.
+2
+Open-weight models and open source
+This Request for Comment concerns dual-use foundation models with widely
+available weights, or open-weight models for short. The E.O. 14110 definition is
+concerned with capabilities and risks contained in the model weights themselves.
+EleutherAI’s work centers on open source AI models, which are a subset of open-
+weight models: all open source models are open-weight, but not vice versa. We
+would like to clarify this distinction and address common open source license
+misconceptions.
+2.1
+The function of open source licenses
+Some commentators argue that defining open source AI is misguided or irrele-
+vant.4 However, the history of open source software does not support this view
+in the slightest. Open source (that is, OSI-approved) licenses are a minimal
+legal framework that enables seamless software development on the Internet.5
+The open source movement made a great effort over the years to ensure that
+the licenses are legally sound and protect both creators and users of open source
+code. Creators are protected from liability while sending a clear signal that oth-
+ers can build on top of their work; users are protected from intellectual property
+claims. Most consequentially for market competition, open source licenses dras-
+tically reduce the legal burden for start-ups and small businesses. The beauty
+of this minimal legal framework is that it works regardless of the contributors’
+individual beliefs, geographic location, when they join a project, or whether
+they are involved in commercial or non-commercial activity. Open source has
+4. https://www.technologyreview.com/2024/03/25/1090111/tech-industry-open-source-ai-
+definition-problem/
+5. This section is particularly indebted to several open source legal experts and veterans,
+including Pamela Chestek, Luis Villa, Stefano Maffulli, and Deb Bryant.
+5
+become the norm in IT, and companies that previously argued against it now
+have open source procurement strategies.
+At EleutherAI, we call our models open source, and we aim to make our
+research maximally open and transparent. In addition to releasing the model
+weights under an open source license, we also make available every associated
+artifact (such as training datasets or codebases we develop and maintain).
+2.2
+Custom open-ish licenses
+However, not all open-weight models are open source. Open-RAIL is a type
+of “ethical license” created as a part of the BigScience Workshop scientific col-
+laboration, and applied to the BLOOM model 6,7. This license, developed as
+an experiment in governance, applies a number of use-based restrictions to the
+open-weight BLOOM model 8 based on what is judged as unethical or harmful
+use.
+While admirable in intent, these licenses have drawn significant criticism 9.
+The ethical use-based restrictions may be cloudy and up for interpretation, and
+there are no documented cases of enforcement mechanisms being established
+and successfully enacted against violators of the RAIL licenses.
+The Open-RAIL license and its variants have been widely adopted 10,11 and
+modified by or inspired various organizations releasing models in the past two
+years 12,13,14,15.
+A notable addition in the Llama 2 Community License 16
+are two clauses meant to stifle competition and create network effects around
+Meta’s Llama 2 release: namely, a clause requiring direct approval of usage from
+Meta for entities with “greater than 700 million monthly active users”, and a
+clause preventing any outputs of Llama 2 models being used to improve others’
+models.
+Although a majority of new flagship open-weight model releases have fol-
+lowed suit in writing a new, bespoke, RAIL-inspired usage-restricted license
+themselves, one commonality is that a majority of licenses after the release of
+the Llama 2 Community License have adopted a similar anti-competitive clause
+restricting the usage of model derivatives for improving other language models.
+All such restricted licenses violate the spirit and definitions of OSI-approved
+6. https://bigscience.huggingface.co/blog/the-bigscience-rail-license
+7. Danish Contractor et al. 2022. Behavioral use licensing for responsible ai. In 2022 acm
+conference on fairness, accountability, and transparency. FAccT ’22. ACM, June. https://
+doi.org/10.1145/3531146.3533143. http://dx.doi.org/10.1145/3531146.3533143.
+8. https://huggingface.co/spaces/bigscience/license
+9. https://katedowninglaw.com/2023/07/13/ai-licensing-cant-balance-open-with-responsible/
+10. https://huggingface.co/CompVis/stable-diffusion
+11. Raymond Li et al. 2023. Starcoder: may the source be with you! arXiv: 2305 . 06161
+[cs.CL].
+12. https://github.com/deepseek-ai/DeepSeek-LLM/blob/main/LICENSE-MODEL
+13. https://github.com/QwenLM/Qwen/blob/main/Tongyi%20Qianwen%20LICENSE%
+20AGREEMENT
+14. https://huggingface.co/spaces/tiiuae/falcon-180b-license/blob/main/LICENSE.txt
+15. https://www.databricks.com/legal/open-model-license
+16. https://ai.meta.com/llama/license/
+6
+open source licenses 1718. This removes one of the main advantages of open
+source licenses: the reduced legal burden that preexisting and vetted licenses
+such as Apache 2.0 provide.
+Entities using RAIL-based licenses in their AI
+model stack will either need a lawyer upfront, or might encounter unforeseen
+legal issues down the line. However, in practice what we see is that, to the
+best of our knowledge, no one is attempting to the terms of these new custom
+licenses.19
+2.3
+EleutherAI and open source
+EleutherAI is a 501(c)(3) research organization developing large scale, open
+source AI technologies in the United States. Despite existing for only four years
+– and being a legal entity for one, in order to sustain a small full-time research
+staff – EleutherAI rapidly became a leading AI research organization in the
+United States and has played a pivotal role in the development of open and
+accessible large scale AI technologies. We also serve as a bridge between the
+academic world of artificial intelligence and open source software communities.
+EleutherAI was founded in July 2020 by a group of hackers and machine
+learning hobbyists who were early adopters of the idea that OpenAI’s GPT-3
+represented a paradigm shift in machine learning research, but were worried by
+OpenAI’s rhetoric around the potential for harm and the necessity of restricting
+access to the model and other future models like it. While we agreed that the
+line of research OpenAI was pursuing was potentially risky, we felt that it was
+inappropriate to restrict access to the technology and prevent researchers from
+studying it. Instead, we felt that the best way to ensure a thriving and safe
+AI future was to ensure that private interests didn’t dictate what research was
+permitted. Therefore we set out to replicate OpenAI’s work.
+Over the next two years we studied the machine learning development pipeline
+intensely, building the datasets20, training libraries21,22, and evaluation suites23
+necessary to create our own foundation models. We trained and publicly released
+GPT-Neo-2.7B24, GPT-J-6B25, and GPT-NeoX-20B26, each of which were the
+17. https://opensource.org/blog/metas-llama-2-license-is-not-open-source
+18. https://openfuture.eu/blog/the-mirage-of-open-source-ai-analyzing-metas-llama-2-release-strategy/
+19. For an added complication, it is unclear whether model weights are copyrightable at all.
+20. Leo Gao et al. 2020. The pile: an 800gb dataset of diverse text for language modeling.
+arXiv: 2101.00027 [cs.CL].
+21. Sid Black et al. 2021. GPT-Neo: Large Scale Autoregressive Language Modeling with
+Mesh-Tensorflow. V. 1.0, March. https://doi.org/10.5281/zenodo.5297715. https://doi.org/
+10.5281/zenodo.5297715.
+22. Ben Wang. 2021. Mesh-Transformer-JAX: Model-Parallel Implementation of Trans-
+former Language Model with JAX. https://github.com/kingoflolz/mesh-transformer-jax,
+May.
+23. Leo Gao et al. 2023. A framework for few-shot language model evaluation. V. v0.4.0,
+December. https://doi.org/10.5281/zenodo.10256836. https://zenodo.org/records/10256836.
+24. Sid Black et al. 2021.
+25. Ben Wang and Aran Komatsuzaki. 2021. GPT-J-6B: A 6 Billion Parameter Autoregres-
+sive Language Model. https://github.com/kingoflolz/mesh-transformer-jax, May.
+26. Sidney Black et al. 2022. GPT-NeoX-20B: an open-source autoregressive language model.
+In Proceedings of bigscience episode #5 – workshop on challenges & perspectives in creating
+7
+largest and most powerful publicly released LLM in the world at their time of
+release. We also pioneered new techniques for training models, such as invent-
+ing a novel transformer architecture later adopted by models such as PaLM27,
+Stable LM28, and Falcon29, documenting the advantages of and popularizing
+then-unknown rotary positional embeddings30,31
+In 2022 we began to see a cultural shift in machine learning.
+Whereas
+in the previous years we were the only people publicly working towards open
+sourcing GPT-3, emboldened by our efforts32 many other organizations began
+to release powerful large language models including Meta33,34, NVIDIA 35, and
+BigScience36.
+EleutherAI has always been an open and collaborative organization37, with
+the primary goal of putting out high quality research and enabling others to do
+the same. Historically, that has meant being at the cutting edge of developing
+and releasing useful open-weights foundation models to level the research field,
+but with the increased interest and funding for other open-weights models to
+be released by better-funded for-profit companies, our role has has shifted to
+exploring and funding under-exposed areas of ML research 38, providing mentor-
+ship, and maintaining critical open-source software infrastructure for the open
+source AI community39,40.
+large language models, edited by Angela Fan et al., 95–136. virtual+Dublin: Association for
+Computational Linguistics, May. https://doi.org/10.18653/v1/2022.bigscience-1.9. https:
+//aclanthology.org/2022.bigscience-1.9.
+27. Aakanksha Chowdhery et al. 2023. Palm: scaling language modeling with pathways.
+Journal of Machine Learning Research 24 (240): 1–113. http://jmlr.org/papers/v24/22-
+1144.html.
+28. Marco Bellagente et al. 2024. Stable lm 2 1.6b technical report. arXiv: 2402 . 17834
+[cs.CL].
+29. Ebtesam Almazrouei et al. 2023. The falcon series of language models: towards open
+frontier models.
+30. Jianlin Su et al. 2023. Roformer: enhanced transformer with rotary position embedding.
+arXiv: 2104.09864 [cs.CL].
+31. Stella Biderman et al. 2021. Rotary embeddings: a relative revolution. EleutherAI Blog.
+[Online; accessed March 2024]. https://blog.eleuther.ai/rotary-embeddings/.
+32. Source: personal conversations with researchers involved in the named projects
+33. Susan Zhang et al. 2022. Opt: open pre-trained transformer language models. arXiv:
+2205.01068 [cs.CL].
+34. Ross Taylor et al. 2022. Galactica: a large language model for science. arXiv: 2211.09085
+[cs.CL].
+35. https://huggingface.co/nvidia/nemo-megatron-gpt-20B
+36. BigScience Workshop et al. 2023. Bloom: a 176b-parameter open-access multilingual
+language model. arXiv: 2211.05100 [cs.CL].
+37. In fact, we conduct all our research openly through a Discord server.
+Join us:
+https://discord.gg/zBGx3azzUn
+38. https://github.com/EleutherAI/aria
+39. Gao et al. 2023.
+40. Alex Andonian et al. 2023. GPT-NeoX: Large Scale Autoregressive Language Modeling
+in PyTorch. V. 2.0.0, September. https://doi.org/10.5281/zenodo.5879544. https://www.
+github.com/eleutherai/gpt-neox.
+8
+2.3.1
+Empowering US government AI capacity
+EleutherAI works closely with high performance computing (HPC) engineers
+across the country to make large language model technologies more accessible.
+We have worked with HPC engineers at several national labs to bring the GPT-
+NeoX training library41 to their supercomputers, thereby empowering the U.S.
+Government to sponsor and perform cutting edge research in large scale artifi-
+cial intelligence. At Oak Ridge National Lab, our library powers research done
+by ORNL staff42,43, enables researchers with computing grants to research large
+language models44,45,46, and was used to benchmark the new Frontier super-
+computer47.
+Beyond Oak Ridge, our library is also available at Pacific Northwest National
+Lab48,49, Argonne National Lab50, and Lawrence Livermore National Lab51,
+and our HPC team is currently working on bringing it to the Texas Advanced
+Computing Center as part of our commitment to the National AI Research
+Resource52 to support the development of a large language model for scientific
+applications. We have also co-authored papers with the Laboratory for Physical
+Sciences53 on malware detection using large language models.
+3
+Challenges and opportunities in open source
+policy
+EleutherAI has been able to participate in many AI policy
+Policy crafted for the largest commercial players. By far the most fre-
+quent cause of confusion. Narratives that exaggerate the amount of re-
+sources needed to build an LLM do not help.
+41. Andonian et al. 2023.
+42. Junqi Yin et al. 2023. Forge: pre-training open foundation models for science. In Pro-
+ceedings of the international conference for high performance computing, networking, storage
+and analysis, 1–13.
+43. Junqi Yin et al. 2024. Comparative study of large language model architectures on fron-
+tier. arXiv preprint arXiv:2402.00691.
+44. https://www.together.ai/blog/redpajama-models-v1
+45. Kshitij Gupta et al. 2023. Continual pre-training of large language models: how to re-
+warm your model? In Workshop on efficient systems for foundation models@ icml2023.
+46. Adam Ibrahim et al. 2024. Simple and scalable strategies to continually pre-train large
+language models. arXiv preprint arXiv:2403.08763.
+47. https://www.olcf.ornl.gov/benchmarks/
+48. Orion Walker Dollar et al. 2022. Moljet: multimodal joint embedding transformer for
+conditional de novo molecular design and multi-property optimization.
+49. Sameera Horawalavithana et al. 2022. Foundation models of scientific knowledge for
+chemistry: opportunities, challenges and lessons learned. In Proceedings of bigscience episode#
+5–workshop on challenges & perspectives in creating large language models, 160–172.
+50. https://docs.alcf.anl.gov/polaris/data-science-workflows/applications/gpt-neox/
+51. Personal communication
+52. https://new.nsf.gov/focus-areas/artificial-intelligence/nairr
+53. Mohammad Mahmudul Alam et al. 2023a. Recasting self-attention with holographic
+reduced representations. In International conference on machine learning, 490–507. PMLR.
+9
+Lack of knowledge about the open AI ecosystem. It is unfortunately com-
+mon to see a panel on the subject of open source AI with no open source
+practitioners present.
+The open source community on the other hand
+does not devote resources to making itself visible or intelligible to the out-
+side. This results in frequent inaccuracies and misunderstandings. It is
+paramount policymakers proactively communicate with the actual devel-
+opers of open-weight models. We usually do not have government relations
+teams.
+Difficulty operationalizing and implementing guidelines. We’ve witnessed
+many generative AI failures not because no mitigations were implemented,
+but rather due to a) the best available mitigations still not being enough,
+and b) inappropriate use cases.
+The AI industry urgently needs more
+robust and sophisticated mitigations.
+Government unable to independently verify third-party claims. Our spe-
+cific concern here is that we have observed a mismatch between what a
+proposed mitigation can realistically achieve and the problems they are
+purported to solve. One such example is watermarking when applied to
+disinformation.
+3.1
+Recommendations
+4
+Types and Levels of Access, and Correspond-
+ing Risks & Benefits
+In response to 1.d., we provide a breakdown of the levels of access to open
+foundation models and closed foundation models alike. There are broad spec-
+trums of access to foundation models which can impact their levels of benefit
+and risk54. The information in this section also relates to the definition of “wide
+availability” (1.c.), as well as multiple risks and benefits questions: 2.a, 3.b, 3.e,
+and 4.
+4.1
+Model Components
+The most important component of model access is model weights. Openly
+available model weights are a necessary prerequisite for open foundation models,
+and provide significant benefits. Open weights allow for reproducible research
+not obsoleted by the deprecation of companies’ previous-generation offerings,
+and allow for customization to new use cases or other reuses. Full access to
+model weights, aside from reproducibility, also is required for work such as
+interpretability research or investigation on modifying model training methods
+54. Irene Solaiman. 2023. The gradient of generative ai release: methods and considerations.
+arXiv: 2302.04844 [cs.CY].
+10
+or architectures55. They also carry substantial financial benefit to the ecosystem
+at large. Access to model weights allows organizations to run models locally,
+which is cheaper than APIs, and locally hosted models are able to maintain user
+privacy in ways that can be highly desirable or even legally required, depending
+on the context. Although open weights carry a majority of the benefits of open
+foundation models, they also hold the burden of much of the risks: open model
+weights are not currently able to be revoked or restricted after release, and can
+be fine-tuned by any actor, including malicious ones.
+Modes of access or supplementary component access beyond just foundation
+model weights can provide benefits far beyond a simple undocumented open
+weights release. Access to model training data can enable external auditing
+and compliance checks, as well as forms of research investigating the impacts of
+training data on model behavior. The primary risk of training dataset release
+is to the companies themselves: they often treat training data as a proprietary
+secret and competitive advantage. Additionally, disclosing information about
+training data can potentially open these model trainers up to lawsuits about
+the dataset contents. However from a societal point of view models only
+become safer by having their training data disclosed.
+Releasing other artifacts produced in the process of model (pre)training,
+such as intermediate training checkpoints, can empower otherwise-impossible
+research regarding the training dynamics of these foundation models56,57, or ver-
+ify that companies’ claims regarding the training process are true58. Widespread
+access to partially trained model checkpoints is essential for making this field
+of research more accessible, as they allow people who don’t have the technical
+knowledge or computational resources to train their own models to do impactful
+research.
+Likewise, publicly releasing artifacts produced in the course of model fine-
+tuning can increase transparency and bring benefits to research and the public
+writ large. Sharing the fine-tuning data, especially data such as labels pro-
+duced by a workforce of human annotators for red-teaming or for adjusting a
+model for “safety” training, can allow for external auditors to examine what
+sorts of safety is being targeted by model trainers59, and can allow for the reuse
+of data labeler labor. Additionally, sharing Reward Models produced in the
+course of Reinforcement Learning from Human Feedback or other safety training
+or filtering can allow for auditing of safety interventions and expose potential
+biases in these judgements60. In both cases, assuming a model’s weights are also
+55. Stella Biderman, Hailey Schoelkopf, et al. 2023. Pythia: a suite for analyzing large lan-
+guage models across training and scaling. In International conference on machine learning,
+2397–2430. PMLR.
+56. Id.
+57. Yuandong Tian et al. 2023. Joma: demystifying multilayer transformers via joint dynam-
+ics of mlp and attention. In The twelfth international conference on learning representations.
+58. Dami Choi, Yonadav Shavit, and David Duvenaud. 2023. Tools for verifying neural
+models’ training data. arXiv: 2307.00682 [cs.LG].
+59. Stephen Casper et al. 2024. Black-box access is insufficient for rigorous ai audits. arXiv:
+2401.14446 [cs.CY].
+60. Nathan Lambert et al. 2024. Rewardbench: evaluating reward models for language mod-
+11
+released openly, the main risk introduced is to the company training the model:
+they will face potential reputational risks or greater scrutiny as a result of these
+releases, regarding their safety mitigations and practices Again, disclosing
+approaches and components around safety increases accountability
+and boosts our collective ability to design safer systems.
+4.2
+Software Components
+Some model developers release the software that they used to create the model.
+While a wide variety of softwares are commonly used in the process of model
+development, they can broadly be grouped into Data Processing, Model
+Training, Model Finetuning, Model Inference, and Model Evaluation.
+The primary benefits of releasing these software are: sharing best practices
+across the ecosystem; ensuring transparency and reproducibility by allowing
+other researchers to reuse and vet code to check that the results are correct; and
+deduplicating effort by allowing people to use or build on existing code when
+building their own models. The risks associated with each are varied but come
+primarily in two forms: risk associated with making technology more accessi-
+ble, and concerns about reputational harm and/or liability for the organization
+releasing the software.
+The release of code for data processing can enable the sharing of best prac-
+tices and provide consistency in the use of data across the ecosystem, as well as
+provide deeper insight into the shaping of a model’s dataset than just a static
+data release. The primary risk of releasing data processing code is to the orga-
+nization inadvertently sharing information about the training data which they
+wished to keep secret.
+The release of model training code is an essential part of building an open
+source ecosystem. The overwhelming majority of people in the field of AI and
+machine learning today (both professional and hobbyist) do not have substantial
+expertise in large scale optimization or high performance computing. As a result,
+the expertise required to create high-quality training libraries is relatively niche
+and accessible open source training libraries tend to be used by a wide variety of
+organizations beyond the ones developing it. Similarly, the primary risk is that
+it makes it easier for potential bad actors to train their own models. However,
+while the expertise to train models is relatively niche, there are nevertheless
+thousands of such people worldwide and any well-resourced actor can afford to
+hire relevant experts. Developing a high quality training library from scratch
+can be done by a small team of engineers in a matter of weeks.
+Model finetuning code is probably the least impactful form of software to
+release. Because so much less compute is used for finetuning than training, it is
+far less important that finetuning code be highly optimized. Many people use
+basic utilities in their machine learning framework of choice (typically PyTorch,
+Jax, or TensorFlow) to finetune large language models. Otherwise, the benefits
+and risks are largely identical to the case of training code.
+eling. arXiv: 2403.13787 [cs.LG].
+12
+The release of model inference code can also be useful in making the model
+usable and accessible to a wide variety of users with varying budgets, and is
+important for the adoption of an open foundation model. Such code releases
+can lower the barriers to at-scale deployment of a model, which can increase
+both positive and negative usage.
+Releasing code for model evaluation is an essential way to enable meaningful
+comparisons between models and to enable transparency in the the reporting
+of evaluations, especially safety-critical ones. Generally evaluation code release
+does not present added risks beyond the other components previously discussed,
+though for some critical topics releasing a labeled dataset of correct and incorrect
+instances is undesirable.
+4.3
+API Components
+Both closed and open foundation models are often served for mass usage via
+APIs, enabling usage of a model without needing access to model weights or to
+run the model’s code locally. While open models are often served via APIs, the
+risk analysis of APIs typically focuses on the perspective of closed models due
+to the fact that open models can also be accessed with fewer restrictions outside
+of APIs.
+APIs can provide varying levels of access and transparency, which we discuss
+here. All APIs offer the ability for a user to feed in inputs and receive outputs–
+for example, generated text from a model such as GPT-4, or images generated
+by Midjourney. This form of access is the most restricted and therefore least
+suitable for research activities, although it is sufficient for many commercial
+applications. It is commonly assumed that by applying “safety finetuning” and
+exposing a model only via this form a models’ behavior can be assured to be
+safe. However, this is a misunderstanding of both the security context of AI
+deployment and the technical literature on safety finetuning.
+While safety filters anecdotally appear to be successful at preventing unin-
+tentional misuse, they are woefully inadequate for preventing deliberate abuse.
+There are a wide variety of simple and easy-to-use techniques for “jailbreaking”
+a language model, or bypassing its safety filters. GPT-4, Claude 1 and 2, and
+Gemini all had their safety filters bypassed within days of their public release.
+A EuroPol workshop61 examining the potential for criminals to use ChatGPT
+found that “[m]any of these safeguards, however, can be circumvented fairly
+easily through prompt engineering.” and that while OpenAI has successfully
+closed some exploits, “there is no shortage of new workarounds being discovered
+by researchers and threat actors.” We are unaware of any statistics on criminal
+use of open vs closed models, but our experience working with large language
+models indicates that even for use-cases that are allegedly forbidden to a pow-
+erful closed model, it is easier to get a high quality generation from a closed
+model via jailbreaking than it is to get a comparatively high-quality output from
+61. Europol. 2023. Chatgpt – the impact of large language models on law enforcement. Pub-
+lications Office of the European Union. https://doi.org/doi/10.2813/255453.
+13
+a weaker open model with no safety finetuning. The fact that safety filters are
+easy to bypass is also widely known to the general public and has been covered
+in accessible news articles by journalists at Vice, CBS News, and Yahoo among
+others.
+It is also common for API providers to provide more detailed information
+than just model generations. Logits, the probability distributions62 over po-
+tential next tokens, are generally viewed as the preferred form of output for
+researchers as it is more useful for many types of research and most knowledge
+benchmarks rely on access to logits to score models. However the full set of
+logits can expose information about models that closed model providers often
+want to keep secret such as architectural details, tokenizer details, and some-
+times even details about the training data. As a compromise, it has become
+common practice to make the k most probable tokens for some reasonable, but
+small, k available.
+Another feature many API providers included until very recently is logit
+bias. Logit biases allow the user to skew the distribution of logits towards or
+away from specific tokens, such as discouraging slurs. Recent work showed that
+allowing user-specified logit bias removes the security enhancements of top-k
+logits and enables users to obtain access to the full logit distribution, as well
+as information about the model architecture, efficiently63,64. As a result of this
+work, major model providers have stopped allowing users to specify arbitrary
+logit biases or have limited logit bias to only impact models when they’re used for
+generation rather than returning logits. This continues to enable most industry
+applications, but substantially limits the usefulness for researchers.
+Foundation model APIs also need not be limited to model inference. Fine-
+tuning APIs are often made available, allowing users to provide a dataset
+which the API provider will use to fine-tune and subsequently host for the user.
+This can be used to enable many successful real-world deployments of models
+specialized for a given task and can be used for many types of research. However
+it comes with substantial downsides from a safety point of view, as safety filters
+are easy to finetune out of a model, even inadvertently65.
+Finally, many API providers allow their models to interface with external
+apps or plug-ins through a process generally known as tool use. Tool use for
+large language models is a budding field of research whose risks and benefits are
+difficult to assess at this time. However it is clear that current implementations
+pose massive security risks. For example, researchers at Salt Labs66 found that
+62. Technically, logits are a particular transformation of the probabilities, but nothing is lost
+on a conceptual level by this simplification.
+63. Matthew Finlayson, Swabha Swayamdipta, and Xiang Ren. 2024. Logits of api-protected
+llms leak proprietary information. arXiv preprint arXiv:2403.09539.
+64. Nicholas Carlini et al. 2024. Stealing part of a production language model. arXiv preprint
+arXiv:2403.06634.
+65. Xiangyu Qi et al. 2023. Fine-tuning aligned language models compromises safety, even
+when users do not intend to! In The twelfth international conference on learning representa-
+tions.
+66. Aviad Carmel. 2024. Security flaws within chatgpt ecosystem allowed access to accounts
+on third-party websites and sensitive data. Salt Labs Blog, https://salt.security/blog/security-
+14
+ChatGPT plug-ins enabled a wide variety of attacks including impersonating
+the user to the third-party app, impersonating the third-party app to the user,
+and tricking a user into running malicious code. The first two attacks allow
+attackers to gain control of user accounts either on the OpenAI side or on the
+third-party application side, and the last enables attackers to install malware
+on user systems without their knowledge. Another prominent example is the
+work of Greshake et al.67 which showed that by inserting invisible text into the
+HTML markup of one’s personal website, one can gain control of the ChatGPT
+session of any user who uses ChatGPT’s web browsing capabilities to view thier
+website.
+The attacker can then see all user inputs, all model outputs, and
+impersonate the model at will.
+5
+National security considerations
+Concerns have been raised about the impact of generative AI on national secu-
+rity. Here we present our observations from years of participation in an inter-
+national open model research community.
+5.1
+Foreign open-weight models
+The United States is not the sole creator of powerful open-weight models. At
+time of writing there are ten open weight models as powerful or more powerful
+than LLaMA 2 70B: Qwen 1.5, Mixtral, Grok-1, Falcon-180B, Yi-34B, DBRX,
+DeepSeek-67B, Command R, Miqu68, and LLaMA 2 70B itself. Four of these
+models were trained in the US, three in China, two in France, and one in the
+UAE69. At various points in the past year, each of these countries has produced
+the model holding the title of “most powerful public-weight model in the world.”
+In addition to releasing highly capable pretrained language models, the govern-
+ments of all three countries have identified investment in open source AI as part
+of their national strategy.
+In February, the New York Times published an article claiming that
+Some of the technology in 01.AI’s system came from Llama. Mr.
+Lee’s start-up then built on Meta’s technology, training its system
+[Yi-34B] with new data to make it more powerful.
+This quote implies that, if not for the release of LLaMA 2, 01.AI wouldn’t have
+been able to train a model as powerful as Yi-34B because the trained LLaMA 2
+flaws-within-chatgpt-extensions-allowed-access-to-accounts-on-third-party-websites-and-
+sensitive-data.
+67. Kai Greshake et al. 2023. Not what you’ve signed up for: compromising real-world llm-
+integrated applications with indirect prompt injection. In Proceedings of the 16th acm work-
+shop on artificial intelligence and security, 79–90.
+68. This model is widely believed to be a leaked quantized early checkpoint of the unreleased
+Mistral-medium model. We will assume that this is correct.
+69. Cohere’s Command R was likely trained within the US, although Cohere is a Canadian
+company.
+15
+model was a component in the pipeline that produced Yi. There is no reason to
+believe that this claim is true, and substantial reason to believe that this claim
+is false. We believe that the authors made an understandable but regrettable
+mistake when trying to follow a technical discussion on the Hugging Face Hub.
+For further elaboration on this topic, see our recent blog post70.
+This article highlights a common misunderstanding of the relationship be-
+tween current and future open-weight models. Future open weight models are
+very rarely based on current open weight models as computing artifacts. Rather
+they will draw design inspiration, learn about best practices, and learn to avoid
+pitfalls previous developers fell into by studying the academic papers and techni-
+cal reports accompanying those models. The models themselves play no role in
+the transfer of scientific knowledge other than to demonstrate that the authors
+did in fact successfully train a powerful model. As a result, heavy restrictions
+or bans on the release of powerful pretrained models is unlikely to meaningfully
+limit model development overseas.
+Note that we focus above on general capabilities rather than size or pretrain-
+ing budget. The list and distribution of countries that have trained the largest
+language models or most expensive language models is largely similar, with the
+notable addition of Russia on the “largest” list due to Yandex’s 100B parameter
+language model. While there are some differences in capabilities brought about
+by design choices, capabilities and expenditures are very strongly correlated for
+any competent team independent of individual design choices. One thing that
+is important to keep in mind regarding countries that have trained large but
+not as good models is that those models are typically trained for a small frac-
+tion of the number of tokens that the powerful models they are being compared
+to were trained for. However training them for a meaningful amount of time
+requires solving all the core engineering problems, and increasing the training
+token budget is primarily a question about financial investment. If Russia prior-
+itized funding for training an approximately state-of-the-open model, we should
+take YaLM-100B as evidence that they are likely to succeed.
+5.2
+Cybersecurity
+Cybersecurity and artificial intelligence is a major topic of interest to the US
+government, as demonstrated by unclassified version of the Office of the Director
+of National Intelligence (ODNI)’s 2024 Annual Threat Assessment of the U.S.
+Intelligence Community71. The Threat Assessment outlined three key threats
+from generative artificial intelligence:
+• Automatic disinformation campaigns
+• Cyber warfare and AI-powered hacking campaigns
+70. Hailey Schoelkopf, Aviya Skowron, and Stella Biderman. 2024. Yi-34b, llama 2, and
+common practices in llm training: a fact check of the new york times. EleutherAI Blog.
+[Online; accessed March 2024]. https://blog.eleuther.ai/nyt-yi-34b-response/.
+71. ttps://www.dni.gov/files/ODNI/documents/assessments/NIC-Declassified-ICA-Foreign-Threats-to-the-2022-US-Elections-D
+pdf
+16
+• Chemical, biological, radiological and nuclear (CBRN) information
+which we will address in turn.
+5.2.1
+Disinformation
+As far as we are aware, limited ability to produce false information is not the
+primary bottleneck for disinformation campaigns. While it can be a bottleneck,
+other issues such as dissemination of information, compromising trust in author-
+ities, and discrete infiltration of social media platforms tend to be substantially
+greater barriers72.
+We also take issue with the common suggestion that disinformation is a
+problem that should be solved at the model-provider level.73 Disinformation is
+a highly nuanced and contextually sensitive concept that cannot be evaluated
+in a vacuum: true sentences in one sociopolitical context might be misleading in
+another and clearly false in a third. Additionally, it is not even clear that false
+information is necessarily the most dangerous74. Research on vaccine hesitancy
+has shown that misleading true information is substantially more impactful at
+reducing compliance than false information.75.
+It is important to keep in mind that the ability to create photo-realistic
+images and videos has been around for over five years and has been used in
+attempted disinformation ops. One interesting case study is the Russia-Ukraine
+war in which falsified videos of Ukrainian President Volodymyr Zelenskyy and
+Russian President Vladimir Putin were created by Russia and Ukraine respec-
+tively and distributed to the other side.76 However disinformation experts are
+skeptical that these photorealistic videos played a significant role in shaping
+discourse on either side77 and point to cruder but better situated attacks on the
+epistemic commons as being more effective, highlighting the need for a nuanced
+view of the issue beyond the ability to generate realistic synthetic content.
+None of this is to say that disinformation isn’t a real problem or that artifi-
+cial intelligence does not play a role in its creation or propagation78. However
+over-indexing on the threat of foundation models for disinformation risks both
+underestimating the problem and overestimating the solution, leaving the U.S.
+at substantially increased risk.
+72. Jon Bateman and Dean Jackson. 2024. Countering disinformation effectively: an
+evidence-based policy guide.
+73. https://www.aisnakeoil.com/p/ai-safety-is-not-a-model-property
+74. Michael Hameleers. 2023. Disinformation as a context-bound phenomenon: toward a
+conceptual clarification integrating actors, intentions and techniques of creation and dissemi-
+nation. Communication Theory 33 (1): 1–10.
+75. Jennifer Nancy Lee Allen, Duncan J Watts, and David Rand. 2023. Quantifying the
+impact of misinformation and vaccine-skeptical content on facebook.
+76. https://theconversation.com/deepfakes-in-warfare-new-concerns-emerge-from-their-use-around-the-russian-invasion-of-ukra
+77. Bateman and Jackson 2024.
+78. While it is a very different type of artificial intelligence than foundation models, recom-
+mender algorithms are a key battleground in the fight against disinformation
+17
+5.2.2
+Cyber warfare and AI-powered hacking campaigns
+The question of whether open source systems and openly available tools for
+finding security vulnerabilities has been debated beyond the field of artificial
+intelligence for decades. In general, security experts believe that there is no
+reason to think that closed systems are more secure than open systems or that
+publicly sharing tools for attacking systems decreases security.79,80
+Foundation models, including open foundation models, are beginning to
+show promise for helping secure our computing systems. Models for malware
+detection81,82 and fuzzing83 are especially promising applications of current
+technologies. Malware detection gives the ability to protect us from offensive
+cyberoperations of adversaries, and the relatively cheap cost of the models con-
+sidered in those papers84 may imply that for a fixed amount of investment one
+gets substantially more defensive value than offensive value.
+Deng et al. (2023) reports using both API and open-weight models to find
+65 bugs in the PyTorch library, 41 of which they were able to confirm are novel
+bugs. While the criticality of these bugs is generally not particularly high,
+5.2.3
+(CBRN) Information
+Chemical, biological, radiological and nuclear (CBRN) information is highly sen-
+sitive and sometimes classified information that pertains to the development of
+extremely dangerous weapons. Some have suggested that large language mod-
+els will make this kind of information more readily accessible and “democratize
+access” to biological weapons. The best available research indicates that this is
+not true of current models,85,86 and we believe that the focus on models in these
+conversations misses the point in a fundamental way: the core issue isn’t the
+model (which is effectively a better search algorithm over the training corpus for
+these purposes) but rather the presence of this information in the training data
+in the first place. We expect that better data management practices, oversight
+of training data, and data investigation and removal will address this issue (to
+the extent that there is one) far better than any model-level interventions.
+79. https://www.zdnet.com/article/risky-business-keeping-security-a-secret-5000127072/
+80. David A Wheeler. 2021. Secure programming howto. Walters Art Museum in Baltimore,
+Maryland.
+81. Mohammad Mahmudul Alam et al. 2023b. Recasting self-attention with holographic
+reduced representations. In International conference on machine learning, 490–507. PMLR.
+82. Mohammad Mahmudul Alam et al. 2024. Holographic global convolutional networks for
+long-range prediction tasks in malware detection. In Proceedings of the 27th international
+conference on artificial intelligence and statistics (aistats).
+83. Yinlin Deng et al. 2023. Large language models are zero-shot fuzzers: fuzzing deep-
+learning libraries via large language models. In Proceedings of the 32nd acm sigsoft interna-
+tional symposium on software testing and analysis, 423–435.
+84. They are multiple orders of magnitude cheaper than training a competent code genera-
+tion algorithm.
+85. Ella Guest, Caleb Lucas, and Christopher A Mouton. 2024. The operational risks of ai
+in large-scale biological attacks: results of a red-team study.
+86. https://openai.com/research/building-an-early-warning-system-for-llm-aided-biological-threat-creation
+18
+When considering models developed for widespread deployment, it is impor-
+tant to keep in mind that there is no evidence that the kind of generalization
+that language models are capable of is suited to generalizing from, e.g., first year
+undergraduate biology to designing biological weapons, and in the overwhelming
+majority of use-cases there isn’t a need for more advanced knowledge than that.
+Even when more advanced knowledge is necessary, curating biological data to
+selectively remove the specific dangerous subfields will very likely ameliorate the
+threat.87 It is possible that for specialist models for sufficiently similar appli-
+cations would be able to perform this kind of generalization, and if substantial
+evidence of this emerges access control regulation for those specialist models
+may be appropriate.
+5.3
+Rotary Embeddings
+On March 24, 2021, a Discord user by the name of bratao dropped a link to a
+Chinese language blog post88 in the middle of the night along with the message
+“Don’t understand a word, but some smart [Chinese AI researchers] are staring
+the repo.” The next morning, Stella Biderman (a mathematically-inclined con-
+tributor who today leads EleutherAI and doesn’t speak a word of Chinese) spent
+several hours reverse engineering the methodology from the equations and a low-
+quality machine translation of the blog post. Intrigued and impressed by what
+she found, she and several other Discord members started working to experi-
+ment with the methodology, training 125M, 350M, and 1.5B parameter models
+(for a small fraction of the typical pretraining budget) that outperformed other
+methods by a small but meaningful amount. The resulting blog post89 went
+live a handful of hours before the official paper90 came out and was the first
+English-language resource on the now-ubiquitous technique. Our GPT-J and
+GPT-NeoX were among the first large models trained with the technique, and
+other work such as PaLM91 and LLaMA 192 cite our work as motivating their
+use.
+87. Research on this topic is currently on-going at EleutherAI.
+88. https://kexue.fm/archives/8265
+89. Biderman et al. 2021.
+90. Jianlin Su et al. 2021. Roformer: enhanced transformer with rotary position embedding.
+arXiv preprint arXiv:2104.09864.
+91. Chowdhery et al. 2023.
+92. Hugo Touvron et al. 2023. Llama: open and efficient foundation language models. arXiv:
+2302.13971 [cs.CL].
+19
+Part B: Remaining questions
+1
+Defining “open” or “widely available”
+a
+Will closed models be opened?
+Yes, there is significant evidence that the weights of models similar to current
+closed AI systems will become available. The current most advanced open mod-
+els are equal or better than the most advanced closed models from just a few
+years ago. In many cases, prominent closed models have been replicated whole-
+sale and released openly. For example, GPT-393 was replicated and released
+openly less than 2 years later by Meta AI’s OPT94 models, and the unreleased
+Chinchilla95 model from Google DeepMind was replicated by Meta AI in the
+form of the Llama 196 series of models less than a year later.
+Other prominent models have been replicated by entities not labs at major
+tech companies. For example, an academic lab led a collaboration to successfully
+replicate AlphaFold297 as OpenFold98, without a restrictive license or lack of
+training details documented.
+OpenAI’s CLIP models99 were also replicated
+and released openly by LAION100, and the released CLIP models by OpenAI
+were used to drive the then-state of the art in controllable image generation
+via VQGAN-CLIP101. The Stable Diffusion 1 model102, then the most capable
+image generation model, was released with open weights. In general, the trend
+has been for open-weights models to match closed AI systems of the time or in
+93. Tom Brown et al. 2020. Language models are few-shot learners. In Advances in neu-
+ral information processing systems, edited by H. Larochelle et al., 33:1877–1901. Cur-
+ran Associates, Inc. https : / / proceedings . neurips . cc / paper files / paper / 2020 / file /
+1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf.
+94. Zhang et al. 2022.
+95. Jordan Hoffmann et al. 2022. Training compute-optimal large language models. arXiv:
+2203.15556 [cs.CL].
+96. Touvron et al. 2023.
+97. John Jumper et al. 2021. Highly accurate protein structure prediction with alphafold.
+Nature 596 (July): 1–11. https://doi.org/10.1038/s41586-021-03819-2.
+98. Gustaf Ahdritz et al. 2023. Openfold: retraining alphafold2 yields new insights into its
+learning mechanisms and capacity for generalization. bioRxiv, https://doi.org/10.1101/2022.
+11.20.517210. eprint: https://www.biorxiv.org/content/early/2023/08/12/2022.11.20.517210.
+full.pdf. https://www.biorxiv.org/content/early/2023/08/12/2022.11.20.517210.
+99. Alec Radford et al. 2021. Learning transferable visual models from natural language
+supervision. In Icml.
+100. Mehdi Cherti et al. 2023. Reproducible scaling laws for contrastive language-image learn-
+ing. In Proceedings of the ieee/cvf conference on computer vision and pattern recognition,
+2818–2829.
+101. Katherine Crowson et al. 2022. Vqgan-clip: open domain image generation and editing
+with natural language guidance. In Computer vision – eccv 2022: 17th european conference, tel
+aviv, israel, october 23–27, 2022, proceedings, part xxxvii, 88–105. Tel Aviv, Israel: Springer-
+Verlag. isbn: 978-3-031-19835-9. https://doi.org /10.1007/978- 3- 031- 19836- 6 6. https:
+//doi.org/10.1007/978-3-031-19836-6 6.
+102. Robin Rombach et al. 2022. High-resolution image synthesis with latent diffusion models.
+In Proceedings of the ieee conference on computer vision and pattern recognition (cvpr). https:
+//github.com/CompVis/latent-diffusionhttps://arxiv.org/abs/2112.10752.
+20
+some cases be the forefront.
+In fact, during the drafting of this response xAI released Grok-1103 and
+Databricks released DBRX104, two large and powerful models following the same
+Mixture-of-Experts architecture used in many leading closed labs. According to
+DataBricks’s analysis their model outperforms GPT-3.5 (likely gpt-3.5-turbo-16k-0613
+in particular), a model that was state-of-the-art when released November 2022.
+b
+Predicting the Gap
+The timeframe between deployment of an open and closed equally-performing
+model is difficult to predict reliably. The primary blocker for the capabilities of
+open models is funding, which can disappear at the whim of a handful of well-
+resourced individuals. The continued increase in costs (of compute and capital)
+to create the most capable closed models will create further barriers to entry,
+but open models remain frequently competitive to closed models and there is
+evidence that they will continue to do so despite these costs.
+The centralization of funding for training these models is itself also a source
+of uncertainty in the gap between open and closed models, as individual factors
+affecting the sponsoring organizations unrelated to AI research per se can have
+substantial impacts on release timelines. For example,
+c
+What level of distribution constitutes “wide availabil-
+ity?”
+For the bulk of our response to this question, see Section 4.
+d
+Do certain forms of access to an open foundation model
+provide more or less benefit or more or less risk than
+others?
+For the bulk of our response to this question, see Section 4.
+i
+Are there promising prospective forms or modes of access that
+could strike a more favorable benefit-risk balance? If so, what are
+they?
+For the bulk of our response to this question, see Section 4.
+We would like to additionally note that, although the weights of closed mod-
+els that have been productized such as ChatGPT are not openly available, such
+deployed models may be far more “widely available” to end users than many
+openly downloadable foundation model weights, especially weights of models too
+large for end consumer hardware to quickly run. Calculations regarding volume
+of risk and benefit should take not just availability of weights into account, but
+103. https://x.ai/blog/grok-os
+104. https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm
+21
+also level of distribution and barriers to model use, since widely deployed models
+receive more traffic and use than open-weight models.
+2
+Comparing Risks
+d
+Well-Financed Actors
+There is no substantial evidence that the lack of weight access to existing models
+is a meaningful factor constraining the actions of state-level actors or other well-
+financed actors. A small but dedicated research team with ten million dollars
+in funding could relatively easily obtain a model as good as or better than the
+best models with widely available weights today.
+i
+How do these risks compare to those associated with closed mod-
+els?
+For both closed and open models, there are numerous state or determined non-
+state actors capable of training highly-capable state of the art models without
+relying on the models which already exist. See also Section ?? and in particular
+our discussion of the claim that LLaMA 2 enabled the training of Yi.
+Notably when trying to maximize benefit but minimize risk, local hosting or
+edge deployment can enable a greater amount of personalization and tailoring
+for a particular use case.
+This can reduce risk, because while ensuring the
+complete “safety” of a general-purpose foundation model is an under-specified
+task105, basing safety around a concrete goal and use case, alongside potential
+threat models, can allow for safety and risk reduction to be effectively achieved.
+ii
+How do these risks compare to those associated with other types
+of software systems and information resources?
+While it has been speculated that AI models will produce security risks such
+as assistance in creating bioweapons, existing studies have shown that there is
+not evidence that current systems are able to meaningfully assist in bioweapon
+development106, and that they are not more helpful than the use of freely avail-
+able traditional software or information resources such as Google or PubMed.
+AI models are currently trained on almost exclusively publicly available infor-
+mation and content, indicating that most threat models–similar to Google or
+other search engines–consist of publicly discoverable information simply being
+easier to surface and access.
+105. https://www.aisnakeoil.com/p/ai-safety-is-not-a-model-property
+106. https://www.rand.org/news/press/2024/01/25.html
+22
+3
+Unique Benefits of Open Models
+We feel it would be appropriate to collect some of the unique benefits and
+perspectives that open models offer as a component of the AI ecosystem.
+Throughout our response elsewhere we discuss risks and benefits of open
+release, but feel that EleutherAI is well-positioned to convey precisely why open
+models matter, and can be entirely of a different kind than closed models.
+In particular, while openly available model weights can carry some of the
+benefits we discuss, maximally open models such as those EleutherAI releases
+including GPT-NeoX107 and Pythia108, or AI2’s OLMo109 and LLM360’s Am-
+ber110 models that followed, provide extensive benefits for the AI ecosystem, for
+research, and for AI governance.
+Open models open up new research areas There are entire areas of ML
+research that would not be possible without open and well-documented
+models like Pythia. Understanding models’ “learning dynamics”–how they
+change over the course of training, in response to new data111,112,113,114.
+Many other forms of research require access to the dataset in addition to
+model weights115,116, and interpretability research requires at minimum
+weight and gradient-level access to a model117,118,119.
+Sharing knowledge broadly Openly released, and especially well-documented
+or transparent open model projects, disseminate knowledge throughout
+the open source community. EleutherAI in particular has trained many
+107. Sidney Black et al. 2022.
+108. Biderman, Schoelkopf, et al. 2023.
+109. Dirk Groeneveld et al. 2024. Olmo: accelerating the science of language models. arXiv:
+2402.00838 [cs.CL].
+110. Zhengzhong Liu et al. 2023. Llm360: towards fully transparent open-source llms. arXiv:
+2312.06550 [cs.CL].
+111. Davis Brown et al. 2023. Understanding the inner-workings of language models through
+representation dissimilarity. In Proceedings of the 2023 conference on empirical methods in
+natural language processing, edited by Houda Bouamor, Juan Pino, and Kalika Bali, 6543–
+6558. Singapore: Association for Computational Linguistics, December. https://doi.org/10.
+18653/v1/2023.emnlp-main.403. https://aclanthology.org/2023.emnlp-main.403.
+112. Dmitrii Krasheninnikov et al. 2023. Meta- (out-of-context) learning in neural networks.
+arXiv: 2310.15047 [cs.LG].
+113. James A. Michaelov and Benjamin K. Bergen. 2023. Emergent inabilities? inverse scaling
+over the course of pretraining. arXiv: 2305.14681 [cs.CL].
+114. Fabien Roger. 2023. Large language models sometimes generate purely negatively-
+reinforced text. arXiv: 2306.07567 [cs.LG].
+115. Stella Biderman, USVSN PRASHANTH, et al. 2023. Emergent and predictable mem-
+orization in large language models. In Advances in neural information processing systems,
+edited by A. Oh et al., 36:28072–28090. Curran Associates, Inc. https://proceedings.neurips.
+cc/paper files/paper/2023/file/59404fb89d6194641c69ae99ecdf8f6d-Paper-Conference.pdf.
+116. Choi, Shavit, and Duvenaud 2023.
+117. Eric Todd et al. 2024. Function vectors in large language models. arXiv: 2310.15213
+[cs.CL].
+118. Kevin Meng et al. 2023. Mass-editing memory in a transformer. arXiv: 2210 . 07229
+[cs.CL].
+119. Wes Gurnee et al. 2023. Finding neurons in a haystack: case studies with sparse probing.
+arXiv: 2305.01610 [cs.LG].
+23
+researchers, many of whom come from non-traditional backgrounds120.
+This allows a larger amount of people to contribute to pushing knowledge
+of the Machine Learning field forward and to help develop techniques that
+serve them and their concerns.
+Safety research is supported and broadened by open models Safety re-
+search is also helped by access to open and transparent foundation models.
+Open-weights models allow more researchers than just the small number
+at industry labs to investigate how to improve model safety, improving
+the breadth and depth of methods that can be explored, and also allows
+for a wider demographic of researchers or auditors of safety. Too much
+work on improving safety has been made possible by open-weights foun-
+dation models to list in full, but we provide a sample here: research on
+the ability to extract “memorized” training datapoints121 from a model,
+investigating the failure modes of watermarking schemes122, and steering
+models’ predictions to provably not depend on undesired attributes such
+as gender123. Even for researchers in industrial labs such as Google, open
+models can enable research on model safety that would not otherwise be
+possible: in an earlier revision of Quantifying Memorization Across Neural
+Language Models, Carlini et al. 124 state that their research on harmful
+memorization in language models “would not have been possible with-
+out EleutherAI’s complete public release of The Pile dataset and their
+GPT-Neo family of models”125.
+Overall, open models enable people close to the deployment context to have
+greater control over the capabilities and usage restrictions of their models, study
+the internal behavior of models during deployment, and examine the training
+process and especially training data for signs that a model is unsafe to deploy in
+a specific use-case. They also lower barriers of entry by making models cheaper
+to run and enable users whose use-cases require strict guarding of privacy (e.g.,
+medicine, government benefits, personal financial information) to use.
+120. Jason Phang et al. 2022. Eleutherai: going beyond ”open science” to ”science in the
+open”. arXiv: 2210.06413 [cs.CL].
+121. Biderman, PRASHANTH, et al. 2023.
+122. John Kirchenbauer et al. 2023. On the reliability of watermarks for large language mod-
+els. arXiv: 2306.04634 [cs.LG].
+123. Nora Belrose et al. 2023. Leace: perfect linear concept erasure in closed form. In Advances
+in neural information processing systems, edited by A. Oh et al., 36:66044–66063. Curran
+Associates, Inc. https://proceedings.neurips.cc/paper files/paper/2023/file/d066d21c619d0a
+78c5b557fa3291a8f4-Paper-Conference.pdf.
+124. https://arxiv.org/abs/2202.07646v2
+125. Nicholas Carlini et al. 2023. Quantifying memorization across neural language models.
+arXiv: 2202.07646 [cs.LG].
+24
+5
+Technical issues in managing risks and dis-
+tributing benefits
+a
+What model evaluations, if any, can help determine
+risks or benefits?
+We caution that current benchmarks in the research community, used in the
+field as objectives to measure progress on an artificially-constructed task, while
+useful for some research applications, are not suited for direct policy or risk
+measurement purposes.
+The best evaluation for measuring model safety is one that closely tracks an
+explicitly outlined threat model and restricted use case, rather than attempting
+to measure “safety” writ large across all potential use cases. For example, red-
+teaming with the help of domain experts, with adequate baseline systems also
+available, can be used to assess safety in real-world (adversarial) scenarios, if
+the red-teamers are adequately representative of user demographics.
+As an additional example of the necessity of targeting and comparing against
+a concrete scenario of potential harm, and a threat model for how a model might
+cause such harm, we call back to Section 1 and note that “bias benchmarks”
+used in the field are insufficient to ensure that models that score
+highly do not cause harm in the real world. Another paper illustrating
+this phenomenon is Large language models propagate race-based medicine126,
+which finds that Bard, ChatGPT, Claude, and GPT-4127, which finds that de-
+ployed large language models recommend discredited race-based medical prac-
+tices grounded in eugenics research. The study specifically considers what would
+happen if an inexperienced doctor consults the state-of-the-art models to answer
+some basic questions about medical best practices and finds that substantial
+harm would ensue. We believe that real world harm, rather than artificial
+bias benchmarks, must be prioritized when designing evaluation protocols for
+deployed systems. In particular, this means that models cannot be evaluated in
+a vacuum and must be evaluated situated in a proposed application context.
+f
+Components Necessary for Red Teaming
+Prior work such as Black-Box Access is Insufficient for Rigorous AI Audits128
+has argued that black-box access is insufficient for effective auditing: it is cru-
+cial to also take into account factors such as methodological choices and how
+these might impact a model’s safety, or additionally internal documentation and
+evaluations to investigate what systems are being optimized for and what steps
+are being taken to reduce risks. Ensuring a broad range of people are able to
+audit the model can achieve broader coverage of potentially-unforeseen harms.
+126. Jesutofunmi A Omiye et al. 2023. Large language models propagate race-based medicine.
+NPJ Digital Medicine 6 (1): 195.
+127. ChatGPT here presumably refers to GPT-3.5 via the chat interface, though the paper
+is unclear on this point.
+128. Casper et al. 2024.
+25
+While some types of auditing or evaluation can be done with purely inputs +
+outputs to a model, having the ability to know what types of transformation
+or augmentation layers surround a foundation model, and access to full out-
+puts such as logits or log-probabilities can enable more thorough evaluation of
+models, such as probing for bias or more fine-grained answer probabilities and
+nuances in evaluation.
+g
+Testing and Verifying Model Weights
+Here we limit our scope to verifying claims regarding either model trainers’
+claims made to auditors, or assessing whether the audited model is the one
+deployed. Regarding the latter, it is possible to determine that these models
+match, as a sufficiently large quantity of random queries will reveal if two models
+are non-identical. However, a complication is that API providers do more than
+just run the input through their model.
+For example, they will sometimes
+process and reformat the input, and also call external APIs such as web search, a
+code compiler, or a computer algebra system. While API calls can be avoided by
+restricting questions to natural language English and turning off web-browsing,
+reprocessing and reformatting of inputs is more challenging. The model host
+would need to disclose all such steps and how they work for testing to be feasible.
+There may also be other, non-public, steps that model hosts use that need to be
+taken into account when devising the verification scheme. Regarding methods
+for proving model trainers’ claims made to auditors are truthful, especially with
+respect to training data composition, this is not yet possible, with the best work
+to date on the topic being Tools for Verifying Neural Models’ Training Data129.
+Note that their schema is not secure and can be fooled.
+129. Choi, Shavit, and Duvenaud 2023.
+26

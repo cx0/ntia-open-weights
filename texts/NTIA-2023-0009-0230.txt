@@ -1,0 +1,139 @@
+ 
+ 
+ 
+ 
+ 
+ 
+March 27, 2024 
+ 
+The Honorable Alan Davidson   
+Administrator  
+National Telecommunications and Information Administration (NTIA)  
+1401 Constitution Ave, NW  
+Washington, DC  20230  
+ 
+Re: Request for Comment, National Telecommunications and Information Administration, 
+Department of Commerce; Dual Use Foundation Artificial Intelligence Models Widely 
+Available Model Weights (89 Fed. Reg. 14,059-14,063, February 26, 2024)  
+Dear Administrator Davidson: 
+ 
+The U.S. Chamber of Commerce (“Chamber”) appreciates the opportunity to respond 
+to the National Telecommunications and Information Administration (“NTIA”) request for 
+comment (“RFC”) on “Dual Use Foundation Artificial Intelligence Models with Widely Available 
+Model Weights.” We agree with NTIA’s statement that “Artificial Intelligence (AI) has had, and 
+will have, a significant effect on society, the economy, and scientific progress.1” Furthermore, 
+we appreciate the RFC’s recognition of how open-source models “could play a key role in 
+fostering growth among less resourced actors, helping to widely share access to AI’s 
+benefits.”2  
+ 
+The Chamber continues to be a strong advocate for using technology to assist small 
+and medium businesses. A Chamber report released last year highlighted that 87%” of small 
+businesses believe that technology platforms have helped their business operate more 
+efficiently3 and that 71% of them plan to adopt the latest technology, including AI.4  
+We remain concerned with the short comment period provided. Given the strategic 
+importance of AI and its many associated technological and policy complexities, agencies 
+must receive meaningful and robust public input to prevent ill-informed policy developments 
+that could hinder the ability of Americans to reap the benefits of AI and maintain global 
+leadership of this groundbreaking technology. Accordingly, the Chamber, with other 
+associations, corresponded requesting a 60-day extension to allow stakeholders to provide 
+the necessary and thoughtful comments.5  
+ 
+ 
+1 89 Fed. Reg. 14060 available at https://www.federalregister.gov/documents/2024/02/26/2024-03763/dual-use-
+foundation-artificial-intelligence-models-with-widely-available-model-weights#print.  
+2 Id. 
+3 Empowering Small Business: The Impact of Technology on U.S. Small Business at 3 (September 2023) available at  
+https://www.uschamber.com/assets/documents/The-Impact-of-Technology-on-Small-Business-Report-2023-
+Edition.pdf.  
+4 Id.  
+5Letter to NTIA (March 14, 2014) available at U.S. Chamber Multi-Association Comment Extension Request on 
+NTIA's Dual Use Open Model RFI | U.S. Chamber of Commerce (uschamber.com).  
+Unfortunately, that request for an extension was denied, and therefore, the business 
+community can only provide limited feedback and comments. This denial will not provide the 
+agency the benefit of robust feedback, and the denial will hamper the ability of the agency to 
+assess and weigh the comments received. Accordingly, the agency is in danger of ignoring 
+issues or data raised in the comment process. 
+ 
+I. 
+General Feedback  
+  
+Many benefits of open-source technology exist. Open-source technology allows 
+developers to build, create, and innovate in various areas that will drive future economic 
+growth. We already see innovation in marketing, communication, cybersecurity, and medicine, 
+among other fields. Access model weights can be a boon to driving safety and security 
+improvements to artificial intelligence by providing greater transparency, allowing flaws to be 
+quickly identified and patched.6  
+ 
+We would further highlight the need for NTIA to make decisions based on sound 
+science and not unsubstantiated concerns that open models pose an increased risk to 
+society.7  
+ 
+Trust in technology is fundamental for society to embrace and use technology. For this 
+reason, it is key to educate and prepare the American public through public-private 
+partnerships. NTIA can help prepare the American public for a future in which AI is widely 
+integrated throughout society and ensure that the United States has the necessary skilled 
+workforce to benefit from the technology fully. We also further emphasize that the specific 
+policy questions within the RFC are not just being asked within the United States but globally 
+as well. NTIA must be mindful of the current geopolitical dialogue on this topic.  
+ 
+II. 
+Definitions .  
+ 
+The Chamber believes it is critically important for NTIA not to deviate from the 
+definition of the “dual-use foundation model” defined within Executive Order 14110.8 Potential 
+changes in the definition could impact the scope of NTIA’s work, which could put 
+unnecessary burdens on researchers, academia, and developers who are not developing 
+technology that hits the level of “dual use foundation models with widely available, and the 
+deployers of systems build on these models.” NTIA should also look to harmonize terminology 
+with other industry efforts, such as the G7, AI Alliance, Frontier Model Forum, and academic 
+and non-governmental standard development organizations. A consent lexicon is vital in 
+creating an environment where all AI value chain stakeholders can understand and become 
+familiar with the terminology.  
+ 
+ 
+ 
+ 
+6 https://arxiv.org/pdf/2211.14946.pdf 
+7 https://crfm.stanford.edu/open-fms/ 
+8 88 Fed. Reg. 75194 available at https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-
+secure-and-trustworthy-development-and-use-of-artificial-intelligence.  
+III. 
+Risk & Risk Management  
+ 
+The Chamber emphasizes that risk-management processes are still evolving, which is 
+why we support the National Institutes of Standards and Technologies (NIST) work around the 
+Risk Management Framework (RMF) and subsequent companion efforts to develop common 
+standards to address and mitigate potential concerns. Additionally, we note that “risk” is 
+contextual. As indicated in the NIST RMF 1.0, “Risk tolerance and the level of risk acceptable 
+to organizations or society are highly contextual and application and use-case specific.”9 This 
+is why we believe it is essential for NTIA to focus on the marginal risk, which is context-
+specific.  
+ 
+IV. 
+Other Issues:  
+ 
+The Chamber is concerned with NTIA asking if “risk” should be associated with 
+floating-point operations per second (aka “FLOPs”), as using such criteria does not use the 
+appropriate quantitative metrics based on benchmarks and evaluations.  
+Finally, it is essential to emphasize that there can be valid reasons for some “artifacts,” 
+such as code, datasets, and model weight, not to be released, as many corresponding factors 
+may make releasing such information challenging.   
+V. 
+Conclusion  
+ 
+Although we reiterate our concerns about this RFC’s short comment period, we look 
+forward to working with NTIA and other stakeholders to address these matters and encourage 
+NTIA to look for other opportunities to receive necessary feedback on the current request.  
+ 
+Sincerely, 
+ 
+ 
+ 
+Michael Richards 
+Senior Director  
+Chamber Technology Engagement Center 
+ 
+U.S. Chamber of Commerce 
+ 
+9 NIST Risk Management Framework at 7 (January 2023) available at 
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf  
